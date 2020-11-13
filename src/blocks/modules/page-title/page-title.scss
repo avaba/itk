@@ -1,7 +1,16 @@
 $ptitle: "page-title";
 
 .#{$ptitle} {
-	
+    color: $text;
+
+    a {
+        color: $accent;
+
+        &:hover {
+            color: $hover;
+        }
+    }
+
     &__h {
         color: $gray;
         font-size: 40px;
@@ -14,6 +23,12 @@ $ptitle: "page-title";
     &__txtSmall {
         font-size: 20px;
         line-height: 28px;
+        text-align: center;
+    }
+	
+    &__txtLess {
+        font-size: 14px;
+        line-height: 22px;
         text-align: center;
     }
 }
