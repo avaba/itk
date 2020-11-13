@@ -1,0 +1,120 @@
+$pfx: "header";
+
+.#{$pfx} {
+    &__top {
+        @include row-flex();
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        &-col {
+            @include col();
+        }
+    }
+
+    &__bot {
+        @include row-flex();
+        align-items: center;
+
+        &-logo {
+            @include col();
+        }
+
+        &-desc {
+            @include col();
+            color: $gray;
+        }
+    }
+}
+
+.#{$pfx}-company {
+    &__nav {
+        display: flex;
+        list-style: none;
+        font-size: 12px;
+        text-transform: uppercase;
+
+        li {
+            a {
+                display: block;
+                padding: 0px 16px;
+                border-radius: 0 0 12px 12px;
+                color: $gray;
+                height: 48px;
+                line-height: 48px;
+
+                &:hover {
+                    color: $accent;
+                }
+            }
+
+            &.active {
+                a {
+                    background: #f0f0f0;
+                    color: $accent;
+                }
+            }
+        }
+    }
+}
+
+.#{$pfx}-right {
+    @include row-flex();
+    align-items: center;
+    font-size: 14px;
+
+    &__col {
+        @include col();
+    }
+
+    &__link {
+        color: $gray;
+        display: inline-block;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__call {
+        background: $accent;
+        padding: 0px 35px;
+        color: #fff;
+        border-radius: 0 0 12px 12px;
+        display: inline-block;
+        box-shadow: 0px 0px 30px 0px rgba(13, 177, 76, 0.3);
+        transition: all 0.2s;
+        height: 48px;
+        line-height: 48px;
+
+        &:hover {
+            background: $hover;
+            box-shadow: 0px 0px 0px 0px rgba(13, 177, 76, 0.3);
+            transition: all 0.2s;
+        }
+    }
+}
+
+.#{$pfx}-menu {
+    @include col();
+    margin-left: auto;
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-left: 20px;
+
+            a {
+                color: #000;
+                font-weight: bold;
+
+                &:hover {
+                    color: $accent;
+                }
+            }
+        }
+    }
+}
