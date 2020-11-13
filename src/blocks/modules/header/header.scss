@@ -1,6 +1,8 @@
 $pfx: "header";
 
 .#{$pfx} {
+    margin-bottom: 30px;
+
     &__top {
         @include row-flex();
         align-items: center;
