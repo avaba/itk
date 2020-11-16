@@ -34,3 +34,7 @@ a {
 .row {
     @include row-flex();
 }
+
+.green-color {
+    color: $accent;
+}
