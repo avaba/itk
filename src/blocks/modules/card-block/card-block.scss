@@ -1,0 +1,119 @@
+$pfx: "card-block";
+
+.#{$pfx} {
+    &__wrap {
+        @include row-flex();
+
+        &-col {
+            @include col();
+            @include size-md(12);
+            @include md(flex, auto);
+            display: flex;
+            flex: 1;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.card-product {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 30px;
+    transition: all 0.2s;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: #000;
+
+    &:hover {
+        border-color: $gray-light;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover & {
+        &__title {
+            color: $accent;
+        }
+
+        &__desc {
+            color: #333;
+        }
+
+        &__foot {
+            &-price {
+                color: $accent;
+            }
+        }
+    }
+
+    &__subtitle {
+        color: $gray;
+        font-size: 12px;
+    }
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    &__desc {
+        font-size: 14px;
+        color: $gray;
+        margin-bottom: 30px;
+    }
+
+    &__foot {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+
+        &-tarif {
+            font-size: 14px;
+            color: $gray;
+        }
+
+        &-price {
+            font-size: 24px;
+        }
+
+        &-date {
+            font-size: 14px;
+            color: $gray;
+        }
+    }
+
+    &-dark {
+        background: #333;
+        border-color: #333;
+
+        &:hover {
+            border-color: #333;
+
+            .card-product__desc {
+                color: #fff;
+            }
+        }
+
+        .card-product__title, .card-product__foot-price {
+            color: #fff;
+        }
+    }
+
+    &-flag {
+        &:before {
+            @include md(width, 48px);
+            @include md(height, 64px);
+            content: "";
+            position: absolute;
+            top: -1px;
+            right: 30px;
+            width: 20px;
+            height: 30px;
+            background: url(../../../img/svg/flag.svg);
+            background-position: 50% 100%;
+            background-size: cover;
+        }
+    }
+}

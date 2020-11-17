@@ -1,0 +1,44 @@
+.footer {
+    &__content {
+        @include row-flex();
+        justify-content: space-between;
+        padding: 24px 40px;
+        background-color: #333333;
+        border-radius: 15px 15px 0 0;
+        font-size: 14px;
+
+        &__item {
+            @include col();
+            @include size-lg(6);
+            @include size-md(12);
+
+            p {
+                @include md(width, 100%);
+                @include md(text-align, center);
+                @include md(margin-bottom, 10px);
+                @include md(margin-right, 0);
+                display: inline-block;
+                margin: 0;
+                color: #979797;
+                line-height: 14px;
+
+                &:last-child {
+                    @include md(margin-bottom, 0);
+                }
+
+                &:not(:last-child) {
+                    @include md(margin-right, 0);
+                    margin-right: 24px;
+                }
+
+                a {
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #aaa;
+                    }
+                }
+            }
+        }
+    }
+}
