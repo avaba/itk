@@ -1,0 +1,42 @@
+$pfx: "advant";
+
+.#{$pfx} {
+    &__wrap {
+        background: url(../../../img/preim.png);
+        border-radius: 25px;
+        background-size: cover;
+        background-position: 50%;
+        padding: 45px;
+    }
+
+    &__inner {
+        @include row-flex();
+        width: 60%;
+        @include lg(width, auto);
+
+        &-col {
+            @include col();
+            @include size(4);
+            @include size-md(6);
+            @include size-sm(12);
+        }
+    }
+}
+
+.#{$pfx}-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    text-align: center;
+
+    &__num {
+        color: $accent;
+        font-size: 72px;
+        @include xl(font-size, 50px);
+    }
+
+    &__desc {
+        font-size: 13px;
+        color: $gray;
+    }
+}

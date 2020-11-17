@@ -11,6 +11,16 @@ $pfx: "header";
 
         &-col {
             @include col();
+
+            &:first-child {
+                @include size-xl(5);
+                @include size-lg(12);
+            }
+
+            &:last-child {
+                @include size-xl(7);
+                @include lg(display, none);
+            }
         }
     }
 
@@ -24,6 +34,10 @@ $pfx: "header";
 
         &-desc {
             @include col();
+            @include size-xl(3);
+            @include size-lg(7);
+            @include size-md(5);
+            @include sm(display, none);
             color: $gray;
         }
     }
@@ -37,13 +51,18 @@ $pfx: "header";
         text-transform: uppercase;
 
         li {
+            @include lg(flex, 1);
             a {
                 display: block;
                 padding: 0px 16px;
+                @include lg(padding, 0px);
                 border-radius: 0 0 12px 12px;
                 color: $gray;
                 height: 48px;
+                @include lg(height, 30px);
                 line-height: 48px;
+                @include lg(line-height, 30px);
+                text-align: center;
 
                 &:hover {
                     color: $accent;
@@ -67,6 +86,7 @@ $pfx: "header";
 
     &__col {
         @include col();
+        @include xl(margin, 0 10px);
     }
 
     &__link {
@@ -81,6 +101,7 @@ $pfx: "header";
     &__call {
         background: $accent;
         padding: 0px 35px;
+        @include xl(padding, 0 20px);
         color: #fff;
         border-radius: 0 0 12px 12px;
         display: inline-block;
@@ -100,6 +121,7 @@ $pfx: "header";
 .#{$pfx}-menu {
     @include col();
     margin-left: auto;
+    @include lg(display, none);
 
     ul {
         list-style: none;
@@ -119,4 +141,77 @@ $pfx: "header";
             }
         }
     }
+}
+
+.hamburger {
+    position: relative;
+    border: 0;
+    background: none;
+    color: #000;
+    font-size: 30px;
+    display: none;
+    @include lg(display, inline-block);
+    z-index: 9;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin-left: auto;
+    padding: 0;
+    margin-right: 15px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.hamburger__box {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+.hamburger__inner,
+.hamburger__inner:after,
+.hamburger__inner:before {
+    position: absolute;
+    height: 2px;
+    width: 35px;
+    top: 2px;
+    display: block;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: 0.15s;
+    -o-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    border-radius: 4px;
+    background-color: #000;
+}
+
+.hamburger__inner:before {
+    content: "";
+    top: 10px;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: 0.15s;
+    -o-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -o-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+}
+
+.hamburger__inner:after {
+    content: "";
+    top: 20px;
+    width: 25px;
 }

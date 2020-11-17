@@ -1,0 +1,120 @@
+$pfx: "card-block";
+
+.#{$pfx} {
+    &__wrap {
+        @include row-flex();
+
+        &-col {
+            @include col();
+            @include size-md(12);
+            flex: 1;
+            @include md(flex, auto);
+            display: flex;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.card-product {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 25px;
+    color: #000;
+    border: 1px solid white;
+    transition: all 0.2s;
+    position: relative;
+    width: 100%;
+
+    &:hover {
+        border-color: $gray-light;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover & {
+        &__title {
+            color: $accent;
+        }
+
+        &__desc {
+            color: #333;
+        }
+
+        &__foot {
+            &-price {
+                color: $accent;
+            }
+        }
+    }
+
+    &__subtitle {
+        color: $gray;
+        font-size: 12px;
+    }
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    &__desc {
+        font-size: 14px;
+        color: $gray;
+        margin-bottom: 30px;
+    }
+
+    &__foot {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+
+        &-tarif {
+            font-size: 14px;
+            color: $gray;
+        }
+
+        &-price {
+            font-size: 24px;
+        }
+
+        &-date {
+            font-size: 14px;
+            color: $gray;
+        }
+    }
+
+    &-dark {
+        background: #333;
+        border-color: #333;
+
+        .card-product__title,
+        .card-product__foot-price {
+            color: white;
+        }
+
+        &:hover {
+            border-color: #333;
+
+            .card-product__desc {
+                color: white;
+            }
+        }
+    }
+
+    &-flag {
+        &:before {
+            content: "";
+            position: absolute;
+            right: 30px;
+            top: -1px;
+            @include md(width, 48px);
+            width: 20px;
+            @include md(height, 64px);
+            height: 30px;
+            background: url(../../../img/svg/flag.svg);
+            background-position: 50% 100%;
+            background-size: cover;
+        }
+    }
+}

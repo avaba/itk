@@ -23,12 +23,16 @@ a {
     }
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1264));
+    @include sm(max-width, rem(480));
+    @include md(max-width, rem(510));
+    @include lg(max-width, rem(690));
+    @include xl(max-width, rem(930));
 }
 
 .row {
@@ -37,4 +41,56 @@ a {
 
 .green-color {
     color: $accent;
+}
+
+.btn {
+    display: inline-block;
+    background: $accent;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+
+.blocks {
+    margin: 50px 0;
+
+    h2 {
+        color: $gray;
+        margin-bottom: 55px;
+        @include lg(margin-bottom, 20px);
+        font-weight: 300;
+        font-size: 40px;
+        @include lg(font-size, 26px);
+        @include lg(width, 100%);
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include lg(flex-wrap, wrap);
+
+        &-link {
+            margin-bottom: 55px;
+            height: 46px;
+            line-height: 46px;
+            padding: 0 25px;
+            border: 1px solid $gray-light;
+            border-radius: 100px;
+            color: $accent;
+            background: white;
+
+            &:hover {
+                background: #f5f5f5;
+            }
+        }
+    }
+}
+
+.map-block {
+    &__img {
+        margin-top: -200px;
+        z-index: -1;
+        position: relative;
+    }
 }

@@ -1,0 +1,32 @@
+$pfx: "home-slide";
+
+.#{$pfx} {
+    &__wrap {
+        background-size: cover;
+        background-position: 50%;
+        background-image: url(../../../img/home-slide.png);
+        padding: 75px;
+        @include md(padding, 30px);
+        border-radius: 25px;
+
+        &-col {
+            width: 40%;
+            @include lg(width, 65%);
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        @include md(font-size, 30px);
+        font-weight: 100;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        font-size: 20px;
+        @include md(font-size, 16px);
+        font-weight: 100;
+        margin-bottom: 60px;
+    }
+}
