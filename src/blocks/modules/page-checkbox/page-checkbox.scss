@@ -4,61 +4,85 @@ $page-checkbox: "page-checkbox";
     color: $text;
     padding-top: 50px;
 	
+	&:nth-last-of-type(1) {
+		.page-checkbox__row {
+			border-bottom: none;
+		}
+	}
+	
     &__row {
-        @include row-flex;
+		align-items: flex-start;
+		box-sizing: border-box;
+        display: flex;
         border-bottom: 1px solid $gray-light;
+		max-width: 1010px;
         padding-bottom: 50px;
+		padding-right: 16px;
     }
 
     &__title {
+//        @include col();
+//        @include size(3);
         font-size: 24px;
         line-height: 28px;
+		margin-right: 16px;
+		width: 220px;
     }
 
     &__content {
-        @include col();
-        @include size(9);
+		width: calc(100% - 236px);
+//        @include col();
+//        @include size(8);
     }
 }
 
 .checkboxList {
-
+	list-style-type: none;
+	
     &__item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         margin-bottom: 24px;
 
         &:last-child {
             margin-bottom: 0;
         }
+		
+        &-text {
+            color: $gray-dark;
+            display: block;
+            font-size: 14px;
+            line-height: 22px;
+            padding-left: 40px;
+			padding-right: 100px;
+        }
+		
+		.select {
+			margin-left: 10px;
+			width: 149px;
+		}
     }
 
     &__input {
         display: none;
 
         &:checked {
-
+			
             + .checkboxList__label {
                 color: $accent;
 
                 &:after {
-                    content: "";
-                    position: absolute;
-                    z-index: 2;
-                    top: 6px;
-                    left: 4px;
-                    width: 16px;
-                    height: 6px;
-                    transform: rotate(-45deg);
-                    border-bottom: 2px solid $accent;
-                    border-left: 2px solid $accent;
+                    opacity: 1;
                 }
+				
+				&:before {
+					border-color: $text;
+				}
             }
         }
     }
 
     &__label {
+		align-items: flex-start;
+		box-sizing: border-box;
         cursor: pointer;
         display: flex;
         font-size: 20px;
@@ -66,6 +90,7 @@ $page-checkbox: "page-checkbox";
         line-height: 28px;
         padding-left: 40px;
         position: relative;
+		transition: all .3s;
         width: 100%;
 
         &:before {
@@ -78,6 +103,112 @@ $page-checkbox: "page-checkbox";
             border: 1px solid $gray-light;
             background: #fff;
             border-radius: 4px;
+			transition: all .3s;
+        }
+		
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: 2;
+			top: 8px;
+			left: 4px;
+			width: 16px;
+			height: 6px;
+			transform: rotate(-45deg);
+			border-bottom: 2px solid $accent;
+			border-left: 2px solid $accent;
+			opacity: 0;
+			transition: all .3s;
+		}
+		
+        > span {
+            align-items: center;
+            display: flex;
+			flex-wrap: wrap;
+			flex-shrink: 0;
+//			width: 80%;
         }
     }
+	
+    &--descript {
+		
+        .checkboxList__item:nth-child(odd) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.hint {
+    border-radius: 50%;
+    display: inline-block;
+	
+    svg {
+        display: block;
+        width: 18px;
+        height: 18px;
+        transition: fill .3s ease;
+        fill: $gray-dark;
+    }
+	
+    &:hover {
+		
+        svg {
+            fill: $accent;
+        }
+    }
+}
+
+.checkboxList__item--hint {
+    margin-left: 10px;
+}
+
+@media (max-width: 1300px) {
+	.page-checkbox__row {
+		width: 850px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.page-checkbox__row {
+		display: block;
+		width: 635px;
+	}
+	.page-checkbox__title {
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	.page-checkbox__content {
+		width: 100%;
+	}
+}
+
+@media (max-width: 992px) {
+	.page-checkbox__row {
+		display: block;
+		width: 415px;
+	}
+	.checkboxList__label > span:nth-child(1) {
+		flex-shrink: unset;
+		margin-right: 15px;
+	}
+	.checkboxList__item-text {
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-checkbox__row {
+		width: 100%;
+	}
+}
+
+@media (max-width: 370px) {
+	.checkboxList__label {
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+	.checkboxList__label > span:nth-child(1) {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
 }

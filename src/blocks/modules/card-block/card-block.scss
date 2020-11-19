@@ -7,9 +7,9 @@ $pfx: "card-block";
         &-col {
             @include col();
             @include size-md(12);
-            flex: 1;
             @include md(flex, auto);
             display: flex;
+            flex: 1;
             margin-bottom: 30px;
         }
     }
@@ -18,18 +18,18 @@ $pfx: "card-block";
 .card-product {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-    padding: 30px;
-    border-radius: 25px;
-    color: #000;
-    border: 1px solid white;
-    transition: all 0.2s;
     position: relative;
     width: 100%;
+    border: 1px solid #fff;
+    padding: 30px;
+    transition: all 0.2s;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: #000;
 
     &:hover {
         border-color: $gray-light;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
     }
 
     &:hover & {
@@ -65,9 +65,9 @@ $pfx: "card-block";
     }
 
     &__foot {
-        margin-top: auto;
         display: flex;
         flex-direction: column;
+        margin-top: auto;
 
         &-tarif {
             font-size: 14px;
@@ -88,29 +88,28 @@ $pfx: "card-block";
         background: #333;
         border-color: #333;
 
-        .card-product__title,
-        .card-product__foot-price {
-            color: white;
-        }
-
         &:hover {
             border-color: #333;
 
             .card-product__desc {
-                color: white;
+                color: #fff;
             }
+        }
+
+        .card-product__title, .card-product__foot-price {
+            color: #fff;
         }
     }
 
     &-flag {
         &:before {
+            @include md(width, 48px);
+            @include md(height, 64px);
             content: "";
             position: absolute;
-            right: 30px;
             top: -1px;
-            @include md(width, 48px);
+            right: 30px;
             width: 20px;
-            @include md(height, 64px);
             height: 30px;
             background: url(../../../img/svg/flag.svg);
             background-position: 50% 100%;

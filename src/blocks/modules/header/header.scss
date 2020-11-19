@@ -53,15 +53,15 @@ $pfx: "header";
         li {
             @include lg(flex, 1);
             a {
+                @include lg(padding, 0);
+                @include lg(height, 30px);
+                @include lg(line-height, 30px);
                 display: block;
-                padding: 0px 16px;
-                @include lg(padding, 0px);
+                height: 48px;
+                padding: 0 16px;
                 border-radius: 0 0 12px 12px;
                 color: $gray;
-                height: 48px;
-                @include lg(height, 30px);
                 line-height: 48px;
-                @include lg(line-height, 30px);
                 text-align: center;
 
                 &:hover {
@@ -99,29 +99,29 @@ $pfx: "header";
     }
 
     &__call {
-        background: $accent;
-        padding: 0px 35px;
         @include xl(padding, 0 20px);
-        color: #fff;
-        border-radius: 0 0 12px 12px;
         display: inline-block;
-        box-shadow: 0px 0px 30px 0px rgba(13, 177, 76, 0.3);
-        transition: all 0.2s;
         height: 48px;
+        padding: 0 35px;
+        transition: all 0.2s;
+        background: $accent;
+        color: white;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 0 30px 0 rgba(13, 177, 76, 0.3);
         line-height: 48px;
 
         &:hover {
-            background: $hover;
-            box-shadow: 0px 0px 0px 0px rgba(13, 177, 76, 0.3);
             transition: all 0.2s;
+            background: $hover;
+            box-shadow: 0 0 0 0 rgba(13, 177, 76, 0.3);
         }
     }
 }
 
 .#{$pfx}-menu {
     @include col();
-    margin-left: auto;
     @include lg(display, none);
+    margin-left: auto;
 
     ul {
         list-style: none;
@@ -133,7 +133,7 @@ $pfx: "header";
 
             a {
                 color: #000;
-                font-weight: bold;
+                font-weight: 700;
 
                 &:hover {
                     color: $accent;
@@ -144,19 +144,19 @@ $pfx: "header";
 }
 
 .hamburger {
-    position: relative;
-    border: 0;
-    background: none;
-    color: #000;
-    font-size: 30px;
-    display: none;
     @include lg(display, inline-block);
+    display: none;
+    position: relative;
     z-index: 9;
+    border: 0;
+    padding: 0;
     -webkit-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    background: none;
+    color: #000;
+    font-size: 30px;
     margin-left: auto;
-    padding: 0;
     margin-right: 15px;
 
     &:focus {
@@ -165,31 +165,21 @@ $pfx: "header";
 }
 
 .hamburger__box {
-    position: relative;
     display: inline-block;
+    position: relative;
     width: 40px;
     height: 24px;
 }
 
-.hamburger__inner,
-.hamburger__inner:after,
-.hamburger__inner:before {
-    position: absolute;
-    height: 2px;
-    width: 35px;
-    top: 2px;
+.hamburger__inner, .hamburger__inner:after, .hamburger__inner:before {
     display: block;
-    -webkit-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
+    position: absolute;
+    top: 2px;
+    width: 35px;
+    height: 2px;
     transition-timing-function: ease;
-    -webkit-transition-duration: 0.15s;
-    -o-transition-duration: 0.15s;
     transition-duration: 0.15s;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    -o-transition-property: transform;
     transition-property: transform;
-    transition-property: transform, -webkit-transform;
     border-radius: 4px;
     background-color: #000;
 }
@@ -197,17 +187,9 @@ $pfx: "header";
 .hamburger__inner:before {
     content: "";
     top: 10px;
-    -webkit-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
     transition-timing-function: ease;
-    -webkit-transition-duration: 0.15s;
-    -o-transition-duration: 0.15s;
     transition-duration: 0.15s;
-    -webkit-transition-property: opacity, -webkit-transform;
-    transition-property: opacity, -webkit-transform;
-    -o-transition-property: transform, opacity;
     transition-property: transform, opacity;
-    transition-property: transform, opacity, -webkit-transform;
 }
 
 .hamburger__inner:after {
