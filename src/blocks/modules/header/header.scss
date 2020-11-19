@@ -1,199 +1,201 @@
 $pfx: "header";
 
 .#{$pfx} {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    &__top {
-        @include row-flex();
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 20px;
+  &__top {
+    @include row-flex();
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 
-        &-col {
-            @include col();
+    &-col {
+      @include col();
 
-            &:first-child {
-                @include size-xl(5);
-                @include size-lg(12);
-            }
+      &:first-child {
+        @include size-xl(5);
+        @include size-lg(12);
+      }
 
-            &:last-child {
-                @include size-xl(7);
-                @include lg(display, none);
-            }
-        }
+      &:last-child {
+        @include size-xl(7);
+		  @include lg(display, none);
+      }
+    }
+  }
+
+  &__bot {
+    @include row-flex();
+    align-items: center;
+
+    &-logo {
+      @include col();
     }
 
-    &__bot {
-        @include row-flex();
-        align-items: center;
-
-        &-logo {
-            @include col();
-        }
-
-        &-desc {
-            @include col();
-            @include size-xl(3);
-            @include size-lg(7);
-            @include size-md(5);
-            @include sm(display, none);
-            color: $gray;
-        }
+    &-desc {
+      @include col();
+      @include size-xl(3);
+      @include size-lg(7);
+      @include size-md(5);
+      @include sm(display, none);
+      color: $gray;
     }
+  }
 }
 
 .#{$pfx}-company {
-    &__nav {
-        display: flex;
-        list-style: none;
-        font-size: 12px;
-        text-transform: uppercase;
+  &__nav {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    text-transform: uppercase;
 
-        li {
-            @include lg(flex, 1);
-            a {
-                @include lg(padding, 0);
-                @include lg(height, 30px);
-                @include lg(line-height, 30px);
-                display: block;
-                height: 48px;
-                padding: 0 16px;
-                border-radius: 0 0 12px 12px;
-                color: $gray;
-                line-height: 48px;
-                text-align: center;
+    li {
+      @include lg(flex, 1);
+      a {
+        @include lg(padding, 0);
+        @include lg(height, 30px);
+        @include lg(line-height, 30px);
+        display: block;
+        height: 48px;
+        padding: 0 16px;
+        border-radius: 0 0 12px 12px;
+        color: $gray;
+        line-height: 48px;
+        text-align: center;
 
-                &:hover {
-                    color: $accent;
-                }
-            }
-
-            &.active {
-                a {
-                    background: #f0f0f0;
-                    color: $accent;
-                }
-            }
+        &:hover {
+          color: $accent;
         }
+      }
+
+      &.active {
+        a {
+          background: #f0f0f0;
+          color: $accent;
+        }
+      }
     }
+  }
 }
 
 .#{$pfx}-right {
-    @include row-flex();
-    align-items: center;
-    font-size: 14px;
+  @include row-flex();
+  align-items: center;
+  font-size: 14px;
 
-    &__col {
-        @include col();
-        @include xl(margin, 0 10px);
+  &__col {
+    @include col();
+    @include xl(margin, 0 10px);
+  }
+
+  &__link {
+    color: $gray;
+    display: inline-block;
+
+    &:hover {
+      color: $accent;
     }
+  }
 
-    &__link {
-        color: $gray;
-        display: inline-block;
+  &__call {
+    @include xl(padding, 0 20px);
+    display: inline-block;
+    height: 48px;
+    padding: 0 35px;
+    transition: all 0.2s;
+    background: $accent;
+    color: white;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 0 30px 0 rgba(13, 177, 76, 0.3);
+    line-height: 48px;
 
-        &:hover {
-            color: $accent;
-        }
+    &:hover {
+      transition: all 0.2s;
+      background: $hover;
+      box-shadow: 0 0 0 0 rgba(13, 177, 76, 0.3);
     }
-
-    &__call {
-        @include xl(padding, 0 20px);
-        display: inline-block;
-        height: 48px;
-        padding: 0 35px;
-        transition: all 0.2s;
-        background: $accent;
-        color: white;
-        border-radius: 0 0 12px 12px;
-        box-shadow: 0 0 30px 0 rgba(13, 177, 76, 0.3);
-        line-height: 48px;
-
-        &:hover {
-            transition: all 0.2s;
-            background: $hover;
-            box-shadow: 0 0 0 0 rgba(13, 177, 76, 0.3);
-        }
-    }
+  }
 }
 
 .#{$pfx}-menu {
-    @include col();
-    @include lg(display, none);
-    margin-left: auto;
+  @include col();
+  @include lg(display, none);
+  margin-left: auto;
 
-    ul {
-        list-style: none;
-        display: flex;
-        align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
 
-        li {
-            margin-left: 20px;
+    li {
+      margin-left: 20px;
 
-            a {
-                color: #000;
-                font-weight: 700;
+      a {
+        color: #000;
+        font-weight: 700;
 
-                &:hover {
-                    color: $accent;
-                }
-            }
+        &:hover {
+          color: $accent;
         }
+      }
     }
+  }
 }
 
 .hamburger {
-    @include lg(display, inline-block);
-    display: none;
-    position: relative;
-    z-index: 9;
-    border: 0;
-    padding: 0;
-    -webkit-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    background: none;
-    color: #000;
-    font-size: 30px;
-    margin-left: auto;
-    margin-right: 15px;
+  @include lg(display, inline-block);
+  display: none;
+  position: relative;
+  z-index: 9;
+  border: 0;
+  padding: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background: none;
+  color: #000;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: 15px;
 
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }
 
 .hamburger__box {
-    display: inline-block;
-    position: relative;
-    width: 40px;
-    height: 24px;
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 24px;
 }
 
-.hamburger__inner, .hamburger__inner:after, .hamburger__inner:before {
-    display: block;
-    position: absolute;
-    top: 2px;
-    width: 35px;
-    height: 2px;
-    transition-timing-function: ease;
-    transition-duration: 0.15s;
-    transition-property: transform;
-    border-radius: 4px;
-    background-color: #000;
+.hamburger__inner,
+.hamburger__inner:after,
+.hamburger__inner:before {
+  display: block;
+  position: absolute;
+  top: 2px;
+  width: 35px;
+  height: 2px;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: transform;
+  border-radius: 4px;
+  background-color: #000;
 }
 
 .hamburger__inner:before {
-    content: "";
-    top: 10px;
-    transition-timing-function: ease;
-    transition-duration: 0.15s;
-    transition-property: transform, opacity;
+  content: "";
+  top: 10px;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: transform, opacity;
 }
 
 .hamburger__inner:after {
-    content: "";
-    top: 20px;
-    width: 25px;
+  content: "";
+  top: 20px;
+  width: 25px;
 }
