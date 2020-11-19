@@ -109,9 +109,6 @@ $pfx: "header";
         border-radius: 0 0 12px 12px;
         box-shadow: 0 0 30px 0 rgba(13, 177, 76, 0.3);
         line-height: 48px;
-        &.dff {
-            display: none;
-        }
 
         &:hover {
             transition: all 0.2s;
