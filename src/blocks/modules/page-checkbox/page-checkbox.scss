@@ -21,8 +21,8 @@ $page-checkbox: "page-checkbox";
     }
 
     &__title {
-        @include col();
-        @include size(3);
+//        @include col();
+//        @include size(3);
         font-size: 24px;
         line-height: 28px;
 		margin-right: 16px;
@@ -47,16 +47,11 @@ $page-checkbox: "page-checkbox";
         }
 		
         &-text {
-<<<<<<< HEAD
-=======
-            @include size(8);
->>>>>>> e45d22186868bca9a9765cd28e99e3c8e0015aeb
             color: $gray-dark;
             display: block;
             font-size: 14px;
             line-height: 22px;
             padding-left: 40px;
-<<<<<<< HEAD
 			padding-right: 100px;
         }
 		
@@ -64,9 +59,6 @@ $page-checkbox: "page-checkbox";
 			margin-left: 10px;
 			width: 149px;
 		}
-=======
-        }
->>>>>>> e45d22186868bca9a9765cd28e99e3c8e0015aeb
     }
 
     &__input {
@@ -136,11 +128,6 @@ $page-checkbox: "page-checkbox";
 			flex-shrink: 0;
 //			width: 80%;
         }
-		
-        > span {
-            display: flex;
-            align-items: center;
-        }
     }
 	
     &--descript {
@@ -163,29 +150,6 @@ $page-checkbox: "page-checkbox";
         fill: $gray-dark;
     }
 	
-<<<<<<< HEAD
-    &--descript {
-		
-        .checkboxList__item:nth-child(odd) {
-            margin-bottom: 0;
-        }
-    }
-}
-
-.hint {
-    border-radius: 50%;
-    display: inline-block;
-	
-    svg {
-        display: block;
-        width: 18px;
-        height: 18px;
-        transition: fill .3s ease;
-        fill: $gray-dark;
-    }
-	
-=======
->>>>>>> e45d22186868bca9a9765cd28e99e3c8e0015aeb
     &:hover {
 		
         svg {
@@ -198,7 +162,6 @@ $page-checkbox: "page-checkbox";
     margin-left: 10px;
 }
 
-<<<<<<< HEAD
 @media (max-width: 1300px) {
 	.page-checkbox__row {
 		width: 850px;
@@ -249,20 +212,3 @@ $page-checkbox: "page-checkbox";
 		margin-bottom: 15px;
 	}
 }
-=======
-.checkboxList__select {
-    margin-left: 10px;
-}
-
-.select {
-    min-width: 149px;
-    border: 1px solid $gray-light;
-    padding: 5px 15px 5px 5px;
-    appearance: none;
-    background: #fff url(../img/svg/arrow-bottom.svg) no-repeat right 8px center;
-    border-radius: 4px;
-    color: $text;
-    font-size: 14px;
-    outline: none;
-}
->>>>>>> e45d22186868bca9a9765cd28e99e3c8e0015aeb
