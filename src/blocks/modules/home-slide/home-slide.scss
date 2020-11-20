@@ -7,11 +7,16 @@ $pfx: "home-slide";
         background-position: 50%;
         background-image: url(../../../img/home-slide.png);
         padding: 75px;
-        border-radius: 25px;
+		  border-radius: 25px;
+		  
+		  &.el__slide {
+			  background-image: url("../img/300.png");
+			  position: relative;
+		  }
 
         &-col {
             @include lg(width, 65%);
-            width: 40%;
+            width: 43%;
         }
     }
 

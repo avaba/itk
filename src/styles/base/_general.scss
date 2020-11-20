@@ -48,7 +48,31 @@ img {
     background: $accent;
     color: white;
     padding: 15px 25px;
-    border-radius: 12px;
+	 border-radius: 12px;
+	 transition: all 0.3s ease;
+	 	span {
+			transform: translateY(-1px);
+			display: block;
+			transition: all 0.3s ease;
+		 }
+	 &.btn-white {
+		 background: white;
+		 color: $accent;
+		 border: 1px solid $accent;
+		 margin-left: 16px;
+	 }
+	 &.btn-shadow {
+		box-shadow: 0px 10px 20px rgba(13, 177, 75, 0.4);
+	 }
+	 &:hover {
+		&:not(.btn-white) {
+			background: #009f3c;
+			box-shadow: 0 0 0 0 rgba(13, 177, 76, 0.3);
+		}
+		span {
+			transform: translateY(0px);
+		}
+	 }
 }
 
 .blocks {
@@ -68,7 +92,10 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include lg(flex-wrap, wrap);
+		  @include lg(flex-wrap, wrap);
+		  &.center {
+			  justify-content: center;
+		  }
 
         &-link {
             margin-bottom: 55px;

@@ -55,13 +55,15 @@ $pfx: "card-block";
 
     &__title {
         font-size: 24px;
-        margin-bottom: 30px;
+		  margin-bottom: 30px;
+		  transition: all 0.3s ease;
     }
 
     &__desc {
         font-size: 14px;
         color: $gray;
-        margin-bottom: 30px;
+		  margin-bottom: 30px;
+		  transition: all 0.3s ease;
     }
 
     &__foot {
@@ -71,11 +73,12 @@ $pfx: "card-block";
 
         &-tarif {
             font-size: 14px;
-            color: $gray;
+				color: $gray;
         }
 
         &-price {
-            font-size: 24px;
+				font-size: 24px;
+				transition: all 0.3s ease;
         }
 
         &-date {
