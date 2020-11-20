@@ -1,35 +1,38 @@
-<form action="#" class="myform">
-	<h2 class="myform__title">Заявка на выпуск сертификата</h2>
-	<p class="myform__descript">
-		Электронная подпись для торгов для физических лиц<br> 
-		в Санкт-Петербурге
-	</p>
-	<ul class="myformList">
-		<li class="myformList__item">
-			<span class="myformList__param">Регион</span>
-			<select class="select myformList__select">
-				<option value="">23 — Краснодарский край</option>
-				<option value="">23 — Краснодарский край</option>
-				<option value="">23 — Краснодарский край</option>
-				<option value="">23 — Краснодарский край</option>
-			</select>
-		</li>
-		<li class="myformList__item"><span class="myformList__param">Город</span><input type="text" class="myformList__input" placeholder="Краснодар" required></li>
-		<li class="myformList__item"><span class="myformList__param">Контактное лицо</span><input type="text" class="myformList__input" placeholder="Алексей" required></li>
-		<li class="myformList__item"><span class="myformList__param">Электронная почта</span><input type="email" class="myformList__input" placeholder="alexey@itcomgk.ru" required></li>
-		<li class="myformList__item"><span class="myformList__param">Номер телефона</span><input type="text" class="myformList__input" placeholder="+7 952 520 00 20" required></li>
-		<li class="myformList__item">
-			<span class="myformList__param">Кто получает сертификат</span>
-			<select class="select myformList__select">
-				<option value="">Физическое лицо</option>
-				<option value="">Юридическое лицо</option>
-			</select>
-		</li>
-		<li class="myformList__item"><span class="myformList__param">ИНН</span><input type="text" class="myformList__input" placeholder="210235444021" required></li>
-	</ul>
-	<input type="submit" value="Отправить заявку" class="myform__submit">
-	<span class="myform__konf">
-		Отправляя заявку, я соглашаюсь на <a href="#">обработку персональных данных</a> <br>
-		и получение информационных сообщений от группы компании Айтиком.
-	</span>
-</form>
+<div class="container">
+	<form action="#" class="myform">
+		<h2 class="myform__title">Заявка на выпуск сертификата</h2>
+		<p class="myform__descript">
+			Электронная подпись для торгов для физических лиц<br> 
+			в Санкт-Петербурге
+		</p>
+		<ul class="myformList">
+			<li class="myformList__item">
+				<span class="myformList__param">Регион</span>
+				<select class="select">
+					<option value="">23 — Краснодарский край</option>
+					<option value="">23 — Краснодарский край</option>
+					<option value="">23 — Краснодарский край</option>
+					<option value="">23 — Краснодарский край</option>
+				</select>
+			</li>
+			<li class="myformList__item"><span class="myformList__param">Город</span><input type="text" class="myformList__input" placeholder="Краснодар" required></li>
+			<li class="myformList__item"><span class="myformList__param">Контактное лицо</span><input type="text" class="myformList__input" placeholder="Алексей" required></li>
+			<li class="myformList__item"><span class="myformList__param">Электронная почта</span><input type="email" class="myformList__input" placeholder="alexey@itcomgk.ru" required></li>
+			<li class="myformList__item"><span class="myformList__param">Номер телефона</span><input type="text" class="myformList__input" placeholder="+7 952 520 00 20" required></li>
+			<li class="myformList__item">
+				<span class="myformList__param">Кто получает сертификат</span>
+				<select class="select">
+					<option selected value="">Физическое лицо</option>
+					<option value="">Юридическое лицо</option>
+				</select>
+			</li>
+			<li class="myformList__item"><span class="myformList__param">ИНН</span><input type="text" class="myformList__input" placeholder="210235444021" required></li>
+		</ul>
+		<input type="submit" value="Отправить заявку" class="myform__submit">
+		<span class="myform__konf">
+			Отправляя заявку, я соглашаюсь на <a href="#">обработку персональных данных</a> <br>
+			и получение информационных сообщений от группы компании Айтиком.
+		</span>
+	</form>
+</div>
+<!-- /.container -->

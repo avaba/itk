@@ -1,0 +1,47 @@
+$pfx: "page-slide";
+
+.#{$pfx} {
+	&__wrap {
+		@include md(padding, 30px);
+		background-size: cover;
+		background-position: 50%;
+		background-image: url(../../../img/page-slide.png);
+		color: $text;
+		padding: 75px;
+		padding-top: 38px;
+		border-radius: 25px;
+		
+		&-col {
+			@include lg(width, 65%);
+			width: 60%;
+		}
+	}
+	
+	&__breadcrumbs {
+		margin-bottom: 45px;
+	}
+	
+	&__title {
+		color: $text;
+		font-weight: 300;
+		font-size: 48px;
+		line-height: 56px;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	
+	&__price {
+		font-size: 14px;
+		margin-bottom: 20px;
+		
+		span {
+			display: block;
+			font-size: 40px;
+		}
+	}
+	
+	&__btn {
+		box-shadow: 0px 10px 20px rgba(13, 177, 75, 0.4);
+		font-size: 14px;
+	}
+}

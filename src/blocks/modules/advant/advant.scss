@@ -7,6 +7,15 @@ $pfx: "advant";
         background-size: cover;
         background-position: 50%;
         padding: 45px;
+		
+		&--gray {
+			background-image: url(../../../img/preim-gray.png);
+			
+			.advant-item__num,
+			.advant-item__desc {
+				color: #fff;
+			}
+		}
     }
 
     &__inner {

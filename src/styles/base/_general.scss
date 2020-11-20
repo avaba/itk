@@ -43,6 +43,10 @@ img {
     color: $accent;
 }
 
+.text-center {
+	text-align: center;
+}
+
 .btn {
     display: inline-block;
     background: $accent;
@@ -73,6 +77,16 @@ img {
 			transform: translateY(0px);
 		}
 	 }
+}
+
+.btn-gray {
+	background: #fff;
+	border-radius: 24px;
+	border: 1px solid $white-light;
+	color: $accent;
+	display: inline-block;
+	font-size: 14px;
+	padding: 15px 25px;
 }
 
 .blocks {
@@ -120,4 +134,33 @@ img {
         z-index: -1;
         position: relative;
     }
+}
+
+.breadcrumbs {
+	
+	&__item {
+		color: $text;
+		display: inline-block;
+		font-size: 12px;
+		line-height: 16px;
+		
+		&:last-child {
+			
+			&:after {
+				display: none;
+			}
+		}
+		
+		&:after {
+			content: '>';
+			display: inline-block;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+	}
+	
+	&__link {
+		color: $text;
+		display: inline-block;
+	}
 }

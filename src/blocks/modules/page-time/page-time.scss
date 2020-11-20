@@ -1,37 +1,63 @@
 $pgtime: "page-time";
 
 .#{$pgtime} {
-    @include row-flex();
+	align-items: flex-start;
+    display: flex;
     color: $text;
     margin-top: 50px;
 	
     &__row {
-        @include row-flex();
         border-bottom: 1px solid $gray-light;
+		display: flex;
+		max-width: 1010px;
         padding-bottom: 55px;
     }
 
     &__title {
-        @include col();
         font-size: 24px;
+		flex-shrink: 0;
         line-height: 28px;
+		margin-right: 16px;
         padding-top: 10px;
+		width: 220px;
     }
 	
+	&__radio {
+		display: none;
+		
+		&:checked {
+			
+			+ .#{$pgtime}__price {
+				border-color: $gray-light;
+				box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+				
+				.#{$pgtime}__price-price {
+					color: $accent;
+				}
+			}
+		}
+	}
+	
+	&__wrapper {
+		display: flex;
+	}
+	
     &__price {
-        @include col();
         background: #fff;
         border-radius: 24px;
         border: 1px solid $gray-light;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+		box-sizing: border-box;
+		cursor: pointer;
+		margin-right: 16px;
         padding-bottom: 30px;
         padding-left: 30px;
         padding-right: 20px;
-        padding-top: 25px;
-
-        &:hover {
-            box-shadow: none;
-        }
+		padding-top: 25px;
+		position: relative;
+		transition: all 0.2s;
+		width: 180px;
+		z-index: 2;
 
         &-title {
             color: #ababab;
@@ -54,14 +80,32 @@ $pgtime: "page-time";
     }
 	
     &__result {
-        @include col();
-        background: url(../img/svg/gray-bg-result.svg) no-repeat left top / cover;
+		background: #f5f5f5;
+		border-radius: 0 24px 24px 0;
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 0;
+		height: 154px;
+		justify-content: center;
         margin-left: auto;
-        padding-bottom: 25px;
-        padding-left: 80px;
+        padding-bottom: 5px;
+        padding-left: 20px;
         padding-right: 25px;
-        padding-top: 25px;
-        width: 240px;
+        padding-top: 5px;
+		position: sticky;
+		top: 20px;
+        width: 150px;
+		
+		&::after {
+			border: 83px solid transparent;
+			border-right: 83px solid #f5f5f5;
+			content: '';
+			height: 0;
+			position: absolute;
+			right: 100%;
+			top: 0;
+			width: 0;
+		}
 
         &-title {
             display: block;
@@ -81,4 +125,76 @@ $pgtime: "page-time";
             line-height: 14px;
         }
     }
+}
+
+@media (max-width: 1300px) {
+	.page-time__row {
+		padding-bottom: 35px;
+		width: 850px;
+	}
+	.page-time__wrapper {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.page-time__price {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.page-time__row {
+		width: 635px;
+	}
+}
+
+@media (max-width: 992px) {
+	.page-time__row {
+		display: block;
+		width: 415px;
+	}
+	.page-time__title {
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	.page-time__wrapper {
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-time__result {
+		display: none;
+	}
+	.page-time__row {
+		width: 100%;
+	}
+}
+
+@media (max-width: 445px) {
+	.page-time__price {
+		margin-right: 4%;
+		width: 46%;
+		
+		&:nth-of-type(even) {
+			margin-right: 0;
+		}
+	}
+}
+
+@media (max-width: 370px) {
+	.page-time__wrapper {
+		display: block;
+	}
+	.page-time__price {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 280px;
+		text-align: center;
+		width: 100%;
+		
+		&:nth-of-type(even) {
+			margin-right: auto;
+		}
+	}
 }

@@ -3,7 +3,7 @@ $myform: "myform";
 .#{myform} {
     box-sizing: border-box;
     max-width: 784px;
-    margin: 0 auto;
+    margin: 0 auto 55px;
     padding: 50px 80px;
     background: #fff;
     border-radius: 24px;
@@ -93,10 +93,47 @@ $myform: "myform";
         outline: none;
     }
 	
-    &__select {
+    .select {
         @include col();
         width: 384px;
         height: 48px;
-        padding: 0 24px;
+		
+		.new-select {
+			box-sizing: border-box;
+			height: 48px;
+			line-height: 48px;
+			width: 100%;
+		}
     }
+}
+
+@media (max-width: 992px) {
+	.myformList__input, 
+	.myformList .select {
+		width: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.#{myform} {
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 100%;
+	}
+	.myformList__item {
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.myformList__param {
+		display: inline-block;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	.myformList__input,
+	.myformList .select {
+		box-sizing: border-box;
+		margin: 0;
+		width: calc(100% - 2px);
+	}
 }

@@ -1,0 +1,65 @@
+.tab {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin-bottom: 55px;
+	
+	&__item {
+		font-size: 14px;
+		margin-right: 16px;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	&__link {
+		background: #fff;
+		border-radius: 24px;
+		border: 1px solid $gray-light;
+		box-shadow: 0px 10px 20px rgba(13, 177, 75, 0);
+		color: $gray-dark;
+		display: block;
+		padding: 14px 18px;
+		transition: all .3s;
+		
+		
+		&:hover, &.active {
+			background: $hover;
+			color: #fff;
+		}
+	}
+}
+
+.tabContent {
+	border-bottom: 1px solid $gray-light;
+	margin-bottom: 25px;
+	
+	&__grid {
+		@include col();
+		@include size(3);
+		margin-bottom: 50px;
+	}
+	
+	&__row {
+		@include row-flex();
+	}
+	
+	&__item {
+		display: none;
+	}
+	
+	&__title {
+		color: $text;
+		display: block;
+		font-size: 16px;
+		line-height: 22px;
+	}
+	
+	&__link {
+		color: $gray-dark;
+		display: inline-block;
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
