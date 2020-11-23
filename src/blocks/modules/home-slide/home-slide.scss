@@ -7,15 +7,18 @@ $pfx: "home-slide";
         background-position: 50%;
         background-image: url(../../../img/home-slide.png);
         padding: 75px;
-		  border-radius: 25px;
+        border-radius: 25px;
 		  
-		  &.el__slide {
-			  background-image: url("../img/300.png");
-			  position: relative;
-		  }
+        &.el__slide {
+            background-image: url("../img/el-slide.jpg");
+            position: relative;
+        }
+        &.noof__slide {
+            background-image: url("../img/no-office-slide.jpg");
+        }
 
         &-col {
-            @include lg(width, 65%);
+            @include lg(width, 71%);
             width: 43%;
         }
     }
@@ -26,6 +29,9 @@ $pfx: "home-slide";
         font-weight: 100;
         margin-top: 0;
         margin-bottom: 20px;
+        &.gray {
+            color: $accent;
+        }
     }
 
     &__desc {
@@ -33,5 +39,9 @@ $pfx: "home-slide";
         font-size: 20px;
         font-weight: 100;
         margin-bottom: 60px;
+        &.small-desc {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
     }
 }
