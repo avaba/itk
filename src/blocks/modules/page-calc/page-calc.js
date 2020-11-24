@@ -4,23 +4,45 @@ let final_summ = $('.js-final-calc-sum'),
     calc_result_month = $('.js-calc-result-month'),
     calc_radio = $('.js-calc-radio input'),
     calc_checkbox = $('.js-calc-checkbox input[type=checkbox]'),
-    checkbox_need = $('.js-checkbox-need input');
+	 checkbox_need = $('.js-checkbox-need input');
 
 function printResult() {
+	let comps = 0,
+		 laws = 0,
+		 tariffs = 0,
+		 validitys = 0,
+		 sertificates = 0,
+		 compos = $('#compos input:checked'),
+		law = $('#law input:checked'),
+		tariff = $('#tariff input:checked'),
+		validity = $('#validity input:checked'),
+		sertificate = $('#sertificate input:checked');
+
+		console.log($(compos).length)
+
+	//report-calculate
+	if($(compos).length > 0) comps = +$(compos).val();
+	if($(law).length > 0) laws = +$(law).val();
+	if($(tariff).length > 0) tariffs = +$(tariff).val();
+	if($(validity).length > 0) validitys = +$(validity).val();
+	if($(sertificate).length > 0) sertificates = +$(sertificate).val();
+
+	//report-calculate
+
+
     let calcRadio = calc_radio_check();
     if (!calcRadio) {
         calcRadio = 0;
     }
     let b = summCheckbox();
     let d = summCheckboxNeed();
-    final_summ.text(+calcRadio + +b + +d);
+    final_summ.text(+calcRadio + +b + +d + comps + laws + tariffs + validitys + sertificates);
 }
 
 printResult();
 
 calc_radio.on('click', function() {
     let this_month = $(this).next().find(calc_month).text();
-    console.log(this_month)
     calc_result_month.text(this_month);
 });
 
