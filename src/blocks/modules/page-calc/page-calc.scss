@@ -49,6 +49,7 @@ $pgtime: "page-time";
 
     &__wrapper {
 		  display: flex;
+		  width: 100%;
 		  &.wrap {
 			flex-wrap: wrap;
 			margin-bottom: -16px;
