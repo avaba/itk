@@ -1,11 +1,13 @@
 .tab {
 	display: flex;
+    flex-wrap: wrap;
 	justify-content: center;
 	list-style-type: none;
-	margin-bottom: 55px;
+    margin-bottom: 40px;
 	
 	&__item {
 		font-size: 14px;
+        margin-bottom: 15px;
 		margin-right: 16px;
 		
 		&:last-child {
@@ -24,10 +26,15 @@
 		transition: all .3s;
 		
 		
-		&:hover, &.active {
+		&.active {
 			background: $hover;
+            border-color: $hover;
 			color: #fff;
 		}
+        
+        &:hover {
+            
+        }
 	}
 }
 
@@ -38,6 +45,9 @@
 	&__grid {
 		@include col();
 		@include size(3);
+        @include size-md(6);
+        @include size-sm(12);
+        @include sm(margin-bottom, 25px);
 		margin-bottom: 50px;
 	}
 	

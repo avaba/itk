@@ -19,10 +19,6 @@
         "build:fonts": "gulp fonts --production",
         "build:favicons": "gulp favicons --production",
         "build:gzip": "gulp gzip --production",
-        "lint:styles": "stylelint \"src/**/*.scss\" --syntax=scss",
-        "lint:styles --fix": "stylelint \"src/**/*.scss\" --syntax=scss --fix",
-        "lint:scripts": "eslint --color ./src/blocks",
-        "lint:scripts --fix": "eslint --fix --color ./src/blocks",
         "bem-c": "bem create $* -l src/blocks/components",
         "bem-m": "bem create $* -l src/blocks/modules"
     },
@@ -36,7 +32,8 @@
         "bem-tools-create": "bem-tools/bem-tools-create",
         "browser-sync": "^2.23.6",
         "del": "^5.1.0",
-        "gulp": "^4.0.0",
+        "eslint": "^7.14.0",
+        "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",
         "gulp-clean-css": "^4.2.0",
         "gulp-debug": "^4.0.0",
@@ -49,7 +46,7 @@
         "gulp-plumber": "^1.2.0",
         "gulp-rename": "^2.0.0",
         "gulp-replace": "^1.0.0",
-        "gulp-sass": "^4.0.2",
+        "gulp-sass": "^4.1.0",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-svg-sprite": "^1.5.0",
         "gulp-watch": "^5.0.0",
@@ -63,9 +60,6 @@
         "imagemin-zopfli": "^7.0.0",
         "lint-staged": "^10.0.3",
         "require-dir": "^1.2.0",
-        "stylelint": "^13.6.1",
-        "stylelint-order": "^4.1.0",
-        "stylelint-selector-bem-pattern": "^2.1.0",
         "webpack": "^4.30.0",
         "webpack-stream": "^5.2.1",
         "yargs": "^15.4.1"
@@ -74,18 +68,5 @@
         "jquery": "^3.5.1",
         "smart-grid": "^2.1.2",
         "tippy.js": "^6.2.7"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "!(_*).scss": [
-            "stylelint --fix --color --config ./.stylelintrc"
-        ],
-        "*.js": [
-            "eslint --fix --color"
-        ]
     }
 }

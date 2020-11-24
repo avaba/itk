@@ -1,0 +1,30 @@
+.breadcrumbs {
+	position: absolute;
+	top: 38px;
+	ul {
+		display: flex;
+		margin: 0 -6px;
+		li {
+			margin: 0 6px;
+			list-style: none;
+			position: relative;
+			&:first-child {
+				&:before {
+					content: '';
+				}
+			}
+			&:before {
+				content: '>';
+				left: -8px;
+				position: absolute;
+				font-size: 12px;
+				top: 4px;
+
+			}
+			a,span {
+				color: #333333;
+				font-size: 12px;
+			}
+		}
+	}
+}
