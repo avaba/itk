@@ -45,6 +45,9 @@ $pfx: "card-block";
             &-price {
                 color: $accent;
             }
+            &-tarif {
+                color: $text;
+            }
         }
     }
 
@@ -55,15 +58,19 @@ $pfx: "card-block";
 
     &__title {
         font-size: 24px;
-		  margin-bottom: 30px;
-		  transition: all 0.3s ease;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
     }
 
     &__desc {
         font-size: 14px;
+        line-height: 20px;
         color: $gray;
-		  margin-bottom: 30px;
-		  transition: all 0.3s ease;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+        &.list__desc {
+            padding-left: 10px;
+        }
     }
 
     &__foot {
@@ -73,12 +80,13 @@ $pfx: "card-block";
 
         &-tarif {
             font-size: 14px;
-				color: $gray;
+            color: $gray;
+            transition: all 0.3s ease;
         }
 
         &-price {
-				font-size: 24px;
-				transition: all 0.3s ease;
+            font-size: 24px;
+            transition: all 0.3s ease;
         }
 
         &-date {

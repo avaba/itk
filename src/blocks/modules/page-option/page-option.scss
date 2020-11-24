@@ -7,22 +7,15 @@ $pfx: "page-option";
 
 .list-2 {
 	@include row-flex();
+	list-style-type: none;
 	
 	&__item {
 		@include col();
 		@include size(3);
-        @include size-lg(6);
-        @include size-sm(12);
 		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
 		border-radius: 24px;
 		background: #fff;
-        margin-bottom: 15px;
 		padding: 30px;
-        transition: all .3s;
-        
-        &:hover {
-            box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
-        }
 	}
 	
 	&__name {

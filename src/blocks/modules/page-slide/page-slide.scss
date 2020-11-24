@@ -12,8 +12,7 @@ $pfx: "page-slide";
 		border-radius: 25px;
 		
 		&-col {
-			@include lg(width, 85%);
-			@include sm(width, 95%);
+			@include lg(width, 65%);
 			width: 60%;
 		}
 	}
@@ -23,11 +22,10 @@ $pfx: "page-slide";
 	}
 	
 	&__title {
-        @include md(font-size, 30px);
 		color: $text;
 		font-weight: 300;
 		font-size: 48px;
-		line-height: 1.3;
+		line-height: 56px;
 		margin-top: 0;
 		margin-bottom: 20px;
 	}

@@ -97,6 +97,13 @@ $myform: "myform";
         @include col();
         width: 384px;
         height: 48px;
+		
+		.new-select {
+			box-sizing: border-box;
+			height: 48px;
+			line-height: 48px;
+			width: 100%;
+		}
     }
 }
 
