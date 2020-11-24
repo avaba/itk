@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="img/favicons/apple-touch-icon-precomposed.png"
+    />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="img/favicons/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/favicons/apple-touch-icon-1024x1024.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    @@include("../blocks/modules/header/header.html")
+
+    <section class="home-slide">
+      <div class="container">
+        <div class="home-slide__wrap el__slide">
+			@@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+          <div class="home-slide__wrap-col">
+            <h1 class="home-slide__title">Электронная отчетность <br> от 234 рублей в месяц</h1>
+            <p class="home-slide__desc">
+					Скидка до 50% новым клиентам
+            </p>
+            <a href="#popupp" class="btn btn-shadow fancybox"><span>Подключить</span></a>
+            <a href="#popupp" class="btn btn-white fancybox"><span>Заказать звонок</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-block blocks">
+      <div class="container">
+        <div class="blocks__head center">
+          <h2>Почему электронную отчетность выбирают в ITCOM</h2>
+        </div>
+        <div class="card-block__wrap">
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Электронная подпись</span>
+              <span class="card-product__title">
+                Для участия
+                <br />
+                в торгах
+              </span>
+              <span class="card-product__desc">
+                Подходит для участия в госзакупках по 44-ФЗ, 223-ФЗ, в
+                коммерческих тендерах и в торгах по банкротству. Более 200
+                электронных торговых площадок
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый тариф</span>
+                <span class="card-product__foot-price">от 4 500 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Электронная подпись</span>
+              <span class="card-product__title">
+                Для вашего бизнеса
+                <br />
+                и отчетности
+              </span>
+              <span class="card-product__desc">
+                Подходит ЮЛ и ИП для работы на порталах: «Госуслуги», ФНС, ПФР,
+                Росстат и др. Для сдачи отчетности, регистрации онлайн-кассы в
+                ОФД и подключения к ЕГАИС
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый тариф</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Электронная подпись</span>
+              <span class="card-product__title">
+                Для физического
+                <br />
+                лица
+              </span>
+              <span class="card-product__desc">
+                Используйте электронную подпись для личных целей на портале
+                Госуслуг, для регистрации бизнеса или покупки имущества
+                должников
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый тариф</span>
+                <span class="card-product__foot-price">от 1 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product card-product-dark">
+              <span class="card-product__subtitle">Электронная подпись</span>
+              <span class="card-product__title">
+                В онлайн
+                <br />
+                конструкторе
+              </span>
+              <span class="card-product__desc">
+                Если вы не нашли подходящую электронную подпись, соберите в
+                гибком конструкторе функционал той электронной подписи, которая
+                вам необходима
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-price">от 1 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-block blocks">
+      <div class="container">
+        <div class="blocks__head">
+          <h2>Решения для вашего бизнеса</h2>
+          <a href="#" class="blocks__head-link">Все виды ЭП</a>
+        </div>
+        <div class="card-block__wrap">
+          <div class="card-block__wrap-col">
+            <a
+              href="#"
+              class="card-product card-product-dark card-product-flag"
+            >
+              <span class="card-product__subtitle">Решение</span>
+              <span class="card-product__title">
+                Корпоративный
+                <br />
+                удостоверяющий центр
+              </span>
+              <span class="card-product__desc">
+                Выдавайте электронную подпись сами, любому количеству
+                сотрудников, прямо на рабочем месте, для любых применений.
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-price">от 10 000 руб.</span>
+                <span class="card-product__foot-date">Единовременно</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Решение</span>
+              <span class="card-product__title">
+                Электронный
+                <br />
+                документооборот
+              </span>
+              <span class="card-product__desc">
+                Применение решений для внутреннего и внешнего документооборота с
+                использованием ЭП
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Упрощенный</span>
+                <span class="card-product__foot-price">от 5 000 руб.</span>
+                <span class="card-product__foot-date">за 1 месяц работы</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Решение</span>
+              <span class="card-product__title">
+                Электронная
+                <br />
+                отчетность
+              </span>
+              <span class="card-product__desc">
+                Помощь с инвентаризацией остатков и составлением инструкций по
+                внедрению системы маркировки
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Стандартный</span>
+                <span class="card-product__foot-price">от 3 000 руб.</span>
+                <span class="card-product__foot-date">за 1 месяц работы</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advant blocks">
+      <div class="container">
+        <div class="blocks__head">
+          <h2>Авторизованный удостоверяющий центр ITCOM</h2>
+          <a href="#" class="blocks__head-link">Подробнее</a>
+        </div>
+        <div class="advant__wrap">
+          <div class="advant__inner">
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">9</span>
+                <span class="advant-item__desc">
+                  лет успешной работы
+                  <br />
+                  на рынке услуг для бизнеса
+                </span>
+              </div>
+            </div>
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">76</span>
+                <span class="advant-item__desc">
+                  филиалов
+                  <br />
+                  по всей России
+                </span>
+              </div>
+            </div>
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">2000</span>
+                <span class="advant-item__desc">партнеров</span>
+              </div>
+            </div>
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">360</span>
+                <span class="advant-item__desc">
+                  пунктов выдачи
+                  <br />
+                  электронной подписи
+                </span>
+              </div>
+            </div>
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">673к</span>
+                <span class="advant-item__desc">
+                  довольных клиентов
+                  <br />
+                  за 9 лет работы
+                </span>
+              </div>
+            </div>
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">248к</span>
+                <span class="advant-item__desc">
+                  квалифицированных
+                  <br />
+                  электронных подписей в год
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news blocks">
+      <div class="container">
+        <div class="blocks__head">
+          <h2>Новости и статьи</h2>
+          <a href="#" class="blocks__head-link">Все публикации</a>
+        </div>
+
+        <div class="news__wrap">
+          <div class="news__wrap-col">
+            <div class="news-item">
+              <a href="" class="news-item__link">
+                <span
+                  class="news-item__link-img"
+                  style="
+                    background-image: url(https://uc-itcom.ru/sites/default/files/2020-10/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0%20%D0%9C%D0%BE%D1%81.%D1%80%D1%83%20%D0%AD%D0%9F.png);
+                  "
+                ></span>
+                <span class="news-item__link-title">
+                  ITCOM и Loginom создали решение для углубленного анализа и
+                  оценки рисков при работе с контрагентами
+                </span>
+                <span class="news-item__link-data">07.10.2020</span>
+              </a>
+            </div>
+          </div>
+          <div class="news__wrap-col">
+            <div class="news-item">
+              <a href="" class="news-item__link">
+                <span
+                  class="news-item__link-img"
+                  style="
+                    background-image: url(https://uc-itcom.ru/sites/default/files/2020-10/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0%20%D0%9C%D0%BE%D1%81.%D1%80%D1%83%20%D0%AD%D0%9F.png);
+                  "
+                ></span>
+                <span class="news-item__link-title">
+                  ITCOM и Loginom создали решение для углубленного анализа и
+                  оценки рисков при работе с контрагентами
+                </span>
+                <span class="news-item__link-data">07.10.2020</span>
+              </a>
+            </div>
+          </div>
+          <div class="news__wrap-col">
+            <div class="news-item">
+              <a href="" class="news-item__link">
+                <span
+                  class="news-item__link-img"
+                  style="
+                    background-image: url(https://uc-itcom.ru/sites/default/files/2020-10/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0%20%D0%9C%D0%BE%D1%81.%D1%80%D1%83%20%D0%AD%D0%9F.png);
+                  "
+                ></span>
+                <span class="news-item__link-title">
+                  ITCOM и Loginom создали решение для углубленного анализа и
+                  оценки рисков при работе с контрагентами
+                </span>
+                <span class="news-item__link-data">07.10.2020</span>
+              </a>
+            </div>
+          </div>
+          <div class="news__wrap-col">
+            <div class="news-item">
+              <a href="" class="news-item__link">
+                <span
+                  class="news-item__link-img"
+                  style="
+                    background-image: url(https://uc-itcom.ru/sites/default/files/2020-10/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0%20%D0%9C%D0%BE%D1%81.%D1%80%D1%83%20%D0%AD%D0%9F.png);
+                  "
+                ></span>
+                <span class="news-item__link-title">
+                  ITCOM и Loginom
+                </span>
+                <span class="news-item__link-data">07.10.2020</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-block blocks">
+      <div class="container">
+        <div class="blocks__head">
+          <h2>Пункты выдачи ЭП</h2>
+          <a href="#" class="blocks__head-link">Перейти к точкам выдачи</a>
+        </div>
+        <img src="../img/svg/map.svg" alt="" class="map-block__img" />
+      </div>
+    </section>
+
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>

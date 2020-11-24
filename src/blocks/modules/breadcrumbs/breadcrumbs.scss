@@ -1,32 +1,30 @@
 .breadcrumbs {
-    position: absolute;
-    top: 38px;
-    @media (max-width: 48rem) {
-        top: 5px;
-    }
-    ul {
-        display: flex;
-        margin: 0 -6px;
-        li {
-            position: relative;
-            margin: 0 6px;
-            list-style: none;
-            &:first-child {
-                &:before {
-                    content: "";
-                }
-            }
-            &:before {
-                content: ">";
-                position: absolute;
-                top: 4px;
-                left: -8px;
-                font-size: 12px;
-            }
-            a, span {
-                color: #333333;
-                font-size: 12px;
-            }
-        }
-    }
+	position: absolute;
+	top: 38px;
+	ul {
+		display: flex;
+		margin: 0 -6px;
+		li {
+			margin: 0 6px;
+			list-style: none;
+			position: relative;
+			&:first-child {
+				&:before {
+					content: '';
+				}
+			}
+			&:before {
+				content: '>';
+				left: -8px;
+				position: absolute;
+				font-size: 12px;
+				top: 4px;
+
+			}
+			a,span {
+				color: #333333;
+				font-size: 12px;
+			}
+		}
+	}
 }
