@@ -1,4 +1,6 @@
-.list-block {
+$cfx: "list-block";
+
+.#{$cfx} {
 	&__list {
 		ul {
 			@include row-flex();
@@ -11,6 +13,7 @@
 				p {
 					font-size: 14px;
 					line-height: 22px;
+					color: $gray;
 				}
 			}
 		}

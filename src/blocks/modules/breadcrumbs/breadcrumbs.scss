@@ -1,6 +1,9 @@
 .breadcrumbs {
 	position: absolute;
 	top: 38px;
+	@media (max-width: 48rem) {
+		top: 5px;
+	}
 	ul {
 		display: flex;
 		margin: 0 -6px;
