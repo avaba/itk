@@ -10,8 +10,11 @@ $pfx: "card-block";
             @include md(flex, auto);
             display: flex;
             flex: 1;
-            margin-bottom: 30px;
-        }
+				margin-bottom: 30px;
+				&.half {
+					@include size-lg(6);
+				}
+		  }
     }
 }
 
