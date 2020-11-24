@@ -44,3 +44,11 @@ $pfx: "map-color";
 		margin-top: 80px;
 	}
 }
+
+@media (max-width: 992px) {
+    .map-color__block {
+        margin-top: 20px;
+        position: static;
+        width: 100%;
+    }
+}
