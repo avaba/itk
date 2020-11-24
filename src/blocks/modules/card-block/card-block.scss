@@ -12,7 +12,10 @@ $pfx: "card-block";
             flex: 1;
 				margin-bottom: 30px;
 				&.half {
-					@include size-lg(2);
+					flex: auto;
+					@include size(3);
+					@include size-xl(6);
+					@include size-md(12);
 				}
 		  }
     }
