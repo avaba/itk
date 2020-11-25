@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="img/favicons/apple-touch-icon-precomposed.png"
+    />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="img/favicons/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/favicons/apple-touch-icon-1024x1024.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    @@include("../blocks/modules/header/header.html")
+
+    <section class="home-slide">
+      <div class="container">
+        <div class="home-slide__wrap el__slide">
+			@@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+          <div class="home-slide__wrap-col">
+            <h1 class="home-slide__title">Электронная отчетность <br> от 234 рублей в месяц</h1>
+            <p class="home-slide__desc">
+					Скидка до 50% новым клиентам
+            </p>
+            <a href="#popupp" class="btn btn-shadow fancybox"><span>Подключить</span></a>
+            <a href="#popupp" class="btn btn-white fancybox">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="list-block blocks">
+      <div class="container">
+        <div class="blocks__head center">
+          <h2>Почему электронную отчетность выбирают в ITCOM</h2>
+        </div>
+        <div class="list-block__list">
+			  <ul>
+				  <li>
+					  <span class="list-block__title">Легко начать</span>
+					  <p>Введите ИНН организации и начните быстрый перенос архива отчётности ФНС из вашей системы</p>
+				  </li>
+				  <li>
+					  <span class="list-block__title">Информирование о статусах</span>
+					  <p>Контролируйте статусы при сдаче отчетности в госорганы. Сразу корректируйте отчеты при необходимости</p>
+				  </li>
+				  <li>
+					  <span class="list-block__title">Проверка отчетов по алгоритмам госорганов</span>
+					  <p>Система агрегирует все основные отчеты и укажет несоответствия и ошибки. В программе более 2 800 алгоритмов проверки, аналогичные используются в госорганах</p>
+				  </li>
+				  <li>
+						<span class="list-block__title">Персональный календарь отчетности</span>
+						<p>Контролируйте сроки отчетов с помощью наглядного календаря или таблицы. Получайте sms и e-mail уведомления о необходимости сдачи отчетов, а также об успешном статусе прохождения</p>
+				  </li>
+				  <li>
+						<span class="list-block__title">Оценка вероятности проверки</span>
+						<p>На основе критериев ФНН и ФСС система рассчитает возможность проверки. Проведет рыночную аналитику на предмер уровня зарплаты, рентабельности и т.д. и предоставит рекомендации по снижению рисков</p>
+				  </li>
+				  <li>
+						<span class="list-block__title">Оптимизация налогов</span>
+						<p>На основе рыночной аналитики вашей отрасли система проанализирует вашу налоговую нагрузку, порекомендует снижение страховых взносов или выбор иной системы налогообложения, если это выгодно и необходимо</p>
+				  </li>
+			  </ul>
+		  </div>
+      </div>
+	 </section>
+	 
+	 <section class="home-slide blocks">
+		 <div class="container">
+			<div class="blocks__head center">
+				<h2>Электронная отчетность удаленно</h2>
+			</div>
+			<div class="home-slide__wrap noof__slide">
+				<div class="home-slide__wrap-col">
+					<h1 class="home-slide__title gray">Без приезда в офис</h1>
+					<p class="home-slide__desc small-desc">
+						Если у вас есть действующая электронная подпись, выданная любым удостоверяющим центром, сообщите об этом менеджеру отдела продаж и подключение к сервису пройдет удаленно
+					</p>
+					<a href="#popupp" class="btn btn-shadow fancybox"><span>Сообщить</span></a>
+					</div>
+			</div>
+		 </div>
+	 </section>
+
+    <section class="card-block blocks">
+      <div class="container">
+        <div class="blocks__head center">
+          <h2>Выберите удобный для вас тариф</h2>
+        </div>
+        <div class="card-block__wrap">
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Направление</span>
+              <span class="card-product__title">
+					<b>Малый и средний<br>
+						бизнес</b>
+              </span>
+              <ul class="card-product__desc list__desc">
+					  <li>Онлайн-отчеты «как на бумаге»</li>
+					  <li>Помощь по заполнению отчетов</li>
+					  <li>Календарь со сроками сдачи</li>
+					  <li>Робот для сдачи нулевки</li>
+					  <li>Понятный финансовый анализ</li>
+					  <li>Рекомендации по оптимизации налогов</li>
+              </ul>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif"><b>Упрощенный тариф</b></span>
+                <span class="card-product__foot-price">от 2 800 ₽</span>
+                <span class="card-product__foot-date">за 1 месяц</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Направление</span>
+              <span class="card-product__title">
+					<b>Уполномоченная<br>
+						бухгалтерия</b>
+              </span>
+              <ul class="card-product__desc list__desc">
+						<li>Легкая отправка отчетности за филиалы через интернет</li>
+						<li>Работа с большими отчетами</li>
+						<li>Удобный ответ на истребования</li>
+						<li>Сверка по налогам за один клик по всем филиалам и дочерним фирмам</li>
+						<li>Гибкая настройка прав доступа</li>
+              </ul>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif"><b>Упрощенный тариф</b></span>
+                <span class="card-product__foot-price">от 500 ₽.</span>
+                <span class="card-product__foot-date">за 1 месяц</span>
+              </span>
+            </a>
+			 </div>
+			 <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Направление</span>
+              <span class="card-product__title">
+					<b>Крупная компания</b>
+              </span>
+              <ul class="card-product__desc list__desc">
+                <li>Отправка любого количества электронных отчетов за один клик</li>
+					 <li>Согласование и переписка по отчету с заказчиком</li>
+					 <li>Управление доверенностями</li>
+					 <li>Механизм автозаполнения отчетов</li>
+              </ul>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif"><b>Упрощенный тариф</b></span>
+                <span class="card-product__foot-price">от 3 200 ₽</span>
+                <span class="card-product__foot-date">за 1 месяц</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Направление</span>
+              <span class="card-product__title">
+					<b>Группа компании</b>
+              </span>
+              <ul class="card-product__desc list__desc">
+                <li>Пакетное расширение компаний</li>
+					 <li>Система разграничения прав пользователей</li>
+					 <li>Все возможности тарифа Упрощенный</li>
+					 <li>Специальные условия по подключению филиалов</li>
+				  </ul>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif"><b>Упрощенный тариф</b></span>
+                <span class="card-product__foot-price">от 5 000 ₽</span>
+                <span class="card-product__foot-date">за 1 месяц</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+	 </section>
+	 
+	 <section class="list-block blocks">
+      <div class="container">
+        <div class="blocks__head center">
+          <h2>В любой тариф электронной отчетности включено</h2>
+        </div>
+        <div class="list-block__list">
+			  <ul>
+				  <li>
+					  <span class="list-block__title">Email и SMS оповещения</span>
+					  <p>Подскажут, когда придёт время сдавать отчёты и платить налоги</p>
+				  </li>
+				  <li>
+					  <span class="list-block__title">Электронная подпись</span>
+					  <p>Получите подпись в подарок в любой из точек выдачи ЭП ITCOM </p>
+				  </li>
+				  <li>
+					  <span class="list-block__title">Поддержка 24/7</span>
+					  <p>Наши клиенты могут получить круглосуточной помощь по самым важным вопросам</p>
+				  </li>
+				  <li>
+						<span class="list-block__title">Обучение</span>
+						<p>Для абонентов ITCOM доступны вебинары и курсы по направлению бухгалтерия</p>
+				  </li>
+			  </ul>
+		  </div>
+      </div>
+	 </section>
+
+	 <section class="feedback blocks">
+		 <div class="container">
+			@@include("../blocks/modules/feedback/feedback.html")
+		 </div>
+	 </section>
+
+	 <section class="card-block blocks">
+      <div class="container">
+        <div class="blocks__head">
+          <h2>Дополнительные услуги и сервисы</h2>
+          <a href="#" class="blocks__head-link">Смотреть все решения</a>
+        </div>
+        <div class="card-block__wrap">
+          <div class="card-block__wrap-col">
+            <a
+              href="#"
+              class="card-product card-product-dark card-product-flag"
+            >
+              <span class="card-product__subtitle">Решение</span>
+              <span class="card-product__title">
+                <b>Корпоративный
+                <br />
+                удостоверяющий центр</b>
+              </span>
+              <span class="card-product__desc">
+                Выдавайте электронную подпись сами, любому количеству
+                сотрудников, прямо на рабочем месте, для любых применений.
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-price">от 10 000 руб.</span>
+                <span class="card-product__foot-date">Единовременно</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Решение</span>
+              <span class="card-product__title">
+                <b>Электронный
+                <br />
+                документооборот</b>
+              </span>
+              <span class="card-product__desc">
+                Применение решений для внутреннего и внешнего документооборота с
+                использованием ЭП
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Упрощенный</span>
+                <span class="card-product__foot-price">от 5 000 руб.</span>
+                <span class="card-product__foot-date">за 1 месяц работы</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Решение</span>
+              <span class="card-product__title">
+                <b>Электронная
+                <br />
+                отчетность</b>
+              </span>
+              <span class="card-product__desc">
+                Помощь с инвентаризацией остатков и составлением инструкций по
+                внедрению системы маркировки
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Стандартный</span>
+                <span class="card-product__foot-price">от 3 000 руб.</span>
+                <span class="card-product__foot-date">за 1 месяц работы</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>

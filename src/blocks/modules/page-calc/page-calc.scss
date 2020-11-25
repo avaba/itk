@@ -1,20 +1,16 @@
-.page-calc {
-//    overflow: hidden;
-}
-
 $pgtime: "page-time";
 
 .#{$pgtime} {
     align-items: flex-start;
-    display: flex;
-    color: $text;
+	 display: flex;
+	 color: $text;
     margin-top: 50px;
     max-width: 1010px;
 
     &__row {
         border-bottom: 1px solid $gray-light;
         display: flex;
-        
+        width: 100%;
         padding-bottom: 55px;
     }
 
@@ -42,14 +38,27 @@ $pgtime: "page-time";
 
                 .#{$pgtime}__price-price {
                     color: $accent;
-                }
+					 }
+					 
+					 ul {
+						 color: $text;
+					 }
             }
         }
     }
 
     &__wrapper {
-        display: flex;
-    }
+		  display: flex;
+		  width: 100%;
+		  &.wrap {
+			flex-wrap: wrap;
+			margin-bottom: -16px;
+		  }
+	 }
+	 
+	 &__group {
+		 margin-top: auto;
+	 }
 
     &__price {
         background: #fff;
@@ -66,22 +75,51 @@ $pgtime: "page-time";
         position: relative;
         transition: all 0.2s;
         width: 180px;
-        z-index: 2;
-        
-        &::after {
-            border-bottom: 2px solid $accent;
-            border-left: 2px solid $accent;
-            content: '';
-            height: 6px;
-            opacity: 0;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-            transition: opacity .3s;
-            transform: rotate(-45deg);
-            width: 16px;
-            z-index: 1;
-        }
+		  z-index: 2;
+
+		  &::after {
+			border-bottom: 2px solid $accent;
+			border-left: 2px solid $accent;
+			content: '';
+			height: 6px;
+			opacity: 0;
+			position: absolute;
+			right: 20px;
+			top: 10px;
+			transition: opacity .3s;
+			transform: rotate(-45deg);
+			width: 16px;
+			z-index: 1;
+		}
+		  
+		  &.#{$pgtime}__half {
+				flex: 1 0 45%;
+				width: 100%;
+				margin-bottom: 16px;
+				display: flex;
+				flex-direction: column;
+				.hint {
+					position: absolute;
+					top: 17px;
+					right: 16px;
+				}
+				ul {
+					margin-top: 23px;
+					margin-bottom: 20px;
+					font-size: 14px;
+					line-height: 20px;
+					color: $gray;
+					padding-left: 15px;
+				}
+				.#{$pgtime}__price-price {
+					font-weight: bold;
+				}
+		  }
+		  
+		  &.#{$pgtime}__trio {
+			flex: 1 0 31.7%;
+			width: 100%;
+		  }
 
         &-title {
             color: #ababab;
@@ -99,10 +137,34 @@ $pgtime: "page-time";
         &-price {
             display: block;
             font-size: 24px;
-            margin-top: 15px;
+				margin-top: 15px;
+				&.small {
+					font-size: 16px;
+					font-weight: bold;
+					b {
+						font-size: 24px;
+					}
+				}
         }
-    }
+	 }
+	 
+	 &.report-time {
+		 .#{$pgtime} {
+			 &__price {
+				&::after {
+					top: auto;
+					bottom: 20px;
+				}
+			}
+		 }
+	 }
 }
+
+
+.mt {
+	margin-top: 22px;
+}
+
 
 .calc-result {
     background: #f5f5f5;
@@ -171,7 +233,10 @@ $pgtime: "page-time";
 @media (max-width: 1200px) {
     .#{$pgtime} {
         width: 635px;
-    }
+	 }
+	 #tariff {
+		flex-direction: column;
+	 }
 }
 
 @media (max-width: 992px) {
@@ -183,7 +248,8 @@ $pgtime: "page-time";
     }
     .page-time__title {
         margin-bottom: 30px;
-        width: 100%;
+		  width: 100%;
+		  text-align: center;
     }
     .page-time__wrapper {
         justify-content: space-between;
@@ -191,43 +257,52 @@ $pgtime: "page-time";
 }
 
 @media (max-width: 768px) {
-    .calc-result {
-        display: none;
-    }
+	.page-time {
+		margin: auto;
+	}
+	.page-calc__wrap {
+		display: flex;
+    	flex-direction: column;
+	}
+	.calc-result {
+		order: 1;
+		position: relative;
+		width: 100%;
+		margin: 0;
+		box-sizing: border-box;
+		margin-bottom: 50px;
+		border-radius: 24px;
+		text-align: center;
+		&::after {
+			display: none;
+		}
+	}
     .page-time__row {
         width: 100%;
     }
 }
 
 @media (max-width: 445px) {
+	.page-time {
+		width: 100%;
+	}
     .page-time__price {
-        margin-right: 4%;
-        width: 46%;
+		padding: 30px 20px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 280px;
+		text-align: center;
+		width: 100%;
 
         &:nth-of-type(even) {
-            margin-right: 0;
+				margin-right: auto;
         }
-    }
+	 }
+	 .page-time__wrapper {
+		display: block;
+  }
 }
-
-@media (max-width: 370px) {
-    .page-time__wrapper {
-        display: block;
-    }
-    .page-time__price {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 280px;
-        text-align: center;
-        width: 100%;
-
-        &:nth-of-type(even) {
-            margin-right: auto;
-        }
-    }
-}
-
 
 $page-checkbox: "page-checkbox";
 
@@ -393,7 +468,12 @@ $page-checkbox: "page-checkbox";
 
 .hint {
     border-radius: 50%;
-    display: inline-block;
+	 display: inline-block;
+	 &.absolute {
+		position: absolute;
+		top: 17px;
+		right: 16px;
+	 }
 
     svg {
         display: block;
