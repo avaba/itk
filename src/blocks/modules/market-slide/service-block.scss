@@ -1,0 +1,48 @@
+.services {
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 20px;
+		margin: -8px -8px;
+	}
+	&__title {
+		transition: all 0.3s ease;
+	}
+	&__item {
+		width: calc(25% - 16px);
+		margin: 8px 8px;
+		a {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 32px;
+			color: #333333;
+		}
+		svg {
+			transition: all 0.3s ease;
+			width: 48px;
+			height: 48px;
+			fill: $gray;
+			margin-left: 45px;
+			float: right;
+			flex: 0 0 auto;
+		}
+		&:hover {
+			svg {
+				fill: #333;
+			}
+			.services__title {
+				color: $purple;
+			}
+		}
+		@media (max-width: 1200px) {
+			width: calc(33.33333% - 16px);
+		}
+		@media (max-width: 920px) {
+			width: calc(50% - 16px);
+		}
+		@media (max-width: 620px) {
+			width: calc(100% - 16px);
+		}
+	}
+}
