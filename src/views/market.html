@@ -98,15 +98,15 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    @@include("../blocks/modules/header/header.html")
+    @@include("../blocks/modules/header/header-market.html")
 
-    <section>
+    <section class="blocks">
 		<div class="services">
 			<div class="container">
-				<div class="news__title">
-					<h2>Наши услуги</h2>
-					<a class="white__btn" href="#">Консультация по услугам</a>
-				</div>
+				<div class="blocks__head">
+					<h2>Решения для вашего бизнеса</h2>
+					<a href="#" class="blocks__head-link orange">Все виды ЭП</a>
+				 </div>
 				<div class="services__content">
 					<div class="services__item shadow">
 						<a href="#">
@@ -154,6 +154,41 @@
 						<a href="#">
 							<span class="services__title">Управление расходами</span>
 							<svg><use xlink:href="img/icons/sprite.svg#08"></use></svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="blocks">
+		<div class="services">
+			<div class="container">
+				<div class="blocks__head">
+					<h2>Услуги для бесперебойной работы ККТ</h2>
+					<a href="#" class="blocks__head-link orange">Смотреть все услуги</a>
+				 </div>
+				<div class="services__content">
+					<div class="services__item shadow">
+						<a href="#">
+							<span class="services__title">Ввод ККТ<br>
+								в эксплуатацию</span>
+						</a>
+					</div>
+					<div class="services__item shadow">
+						<a href="#">
+							<span class="services__title">Сопровождение<br>
+								вашей ККТ</span>
+						</a>
+					</div>
+					<div class="services__item shadow">
+						<a href="#">
+							<span class="services__title">Программное<br>
+								обновление ККТ</span>
+						</a>
+					</div>
+					<div class="services__item shadow">
+						<a href="#">
+							<span class="services__title">Ремонт ККТ</span>
 						</a>
 					</div>
 				</div>

@@ -1,0 +1,201 @@
+.header {
+	&.header__market {
+		.header-right__col,.header-right__link {
+			display: flex;
+			align-items: center;
+			transition: all 0.3s ease;
+			color: $gray;
+			svg {
+				margin-right: 8px;
+				fill: $gray;
+				transition: all 0.3s ease;
+			}
+			&:hover {
+				color: $orange;
+				svg {
+					fill: $orange;
+				}
+			}
+		}
+		.header-company__nav li.active a {
+			color: $orange;
+		}
+		.header-right__call, .btn {
+			background-color: $orange;
+			box-shadow: 0px 10px 20px rgba(230, 81, 0, 0.4);
+			transition: all 0.3s ease;
+			&:hover {
+				background-color: #c74600;;
+				box-shadow: none;;
+			}
+			&.btn-white {
+				background: transparent;
+				color: white;
+				border: 1px solid white;
+				margin-left: 16px;
+			}
+		}
+		button.btn {
+			border: none;
+			outline: none;
+			display: flex;
+			align-items: center;
+			svg {
+				margin-right: 8px;
+			}
+		}
+		.header__bot{
+			&-menu {
+				margin-right: 16px;
+				cursor: pointer;
+				svg {
+					transition: all 0.3s ease;
+					transform: translateY(-1px);
+				}
+				&:hover {
+					svg {
+						transform: translateY(0px);
+					}
+				}
+			}
+			&--submenu {
+				position: absolute;
+				left: 0;
+				right: 0;
+				padding-top: 25px;
+				top: 115px;
+				display: none;
+			}
+			&--content {
+				@include row-flex();
+				background-color: white;
+				border-radius: 24px;
+				box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+				overflow: hidden;
+			}
+			&--left {
+				@include size-lg(4);
+				max-width: 400px;
+				width: 100%;
+				position: relative;
+				img {
+					object-fit: cover;
+					height: 100%;
+				}
+				a.btn-white {
+					position: absolute;
+					bottom: 20px;
+					left: 0;
+					right: 0;
+					margin: auto;
+					max-width: 200px;
+					width: 90%;
+					text-align: center;
+					transition: all 0.3s ease;
+					&:hover {
+						border-color: $gray;
+						color: $gray;
+					}
+				}
+			}
+			&--right {
+				@include size-lg(8);
+				display: flex;
+				flex: 1;
+				margin-right: -54px;
+				justify-content: space-between;
+				padding: 38px 51px 40px 64px;
+				.menu__title {
+					display: block;
+					font-size: 20px;
+					line-height: 28px;
+					color: $gray;
+					margin: 7px 0;
+				}
+				ul {
+					li {
+						display: block;
+						a {
+							color: $text;
+							line-height: 22px;
+							transition: all 0.3s ease;
+							font-size: 14px;
+							&:hover {
+								color: $orange;
+							}
+						}
+					}
+				}
+			}
+			&--item {
+				margin-right: 54px;
+			}
+		}
+		.header-menu ul li {
+			a {
+				padding-left: 26px;
+				position: relative;
+				font-weight: normal;
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					margin: auto;
+					width: 19px;
+					height: 19px;
+					display: block;
+				}
+				&:hover {
+					color: $orange;
+				}
+			}
+			&:first-child {
+				a {
+					&:after {
+						background-image: url("../../../img/svg/favorite.svg");
+					}
+				}
+			}
+			&:nth-child(2) {
+				a {
+					&:after {
+						background-image: url("../../../img/svg/basket.svg");
+					}
+				}
+			}
+			&:last-child {
+				a {
+					padding-left: 0;
+				}
+			}
+		}
+		.search-form {
+			position: relative;
+			flex: auto;
+			input {
+				padding: 15px 25px;
+				border-radius: 12px;
+				border: 1px solid $gray;
+				width: 100%;
+				outline: none;
+				box-sizing: border-box;
+				transition: all 0.3s ease;
+				&:hover, &:active {
+					border-color: $orange;
+				}
+			}
+			button {
+				position: absolute;
+				cursor: pointer;
+				top: 0;
+				bottom: 0;
+				right: 10px;
+				margin: auto;
+				background: none;
+				border: none;
+			}
+		}
+	}
+}
