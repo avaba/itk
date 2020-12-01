@@ -97,8 +97,46 @@
     />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
-  <body>
-    @@include("../blocks/modules/header/header-market.html")
+  <body class="market">
+	 @@include("../blocks/modules/header/header-market.html")
+	 
+	 @@include("../blocks/modules/market-slide/market-slide.html")
+
+	 <section class="card-block blocks">
+		 <div class="container">
+			<div class="blocks__head center">
+				<h2>Актуальные акции</h2>
+			</div>
+			<div class="card-block__wrap">
+				<div class="card-block__wrap-col">
+					<a href="#">
+						<div class="card-block__title">
+							<span>При заказе от 10 000 руб</span>
+							<h3>Бесплатная
+								доставка</h3>
+								<span class="sticker"></span>
+						</div>
+						<img src="../img/001.jpg" alt="">
+					</a>
+				</div>
+				<div class="card-block__wrap-col">
+					<a href="#">
+						<img src="../img/002.jpg" alt="">
+					</a>
+				</div>
+				<div class="card-block__wrap-col">
+					<a href="#">
+						<img src="../img/001.jpg" alt="">
+					</a>
+				</div>
+				<div class="card-block__wrap-col">
+					<a href="#">
+						<img src="../img/001.jpg" alt="">
+					</a>
+				</div>
+			</div>
+		 </div>
+	 </section>
 
     <section class="blocks">
 		<div class="services">
