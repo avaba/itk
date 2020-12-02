@@ -321,7 +321,7 @@
 				 </ul>
 			 </div>
 			 <div class="case-tabs__list">
-				 <div class="case-tabs__item" id="stock" style="display: block;">
+				 <div class="case-tabs__item active" id="stock">
 					@@include("../blocks/modules/case/case.html")
 				 </div>
 				 <div class="case-tabs__item" id="sale">
@@ -337,6 +337,43 @@
 					@@include("../blocks/modules/case/case.html")
 				 </div>
 			 </div>
+		</div>
+	</section>
+
+	<section class="feedback blocks">
+		<div class="container">
+			<div class="feedback__container" style="background-image: url(../../img/market-slide-all.jpg);">
+				<div class="feedback__content">
+					<h2>Подбор кассы по параметрам</h2>
+					<span class="form__desc">Подбор онлайн-кассы от ITCOM Market среди 3000 моделей специально для вас</span>
+					<div class="feedback__form market-form">
+						<form action="">
+							<label for="#">
+								<select class="select" name="" id="">
+									<option value="" selected disabled>Вид деятельности</option>
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</label>
+							<label for="#">
+								<select class="select" name="" id="">
+									<option value="" selected disabled>Характер работы</option>
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</label>
+							<label for="#">
+								<select class="select" name="" id="">
+									<option value="" selected disabled>Ценовой сегмент</option>
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</label>
+							<button type="submit" class="btn"><span>Подобрать кассу</span></button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -417,9 +454,39 @@
           </div>
         </div>
       </div>
-    </section>
+	 </section>
+	 
+	 <section class="feedback blocks">
+		<div class="container">
+			<div class="blocks__head">
+				<h2>Затрудняетесь с подбором кассовой техники?</h2>
+			 </div>
+			 <div class="feedback__container difficult">
+				<div class="feedback__content">
+					<span class="form__desc">Подбор онлайн-кассы от ITCOM Market среди 3000 моделей специально для вас</span>
+					<div class="feedback__form market-form">
+						<form action="">
+							<label for="#">
+								<input class="big" type="text" placeholder="Сфера вашего бизнеса">
+							</label>
+							<label for="#">
+								<input class="big" type="text" placeholder="Есть ли у вас кассовое оборудование">
+							</label>
+							<label for="#">
+								<input type="email" placeholder="Ваш email">
+							</label>
+							<label for="#">
+								<input type="tel" placeholder="Номер телефона">
+							</label>
+							<button type="submit" class="btn"><span>Отправить заявку</span></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	 </section>
 
-    @@include("../blocks/modules/footer/footer.html")
+    @@include("../blocks/modules/footer/footer-market.html")
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
   </body>
