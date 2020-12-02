@@ -9,6 +9,9 @@ body.market {
 	.feedback { 
 		&__container {
 			padding: 52px 56px 56px;
+			@media (max-width: 48rem) {
+				padding: 30px 20px;
+			}
 			&.difficult {
 				background-image: none;
 				padding: 0;
@@ -42,9 +45,7 @@ body.market {
 		&__wrap {
 			@include row-flex();
 			&-col {
-				@include col();
-				@include size(3);
-				@include size-xs(6);
+				@include size-lg(6);
 				@include size-sm(12);
 				position: relative;
 				overflow: hidden;
@@ -270,6 +271,7 @@ body.market {
 		.search-form {
 			position: relative;
 			flex: auto;
+			@include lg(display, none);
 			input {
 				padding: 15px 25px;
 				border-radius: 12px;

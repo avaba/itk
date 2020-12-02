@@ -80,15 +80,31 @@ $fbk: "feedback";
 				label {
 					margin-right: 16px;
 					margin-bottom: 20px;
+					@media (max-width: 48rem) {
+						width: 100%;
+						input {
+							&.big{
+								max-width: 100%;
+								min-width: 100%;
+								width: 100%;
+							}
+						}
+					}
 				}
 				button {
 					margin-bottom: 20px;
 				}
 				.jq-selectbox {
 					color: $gray-dark;
+					@media (max-width: 48rem) {
+						width: 100%;
+					}
 				}
 				.jq-selectbox__select {
 					width: 207px;
+					@media (max-width: 48rem) {
+						width: 100%;
+					}
 				}
 				.jq-selectbox__select-text {
 					background-color: white;
