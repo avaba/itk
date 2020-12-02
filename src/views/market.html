@@ -305,11 +305,46 @@
 		</div>
 	</section>
 
+	<section class="case-tabs blocks">
+		<div class="container">
+			<div class="blocks__head">
+				<h2>Мы рекомендуем</h2>
+				<a href="#" class="blocks__head-link orange">Все товары</a>
+			 </div>
+			 <div class="tabs-list">
+				 <ul class="tabs">
+					<li><span data-tab="stock" class="tab active stock">Акция</span></li>
+					<li><span data-tab="sale" class="tab sale">Скидка</span></li>
+					<li><span data-tab="new" class="tab new">Новинка</span></li>
+					<li><span data-tab="mark" class="tab mark">Для маркировки</span></li>
+					<li><span data-tab="kredit" class="tab kredit">Рассрочка</span></li>
+				 </ul>
+			 </div>
+			 <div class="case-tabs__list">
+				 <div class="case-tabs__item" id="stock" style="display: block;">
+					@@include("../blocks/modules/case/case.html")
+				 </div>
+				 <div class="case-tabs__item" id="sale">
+					@@include("../blocks/modules/case/case.html")
+				 </div>
+				 <div class="case-tabs__item" id="new">
+					@@include("../blocks/modules/case/case.html")
+				 </div>
+				 <div class="case-tabs__item" id="mark">
+					@@include("../blocks/modules/case/case.html")
+				 </div>
+				 <div class="case-tabs__item" id="kredit">
+					@@include("../blocks/modules/case/case.html")
+				 </div>
+			 </div>
+		</div>
+	</section>
+
 	<section class="news blocks">
       <div class="container">
         <div class="blocks__head">
-          <h2>Новости и статьи</h2>
-          <a href="#" class="blocks__head-link">Все публикации</a>
+          <h2>Экспертные статьи</h2>
+          <a href="#" class="blocks__head-link orange">Все публикации</a>
         </div>
 
         <div class="news__wrap">

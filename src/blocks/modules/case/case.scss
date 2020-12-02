@@ -88,6 +88,7 @@
 					margin: 0 8px;
 				}
 				&--category {
+					transition: all 0.3s ease;
 					display: block;
 					font-size: 12px;
 					line-height: 22px;
@@ -103,6 +104,7 @@
 					display: block;
 				}
 				&--price {
+					transition: all 0.3s ease;
 					color: $gray;
 					margin-top: auto;
 					display: flex;
@@ -134,16 +136,22 @@
 				}
 				&:hover {
 					box-shadow: none;
+					.case-tab__item--category {
+						transform: translateY(1px);
+					}
 					.case-tab__item--title {
 						color: $orange;
+						transform: translateY(1px);
 					}
 					.case-tab__item--price {
+						transform: translateY(1px);
 						.price {
 							color: $orange;
 						}
 						.icons {
 							visibility: visible;
 							opacity: 1;
+							transform: translateY(1px);
 						}
 					}
 				}

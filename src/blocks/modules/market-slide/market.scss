@@ -1,4 +1,11 @@
 body.market {
+	.news-item__link {
+		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+		&:hover {
+			color: $orange;
+			box-shadow: none;
+		}
+	}
 	.header-right__call, .btn {
 		background-color: $orange!important;
 		box-shadow: 0px 10px 20px rgba(230, 81, 0, 0.4);
@@ -260,6 +267,57 @@ body.market {
 				margin: auto;
 				background: none;
 				border: none;
+			}
+		}
+	}
+}
+
+.case-tabs {
+	&__item {
+		display: none;
+	}
+}
+
+.tabs-list {
+	.tabs {
+		display: flex;
+		align-items: center;
+		li {
+			display: inline-block;
+			cursor: pointer;
+			&:not(:last-child) {
+				margin-right: 8px;
+			}
+			span {
+				display: block;
+				padding: 14px 24px;
+				background: #c8c8c8;
+				border-radius: 24px;
+				color: white;
+				transition: all 0.3s ease;
+				&.active, &:hover {
+					&.hit {
+						background-color: #ffc000;
+					}
+					&.discount {
+						background-color: #e30574;
+					}
+					&.mark {
+						background-color: #b9d400;
+					}
+					&.new {
+						background-color: #52ce00;
+					}
+					&.sale {
+						background-color: #e30510;
+					}
+					&.stock {
+						background-color: $orange;
+					}
+					&.kredit {
+						background-color: #0080ff;
+					}
+				}
 			}
 		}
 	}

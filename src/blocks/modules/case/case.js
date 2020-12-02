@@ -17,4 +17,14 @@ $(document).ready(function(){
 		},
 		]
 	})
+
+	$('span.tab').click(function(){
+		let id = $(this).data('tab');
+
+		$('span.tab').removeClass('active');
+		$('.case-tabs__item').fadeOut(1);
+		$('.case-tab__container').on('slickNext');
+		$(this).addClass('active');
+		$('#'+id).fadeIn(1);
+	})
 })
