@@ -7,33 +7,64 @@
 	}
 	&__title {
 		transition: all 0.3s ease;
+		margin-bottom: 27px;
+		&.nom {
+			margin-bottom: 0;
+		}
 	}
 	&__item {
 		width: calc(25% - 16px);
 		margin: 8px 8px;
+		background: #fff;
+		filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.2));
+		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+		border-radius: 24px;
+		transition: all 0.3s ease;
+		&.slider {
+			img {
+				object-fit: contain;
+				margin: auto;
+				filter: grayscale(100%);
+				flex-shrink: 0;
+				opacity: .5;
+				transition: all 0.3s ease;
+			}
+			&:hover {
+				img {
+					filter: none;
+					opacity: 1;
+				}
+			}
+		}
 		a {
 			display: flex;
-			justify-content: space-between;
-			align-items: center;
 			padding: 32px;
-			color: #333333;
-		}
-		svg {
+			color: $text;
+			flex-direction: column;
+			height: 100%;
+			box-sizing: border-box;
 			transition: all 0.3s ease;
-			width: 48px;
-			height: 48px;
-			fill: $gray;
-			margin-left: 45px;
-			float: right;
-			flex: 0 0 auto;
 		}
 		&:hover {
+			box-shadow: none;
+			a {
+				transform: translateY(1px);
+			}
 			svg {
-				fill: #333;
+				fill: $orange;
 			}
 			.services__title {
 				color: $orange;
 			}
+		}
+		svg {
+			transition: all 0.3s ease;
+			width: 56px;
+			height: 56px;
+			fill: $gray;
+			margin-top: auto;
+			float: right;
+			flex: 0 0 auto;
 		}
 		@media (max-width: 1200px) {
 			width: calc(33.33333% - 16px);
