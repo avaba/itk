@@ -127,7 +127,10 @@ img {
             border-radius: 100px;
             color: $accent;
             background: white;
-            white-space: nowrap;
+				white-space: nowrap;
+				&.orange {
+					color: $orange;
+				}
             
             @media (max-width: 400px) {
                 font-size: 14px;
