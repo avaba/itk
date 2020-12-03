@@ -123,9 +123,6 @@ $pfx: "header";
                 transform: translateY(0px);
             }
 		  }
-		  &.location {
-			  @include xl(display, none);
-		  }
     }
 }
 

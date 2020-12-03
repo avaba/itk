@@ -130,6 +130,11 @@ body.market {
 					fill: $orange;
 				}
 			}
+			&.location {
+				@media screen and (max-width: 75rem) {
+					display: none;
+				}
+			}
 		}
 		.header-company__nav li.active a {
 			color: $orange;
