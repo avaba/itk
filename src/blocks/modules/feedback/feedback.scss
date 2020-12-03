@@ -52,6 +52,11 @@ $fbk: "feedback";
 				color: $gray;
 				margin-right: 16px;
 				box-sizing: border-box;
+				&.big {
+					max-width: 304px;
+					min-width: 304px;
+					width: 100%;
+				}
 				&:hover, &:focus {
 					color: $text;
 				}
@@ -61,6 +66,60 @@ $fbk: "feedback";
 				@media (max-width: 48rem) {
 					width: 100%;
 					margin-right: 0;
+				}
+			}
+		}
+		&.market-form {
+			form {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				@media (max-width: 62rem) {
+					align-items: flex-start;
+				}
+				label {
+					margin-right: 16px;
+					margin-bottom: 20px;
+					@media (max-width: 48rem) {
+						width: 100%;
+						input {
+							&.big{
+								max-width: 100%;
+								min-width: 100%;
+								width: 100%;
+							}
+						}
+					}
+				}
+				button {
+					margin-bottom: 20px;
+				}
+				.jq-selectbox {
+					color: $gray-dark;
+					@media (max-width: 48rem) {
+						width: 100%;
+					}
+				}
+				.jq-selectbox__select {
+					width: 207px;
+					@media (max-width: 48rem) {
+						width: 100%;
+					}
+				}
+				.jq-selectbox__select-text {
+					background-color: white;
+					padding: 14px 16px 15px;
+					padding-right: 47px;
+				}
+				.jq-selectbox__trigger {
+					right: 15px;
+				}
+				.jq-selectbox li:hover, .jq-select-multiple li:hover {
+					color: $orange;
+				}
+				.jq-selectbox li.selected {
+					background-color: $orange;
+					color: white;
 				}
 			}
 		}
