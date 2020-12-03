@@ -46,8 +46,8 @@ body.market {
 			@include row-flex();
 			&-col {
 				@include col();
-				@include size-xl(3);
-				@include size-lg(6);
+				@include size(3);
+				@include size-xl(6);
 				@include size-sm(12);
 				position: relative;
 				overflow: hidden;
@@ -156,9 +156,11 @@ body.market {
 						transform: translateY(0px);
 					}
 				}
+				@include md(display, none!important);
 			}
 			&--submenu {
 				position: absolute;
+				z-index: 99;
 				left: 0;
 				right: 0;
 				padding-top: 25px;
@@ -171,12 +173,30 @@ body.market {
 				border-radius: 24px;
 				box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
 				overflow: hidden;
+				@media (max-width: 62rem) {
+					flex-direction: column;
+				}
 			}
 			&--left {
-				@include size-lg(4);
+				@include size(4);
+				@include size-lg(12);
 				max-width: 400px;
 				width: 100%;
 				position: relative;
+				@media screen and (max-width: 62rem) {
+					max-width: 100%;
+					padding: 20px;
+					box-sizing: border-box;
+					margin: auto;
+					img {
+						display: none;
+					}
+					a.btn-white {
+						position: relative;
+						bottom: 0;
+						border-color: $orange;
+					}
+				}
 				img {
 					object-fit: cover;
 					height: 100%;
@@ -198,12 +218,27 @@ body.market {
 				}
 			}
 			&--right {
-				@include size-lg(8);
+				@include size(8);
+				@include size-lg(12);
+				@media screen and (max-width: 62rem) {
+					padding: 20px;
+					margin: auto;
+					box-sizing: border-box;
+					.menu__title {
+						cursor: pointer;
+					}
+					ul {
+						display: none;
+					}
+				}
 				display: flex;
 				flex: 1;
 				margin-right: -54px;
 				justify-content: space-between;
 				padding: 38px 51px 40px 64px;
+				@media screen and (max-width: 36rem) {
+					flex-direction: column;
+				}
 				.menu__title {
 					display: block;
 					font-size: 20px;
@@ -228,6 +263,13 @@ body.market {
 			}
 			&--item {
 				margin-right: 54px;
+				@media screen and (max-width: 62rem) {
+					margin-right: 0;
+					width: 50%;
+				}
+				@media screen and (max-width: 36rem) {
+					margin-right: 0;
+				}
 			}
 		}
 		.header-menu ul li {
