@@ -122,7 +122,10 @@ $pfx: "header";
             span {
                 transform: translateY(0px);
             }
-        }
+		  }
+		  &.location {
+			  @include xl(display, none);
+		  }
     }
 }
 

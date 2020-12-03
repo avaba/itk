@@ -45,12 +45,12 @@ body.market {
 		&__wrap {
 			@include row-flex();
 			&-col {
-				@include col();
 				@include size(3);
 				@include size-xl(6);
 				@include size-sm(12);
 				position: relative;
 				overflow: hidden;
+				flex: auto;
 				border-radius: 24px;
 				border: 1px solid $gray-light;
 				transition: all 0.3s ease;
@@ -295,14 +295,16 @@ body.market {
 			&:first-child {
 				a {
 					&:after {
-						background-image: url("../../../img/svg/favorite.svg");
+						background: url(../../../img/svg/favorite.svg) no-repeat center center;
+						background-size: contain;
 					}
 				}
 			}
 			&:nth-child(2) {
 				a {
 					&:after {
-						background-image: url("../../../img/svg/basket.svg");
+						background: url(../../../img/svg/basket.svg) no-repeat center center;
+						background-size: contain;
 					}
 				}
 			}
