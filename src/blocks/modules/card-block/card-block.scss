@@ -10,14 +10,14 @@ $pfx: "card-block";
             @include md(flex, auto);
             display: flex;
             flex: 1;
-				margin-bottom: 30px;
-				&.half {
-					flex: auto;
-					@include size(3);
-					@include size-xl(6);
-					@include size-md(12);
-				}
-		  }
+            margin-bottom: 30px;
+            &.half {
+                flex: auto;
+                @include size(3);
+                @include size-xl(6);
+                @include size-md(12);
+            }
+        }
     }
 }
 
@@ -50,10 +50,10 @@ $pfx: "card-block";
         &__foot {
             &-price {
                 color: $accent;
-				}
-				&-tarif {
-					color: $text;
-				}
+            }
+            &-tarif {
+                color: $text;
+            }
         }
     }
 
@@ -64,19 +64,19 @@ $pfx: "card-block";
 
     &__title {
         font-size: 24px;
-		  margin-bottom: 30px;
-		  transition: all 0.3s ease;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
     }
 
     &__desc {
-		  font-size: 14px;
-		  line-height: 20px;
+        font-size: 14px;
+        line-height: 20px;
         color: $gray;
-		  margin-bottom: 30px;
-		  transition: all 0.3s ease;
-		  &.list__desc {
-			  padding-left: 15px;
-		  }
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+        &.list__desc {
+            padding-left: 15px;
+        }
     }
 
     &__foot {
@@ -86,13 +86,13 @@ $pfx: "card-block";
 
         &-tarif {
             font-size: 14px;
-				color: $gray;
-				transition: all 0.3s ease;
+            color: $gray;
+            transition: all 0.3s ease;
         }
 
         &-price {
-				font-size: 24px;
-				transition: all 0.3s ease;
+            font-size: 24px;
+            transition: all 0.3s ease;
         }
 
         &-date {
@@ -113,7 +113,8 @@ $pfx: "card-block";
             }
         }
 
-        .card-product__title, .card-product__foot-price {
+        .card-product__title,
+        .card-product__foot-price {
             color: white;
         }
     }
