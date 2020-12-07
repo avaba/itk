@@ -7,6 +7,13 @@ $fbk: "feedback";
 		background-image: url("../../../img/feedback.jpg");
 		padding: 52px 80px 56px;
 		border-radius: 25px;
+
+		&-white {
+			.feedback__content h2 {
+				color: #fff;
+			}
+		}
+
 		@media (max-width: 48rem) {
 			padding: 30px;
 		}
@@ -46,7 +53,7 @@ $fbk: "feedback";
 				outline: none;
 				border-radius: 12px;
 				background: #fafafa;
-				border: 1px solid $gray;
+				border: 0;
 				font-size: 14px;
 				text-align: left;
 				color: $gray;
@@ -57,7 +64,8 @@ $fbk: "feedback";
 					min-width: 304px;
 					width: 100%;
 				}
-				&:hover, &:focus {
+				&:hover,
+				&:focus {
 					color: $text;
 				}
 				@media (max-width: 62rem) {
@@ -83,7 +91,7 @@ $fbk: "feedback";
 					@media (max-width: 48rem) {
 						width: 100%;
 						input {
-							&.big{
+							&.big {
 								max-width: 100%;
 								min-width: 100%;
 								width: 100%;
@@ -114,7 +122,8 @@ $fbk: "feedback";
 				.jq-selectbox__trigger {
 					right: 15px;
 				}
-				.jq-selectbox li:hover, .jq-select-multiple li:hover {
+				.jq-selectbox li:hover,
+				.jq-select-multiple li:hover {
 					color: $orange;
 				}
 				.jq-selectbox li.selected {

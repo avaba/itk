@@ -19,6 +19,10 @@ $pfx: "card-block";
             }
         }
     }
+
+    &__hide {
+        display: none;
+    }
 }
 
 .card-product {
@@ -66,6 +70,7 @@ $pfx: "card-block";
         font-size: 24px;
         margin-bottom: 30px;
         transition: all 0.3s ease;
+        font-weight: bold;
     }
 
     &__desc {
@@ -93,6 +98,7 @@ $pfx: "card-block";
         &-price {
             font-size: 24px;
             transition: all 0.3s ease;
+            font-weight: bold;
         }
 
         &-date {

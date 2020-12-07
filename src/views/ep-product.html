@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="img/favicons/apple-touch-icon-precomposed.png"
+    />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="img/favicons/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/favicons/apple-touch-icon-1024x1024.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    @@include("../blocks/modules/header/header.html")
+    <section class="home-slide">
+      <div class="container">
+        <div
+          class="home-slide__wrap"
+          style="background-image: url(../img/bg-ep-product.png);"
+        >
+          <div class="home-slide__wrap-col">
+            <h1 class="home-slide__title">
+              Электронная подпись
+              <br />
+              за 15 минут
+            </h1>
+            <p class="home-slide__desc">
+              Новый сервис по выпуску электронной подписи не выходя из дома
+            </p>
+            <a href="#popupp" class="btn btn-shadow fancybox">
+              <span>Выпустить ЭП</span>
+            </a>
+            <a href="#popupp" class="btn btn-white fancybox">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-block blocks">
+      <div class="container">
+        <div class="blocks__head">
+          <h2>Электронная подпись для электронных торгов</h2>
+        </div>
+        <div class="card-block__wrap">
+          <div class="card-block__wrap-col">
+            <a href="/product-all.html" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Базовый для участия в торгах
+              </span>
+              <span class="card-product__desc">
+                Подходит для участия в госзакупках по 44-ФЗ, 223-ФЗ, в
+                коммерческих тендерах и в торгах по банкротству. Более 200
+                электронных торговых площадок
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 4 500 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Оптимум
+              </span>
+              <span class="card-product__desc">
+                В состав тарифа входят расширения для крупнейших ЭТП:
+                Газпромбанк, Фабрикант и B2B-Center. Также включает все
+                возможности тарифа "Базовый"
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 10 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Базовый для торгов по 127-ФЗ
+              </span>
+              <span class="card-product__desc">
+                В состав тарифа входят расширения для крупнейших ЭТП:
+                Газпромбанк, Фабрикант и B2B-Center. Также включает все
+                возможности тарифа "Базовый"
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 10 500 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Оптимум на 2 года
+              </span>
+              <span class="card-product__desc">
+                В состав тарифа входят расширения для крупнейших ЭТП:
+                Газпромбанк, Фабрикант и B2B-Center. Также включает все
+                возможности тарифа "Базовый"
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 15 500 руб.</span>
+                <span class="card-product__foot-date">на 24 месяца</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-block card-block-toggle blocks">
+      <div class="container">
+        <div class="blocks__head">
+          <h2>Электронная подпись для бизнеса и отчетности</h2>
+        </div>
+        <div class="card-block__wrap">
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Базовый для госсистем
+              </span>
+              <span class="card-product__desc">
+                Подпись для работы на портале "Госуслуги", сдача отчетности в
+                контролирующие органы — ФНС, ПФР, Росстат и ЭДО
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 500 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                ЕГАИС
+              </span>
+              <span class="card-product__desc">
+                Необходим для регистрации и работы с ЕГАИС производителю,
+                дистрибьютору, продавцам алкогольной продукции, а также
+                предприятиям общепита
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Для маркировки
+              </span>
+              <span class="card-product__desc">
+                ЭП для торговли маркированным товаром, регистрации и работе в
+                системе честныйзнак.рф
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Для кассы
+              </span>
+              <span class="card-product__desc">
+                ЭП позволяет зарегистрировать, перерегистрировать или снять с
+                учета онлайн-кассу в ФНС, передать данные в ОФД и сдавать
+                отчетность
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Росреестр
+              </span>
+              <span class="card-product__desc">
+                ЭП для работы на портале "Росреестр" и обеспечивает получение всех услуг удаленно: постановка недвижимости на кадастровый учет из ЕГРП и ГКН
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 500 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                ФИС ФРДО
+              </span>
+              <span class="card-product__desc">
+                ЭП для работы образовательных учреждений и органов власти на портале ФИР ФРДО для единой базы, документов об образовании
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                СМЭВ
+              </span>
+              <span class="card-product__desc">
+                ЭП полноценной работы в системе межведомственного электронного взаимодействия для должностных лиц — органов исполнительной власти
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                ФТС
+              </span>
+              <span class="card-product__desc">
+                ЭП подходит для таможенного декларирования и обеспечения документооборота с ФТС
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Меркурий
+              </span>
+              <span class="card-product__desc">
+                Подходит для работы с ФГИС "Меркурий", на портале "Госулсуги", сдача отчетности в ФНС, ПФР, Росстат
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 500 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                ПИК ЕАСУЗ
+              </span>
+              <span class="card-product__desc">
+                Подходит для работы в системе ПИК ЕАСУЗ, на портале "Госуслуги", сдача отчетности в ФНС, ПФР, Росстат
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                ГИС ГМП
+              </span>
+              <span class="card-product__desc">
+                Подходит для работы с системой ГИС ГМП, на портале "Госуслуги", сдача отчетности в ФНС, ПФР, Росстат
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                НЭП
+              </span>
+              <span class="card-product__desc">
+                Подходит для работы во внутреннем документообороте компании
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                МОС.РУ
+              </span>
+              <span class="card-product__desc">
+                Подходит для работы на сайте mos.ru, на портале "Госуслуги", сдача отчетности в фнс, ПФР, Росстат
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 500 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col half">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Мосэнергосбыт
+              </span>
+              <span class="card-product__desc">
+                Подходит для работы на сайте Мосэнергосбыт, на портале "Госуслуги", сдача отчетности в ФНС, ПФР, Росстат
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяца</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-shadow card-block-toggle__btn">Показать все тарифы</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-block blocks">
+      <div class="container">
+        <div class="blocks__head">
+          <h2>Электронная подпись для физического лица</h2>
+        </div>
+        <div class="card-block__wrap">
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Базовый для Госуслуг
+              </span>
+              <span class="card-product__desc">
+                ЭП для работы на портале "Госуслуги", для сдачи отчетности в
+                ФНС, ПФР, Росстат и ЭДО
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Росреестр
+              </span>
+              <span class="card-product__desc">
+                ЭП для работы на портале "Росреестр", постановка недвижимости на
+                кадастровый учет из ЕГРП и ГКН
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-block__wrap-col">
+            <a href="#" class="card-product">
+              <span class="card-product__subtitle">Тариф</span>
+              <span class="card-product__title">
+                Облачная ЭП
+              </span>
+              <span class="card-product__desc">
+                ЭП для работы на портале "Госуслуги", для сдачи отчетности в
+                ФНС, ПФР, Росстат и ЭДО
+              </span>
+              <span class="card-product__foot">
+                <span class="card-product__foot-tarif">Базовый комплект</span>
+                <span class="card-product__foot-price">от 2 000 руб.</span>
+                <span class="card-product__foot-date">на 12 месяцев</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advant blocks">
+      <div class="container">
+        <div class="blocks__head">
+          <h2>Авторизованный удостоверяющий центр ITCOM</h2>
+        </div>
+        <div class="advant__wrap">
+          <div class="advant__inner">
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">9</span>
+                <span class="advant-item__desc">
+                  лет успешной работы
+                  <br />
+                  на рынке услуг для бизнеса
+                </span>
+              </div>
+            </div>
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">76</span>
+                <span class="advant-item__desc">
+                  филиалов
+                  <br />
+                  по всей России
+                </span>
+              </div>
+            </div>
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">2000</span>
+                <span class="advant-item__desc">партнеров</span>
+              </div>
+            </div>
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">360</span>
+                <span class="advant-item__desc">
+                  пунктов выдачи
+                  <br />
+                  электронной подписи
+                </span>
+              </div>
+            </div>
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">673к</span>
+                <span class="advant-item__desc">
+                  довольных клиентов
+                  <br />
+                  за 9 лет работы
+                </span>
+              </div>
+            </div>
+            <div class="advant__inner-col">
+              <div class="advant-item">
+                <span class="advant-item__num">248к</span>
+                <span class="advant-item__desc">
+                  квалифицированных
+                  <br />
+                  электронных подписей в год
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-option blocks">
+        <div class="container">
+            <div class="blocks__head">
+                <h2>С электронной подписью покупают</h2>
+            </div>
+            <div class="list-2">
+                <a href="#" class="list-2__item">
+                    <span class="list-2__name">Услуга</span>
+                    <span class="list-2__title">Тендерное сопровождение</span>
+                </a>
+                <a href="#" class="list-2__item">
+                    <span class="list-2__name">Услуга</span>
+                    <span class="list-2__title">Обучение участию в электронных торгах</span>
+                </a>
+                <a href="#" class="list-2__item">
+                    <span class="list-2__name">Услуга</span>
+                    <span class="list-2__title">Электронный документооборот</span>
+                </a>
+                <a href="#" class="list-2__item">
+                    <span class="list-2__name">Услуга</span>
+                    <span class="list-2__title">Электронная отчетность</span>
+                </a>
+            </di>
+        </div>
+    </section>
+
+    <section class="blocks">
+        <div class="container">
+            <div class="feedback__container feedback__container-white" style="background-image: url(../img/feedback-white.png);">
+                <div class="feedback__content">
+                    <h2>Не нашли подходящий тариф?</h2>
+                    <span class="form__desc">Поможем подобрать оптимальный тариф,   учитывающий особенности вашего бизнеса</span>
+                    <div class="feedback__form">
+                        <form action="">
+                            <label for="#">
+                                <input type="email" placeholder="Ваш email">
+                            </label>
+                            <label for="#">
+                                <input type="tel" placeholder="Номер телефона">
+                            </label>
+                            <button type="submit" class="btn"><span>Перезвонить мне</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>

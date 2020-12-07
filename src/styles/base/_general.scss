@@ -1,7 +1,7 @@
 body {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 16px;
-    min-width: 320px;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+	min-width: 320px;
 }
 
 h1,
@@ -11,34 +11,34 @@ h4,
 h5,
 h6,
 ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-    color: $accent;
-    transition: all .3s;
-    text-decoration: none;
+	color: $accent;
+	transition: all 0.3s;
+	text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .container {
-    @include container();
-    @include sm(max-width, rem(480));
-    @include md(max-width, rem(510));
-    @include lg(max-width, rem(690));
-    @include xl(max-width, rem(930));
+	@include container();
+	@include sm(max-width, rem(480));
+	@include md(max-width, rem(510));
+	@include lg(max-width, rem(690));
+	@include xl(max-width, rem(930));
 }
 
 .row {
-    @include row-flex();
+	@include row-flex();
 }
 
 .green-color {
-    color: $accent;
+	color: $accent;
 }
 
 .text-center {
@@ -46,31 +46,39 @@ img {
 }
 
 .btn {
-    display: inline-block;
-    background: $accent;
-    color: white;
-    padding: 15px 25px;
-	 border-radius: 12px;
-	 transition: all 0.3s ease;
-	 	span {
-			transform: translateY(-1px);
-			display: block;
-			transition: all 0.3s ease;
-		 }
-	 &.btn-white {
-		 background: white;
-		 color: $accent;
-		 border: 1px solid $accent;
-		 margin-left: 16px;
-		 @media (max-width: 48em) {
-			 margin-left: 0;
-			 margin-top: 20px;
-		 }
-	 }
-	 &.btn-shadow {
+	display: inline-block;
+	background: $accent;
+	color: white;
+	padding: 15px 25px;
+	border-radius: 12px;
+	transition: all 0.3s ease;
+	border: 0;
+	cursor: pointer;
+	span {
+		transform: translateY(-1px);
+		display: block;
+		transition: all 0.3s ease;
+	}
+	&.btn-white {
+		background: white;
+		color: $accent;
+		border: 1px solid $accent;
+		margin-left: 16px;
+
+		&:hover {
+			background-color: $accent;
+			color: #fff;
+		}
+
+		@media (max-width: 48em) {
+			margin-left: 0;
+			margin-top: 20px;
+		}
+	}
+	&.btn-shadow {
 		box-shadow: 0px 10px 20px rgba(13, 177, 75, 0.4);
-	 }
-	 &:hover {
+	}
+	&:hover {
 		&:not(.btn-white) {
 			background: #009f3c;
 			box-shadow: 0 0 0 0 rgba(13, 177, 76, 0.3);
@@ -78,7 +86,11 @@ img {
 		span {
 			transform: translateY(0px);
 		}
-	 }
+	}
+
+	&:focus {
+		outline: 0;
+	}
 }
 
 .btn-gray {
@@ -89,91 +101,89 @@ img {
 	display: inline-block;
 	font-size: 14px;
 	padding: 15px 25px;
-    transition: background .3s;
-    
-    &:hover {
-        background: #f5f5f5;
-    }
+	transition: background 0.3s;
+
+	&:hover {
+		background: #f5f5f5;
+	}
 }
 
 .blocks {
-    margin: 50px 0;
+	margin: 50px 0;
 
-    h2 {
-        color: $gray;
-        margin-bottom: 55px;
-        @include lg(margin-bottom, 20px);
-        font-weight: 300;
-        font-size: 40px;
-        @include lg(font-size, 26px);
-        @include lg(width, 100%);
-    }
+	h2 {
+		color: $gray;
+		margin-bottom: 55px;
+		@include lg(margin-bottom, 20px);
+		font-weight: 300;
+		font-size: 40px;
+		@include lg(font-size, 26px);
+		@include lg(width, 100%);
+	}
 
-    &__head {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-		  @include lg(flex-wrap, wrap);
-		  &.center {
-			  justify-content: center;
-		  }
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include lg(flex-wrap, wrap);
+		&.center {
+			justify-content: center;
+		}
 
-        &-link {
-            margin-bottom: 55px;
-            height: 46px;
-            line-height: 46px;
-            padding: 0 25px;
-            border: 1px solid $gray-light;
-            border-radius: 100px;
-            color: $accent;
-            background: white;
-				white-space: nowrap;
-				&.orange {
-					color: $orange;
-				}
-            
-            @media (max-width: 400px) {
-                font-size: 14px;
-            }
+		&-link {
+			margin-bottom: 55px;
+			height: 46px;
+			line-height: 46px;
+			padding: 0 25px;
+			border: 1px solid $gray-light;
+			border-radius: 100px;
+			color: $accent;
+			background: white;
+			white-space: nowrap;
+			&.orange {
+				color: $orange;
+			}
 
-            &:hover {
-                background: #f5f5f5;
-            }
-        }
-    }
+			@media (max-width: 400px) {
+				font-size: 14px;
+			}
+
+			&:hover {
+				background: #f5f5f5;
+			}
+		}
+	}
 }
 
 .map-block {
-    &__img {
-        margin-top: -200px;
-        z-index: -1;
-        position: relative;
-    }
+	&__img {
+		margin-top: -200px;
+		z-index: -1;
+		position: relative;
+	}
 }
 
 .breadcrumbs {
-	
 	&__item {
 		color: $text;
 		display: inline-block;
 		font-size: 12px;
 		line-height: 16px;
-		
+
 		&:last-child {
-			
 			&:after {
 				display: none;
 			}
 		}
-		
+
 		&:after {
-			content: '>';
+			content: ">";
 			display: inline-block;
 			margin-left: 5px;
 			margin-right: 5px;
 		}
 	}
-	
+
 	&__link {
 		color: $text;
 		display: inline-block;
