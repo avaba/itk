@@ -1,136 +1,144 @@
 $fbk: "feedback";
 
 .#{$fbk} {
-	&__container {
-		background-size: cover;
-		background-position: 50%;
-		background-image: url("../../../img/feedback.jpg");
-		padding: 52px 80px 56px;
-		border-radius: 25px;
+    &__container {
+        background-size: cover;
+        background-position: 50%;
+        background-image: url("../../../img/feedback.jpg");
+        padding: 52px 80px 56px;
+        border-radius: 25px;
 
-		&-white {
-			.feedback__content h2 {
-				color: #fff;
-			}
-		}
+        &-white {
+            .feedback__content h2 {
+                color: #fff;
+            }
+        }
 
-		@media (max-width: 48rem) {
-			padding: 30px;
-		}
-	}
-	&__content {
-		h2 {
-			margin-bottom: 11px;
-			color: $accent;
-			@media (max-width: 48rem) {
-				text-align: center;
-			}
-		}
-		span.form__desc {
-			font-size: 16px;
-			display: block;
-			line-height: 24px;
-			text-align: left;
-			color: #fff;
-			margin-bottom: 22px;
-			@media (max-width: 48rem) {
-				text-align: center;
-			}
-		}
-	}
-	&__form {
-		form {
-			button {
-				border: none;
-				outline: none;
-				cursor: pointer;
-				@media (max-width: 48rem) {
-					width: 100%;
-				}
-			}
-			input {
-				padding: 15px 16px;
-				outline: none;
-				border-radius: 12px;
-				background: #fafafa;
-				border: 0;
-				font-size: 14px;
-				text-align: left;
-				color: $gray;
-				margin-right: 16px;
-				box-sizing: border-box;
-				&.big {
-					max-width: 304px;
-					min-width: 304px;
-					width: 100%;
-				}
-				&:hover,
-				&:focus {
-					color: $text;
-				}
-				@media (max-width: 62rem) {
-					margin-bottom: 20px;
-				}
-				@media (max-width: 48rem) {
-					width: 100%;
-					margin-right: 0;
-				}
-			}
-		}
-		&.market-form {
-			form {
-				display: flex;
-				align-items: center;
-				flex-wrap: wrap;
-				@media (max-width: 62rem) {
-					align-items: flex-start;
-				}
-				label {
-					margin-right: 16px;
-					margin-bottom: 20px;
-					@media (max-width: 48rem) {
-						width: 100%;
-						input {
-							&.big {
-								max-width: 100%;
-								min-width: 100%;
-								width: 100%;
-							}
-						}
-					}
-				}
-				button {
-					margin-bottom: 20px;
-				}
-				.jq-selectbox {
-					color: $gray-dark;
-					@media (max-width: 48rem) {
-						width: 100%;
-					}
-				}
-				.jq-selectbox__select {
-					width: 207px;
-					@media (max-width: 48rem) {
-						width: 100%;
-					}
-				}
-				.jq-selectbox__select-text {
-					background-color: white;
-					padding: 14px 16px 15px;
-					padding-right: 47px;
-				}
-				.jq-selectbox__trigger {
-					right: 15px;
-				}
-				.jq-selectbox li:hover,
-				.jq-select-multiple li:hover {
-					color: $orange;
-				}
-				.jq-selectbox li.selected {
-					background-color: $orange;
-					color: white;
-				}
-			}
-		}
-	}
+        &-black {
+            .feedback__content h2 {
+                color: #333;
+            }
+
+            .feedback__content span.form__desc {
+                color: #333;
+            }
+        }
+
+        @media (max-width: 48rem) {
+            padding: 30px;
+        }
+    }
+    &__content {
+        h2 {
+            margin-bottom: 11px;
+            color: $accent;
+            @media (max-width: 48rem) {
+                text-align: center;
+            }
+        }
+        span.form__desc {
+            font-size: 16px;
+            display: block;
+            line-height: 24px;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 22px;
+            @media (max-width: 48rem) {
+                text-align: center;
+            }
+        }
+    }
+    &__form {
+        form {
+            button {
+                border: none;
+                outline: none;
+                cursor: pointer;
+                @media (max-width: 48rem) {
+                    width: 100%;
+                }
+            }
+            input {
+                box-sizing: border-box;
+                border: 0;
+                padding: 15px 16px;
+                outline: none;
+                border-radius: 12px;
+                background: #fafafa;
+                font-size: 14px;
+                text-align: left;
+                color: $gray;
+                margin-right: 16px;
+                &.big {
+                    width: 100%;
+                    min-width: 304px;
+                    max-width: 304px;
+                }
+                &:hover, &:focus {
+                    color: $text;
+                }
+                @media (max-width: 62rem) {
+                    margin-bottom: 20px;
+                }
+                @media (max-width: 48rem) {
+                    width: 100%;
+                    margin-right: 0;
+                }
+            }
+        }
+        &.market-form {
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                @media (max-width: 62rem) {
+                    align-items: flex-start;
+                }
+                label {
+                    margin-right: 16px;
+                    margin-bottom: 20px;
+                    @media (max-width: 48rem) {
+                        width: 100%;
+                        input {
+                            &.big {
+                                width: 100%;
+                                min-width: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+                button {
+                    margin-bottom: 20px;
+                }
+                .jq-selectbox {
+                    color: $gray-dark;
+                    @media (max-width: 48rem) {
+                        width: 100%;
+                    }
+                }
+                .jq-selectbox__select {
+                    width: 207px;
+                    @media (max-width: 48rem) {
+                        width: 100%;
+                    }
+                }
+                .jq-selectbox__select-text {
+                    padding: 14px 16px 15px;
+                    background-color: white;
+                    padding-right: 47px;
+                }
+                .jq-selectbox__trigger {
+                    right: 15px;
+                }
+                .jq-selectbox li:hover, .jq-select-multiple li:hover {
+                    color: $orange;
+                }
+                .jq-selectbox li.selected {
+                    background-color: $orange;
+                    color: white;
+                }
+            }
+        }
+    }
 }
