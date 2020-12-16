@@ -17,7 +17,7 @@ $myform: "myform";
         margin-bottom: 20px;
         text-align: center;
     }
-	
+
     &__descript {
         color: $text;
         font-size: 20px;
@@ -25,7 +25,7 @@ $myform: "myform";
         margin-bottom: 25px;
         text-align: center;
     }
-	
+
     &__submit {
         display: block;
         width: 144px;
@@ -39,12 +39,12 @@ $myform: "myform";
         cursor: pointer;
         font-size: 14px;
         text-align: center;
-		
+
         &:hover {
             background: $hover;
         }
     }
-	
+
     &__konf {
         display: block;
         color: $gray-dark;
@@ -52,7 +52,7 @@ $myform: "myform";
         line-height: 22px;
         margin-top: 24px;
         text-align: center;
-		
+
         a {
             color: $accent;
         }
@@ -61,25 +61,25 @@ $myform: "myform";
 
 .myformList {
     margin-bottom: 24px;
-	
+
     &__item {
         @include row-flex;
         align-items: center;
         justify-content: flex-end;
         margin-bottom: 24px;
-		
+
         &:last-child {
             margin-bottom: 0;
         }
     }
-	
+
     &__param {
         @include col();
         color: $gray-dark;
         font-size: 16px;
         text-align: right;
     }
-	
+
     &__input {
         @include col();
         display: block;
@@ -92,7 +92,7 @@ $myform: "myform";
         color: $text;
         outline: none;
     }
-	
+
     .select {
         @include col();
         width: 384px;
@@ -101,32 +101,36 @@ $myform: "myform";
 }
 
 @media (max-width: 992px) {
-	.myformList__input, 
-	.myformList .select {
-		width: 300px;
-	}
+    .myformList__input,
+    .myformList .select {
+        width: 300px;
+    }
 }
 
 @media (max-width: 768px) {
-	.#{myform} {
-		padding-left: 5%;
-		padding-right: 5%;
-		width: 100%;
-	}
-	.myformList__item {
-		display: block;
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.myformList__param {
-		display: inline-block;
-		margin-bottom: 10px;
-		text-align: left;
-	}
-	.myformList__input,
-	.myformList .select {
-		box-sizing: border-box;
-		margin: 0;
-		width: calc(100% - 2px);
-	}
+    .#{myform} {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+    }
+    .myformList__item {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .myformList__param {
+        display: inline-block;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .myformList__input,
+    .myformList .select {
+        box-sizing: border-box;
+        margin: 0;
+        width: calc(100% - 2px);
+    }
+}
+
+#hide-form {
+    display: none;
 }

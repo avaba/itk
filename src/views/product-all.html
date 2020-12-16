@@ -35,7 +35,14 @@
   @@include("../blocks/modules/platform/platform.html")
   @@include("../blocks/modules/page-title/page-title.html")
   @@include("../blocks/modules/page-calc/page-calc.html")
-  @@include("../blocks/modules/page-form/page-form.html")
+  <div class="container mb-3">
+    <div class="text-center">
+      <button id="sert-btn-form" class="btn">Отправить заявку на сертификат</button>
+    </div>
+  </div>
+  <div id="hide-form">
+    @@include("../blocks/modules/page-form/page-form.html")
+  </div>
   @@include("../blocks/modules/sertificate-advantages/sertificate-advantages.html")
   <section class="advant blocks">
     <div class="container">
