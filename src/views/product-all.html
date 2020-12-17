@@ -35,15 +35,25 @@
   @@include("../blocks/modules/platform/platform.html")
   @@include("../blocks/modules/page-title/page-title.html")
   @@include("../blocks/modules/page-calc/page-calc.html")
-  <div class="container mb-3">
-    <div class="text-center">
-      <button id="sert-btn-form" class="btn">Отправить заявку на сертификат</button>
+
+  <div class="page-result">
+    <p class="page-result__title">
+      Электронная подпись для торгов<br>
+      для физических лиц в Санкт-Петербурге
+    </p>
+    <div class="page-result__price">
+      <span class="page-result__time"><span class="js-calc-result-month">на 12 месяцев</span> Базовый тариф</span>
+      от <span class="js-final-calc-sum"></span> руб.
     </div>
+    <button id="sert-btn-form" class="btn">Заказать ЭП для торгов</button>
+    <p class="page-result__konsult">Затрудняетесь с выбором? <a href="">Проконсультироваться</a></p>
   </div>
   <div id="hide-form">
     @@include("../blocks/modules/page-form/page-form.html")
   </div>
+
   @@include("../blocks/modules/sertificate-advantages/sertificate-advantages.html")
+
   <section class="advant blocks">
     <div class="container">
       <div class="blocks__head">
@@ -114,7 +124,6 @@
   </section>
   @@include("../blocks/modules/page-option/page-option.html")
   @@include("../blocks/modules/map-color/map-color.html")
-  @@include("../blocks/modules/page-result/page-result.html")
   @@include("../blocks/modules/footer/footer.html")
   <script src="js/main.js"></script>
   <script src="js/vendor.js"></script>
