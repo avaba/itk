@@ -18,6 +18,46 @@ $pfx: "home-slide";
         &.noof__slide {
             background-image: url("../img/no-office-slide.jpg");
         }
+        &.edo__slide {
+
+            &--1 {
+                background-image: url("../img/edo-slide--1.jpg");
+                padding: 145px 75px 60px;
+
+                @media screen and (max-width: 48rem) {
+                    padding: 30px;
+                }
+            }
+
+            &--2 {
+                background-image: url("../img/edo-slide--2.jpg");
+                padding: 80px 90px;
+
+                @media screen and (max-width: 48rem) {
+                    padding: 30px;
+                }
+
+                .home-slide__wrap-col {
+                    width: 70%;
+                }
+
+                .home-slide__title {
+                    font-size: 40px;
+                    line-height: 47px;
+                }
+
+                ul {
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #333333;
+                    margin-bottom: 0;
+
+                    @media screen and (max-width: 48rem) {
+                        margin-bottom: 2em;
+                    }
+                }
+            }
+        }
 
         &-col {
             @include lg(width, 71%);
@@ -36,7 +76,7 @@ $pfx: "home-slide";
         }
     }
 
-    &__desc {
+    &__desc, ul {
         @include md(font-size, 16px);
         font-size: 20px;
         font-weight: 100;
@@ -45,5 +85,9 @@ $pfx: "home-slide";
             font-size: 16px;
             margin-bottom: 30px;
         }
+    }
+
+    ul {
+        text-shadow: 1px 1px 1px white;
     }
 }

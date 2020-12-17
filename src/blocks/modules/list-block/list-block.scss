@@ -1,7 +1,7 @@
 $cfx: "list-block";
 
 .#{$cfx} {
-	&__list {
+	&__list, &__text {
 		ul {
 			@include row-flex();
 			justify-content: space-between;
@@ -14,14 +14,18 @@ $cfx: "list-block";
 					font-size: 14px;
 					line-height: 22px;
 					color: $gray;
+					margin-top: 0.3em;
 				}
 			}
 		}
 	}
+	&__list + &__text {
+		margin-top: 1.2em;
+	}
 	&__title {
 		font-weight: bold;
 		font-size: 24px;
-		line-height: 40px;
 		color: $text;
+		line-height: 1.3;
 	}
 }
