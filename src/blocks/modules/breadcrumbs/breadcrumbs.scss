@@ -5,10 +5,13 @@
 
     @media (max-width: 48rem) {
         top: 5px;
+        left: auto;
     }
     ul {
         display: flex;
         margin: 0 -6px;
+        flex-wrap: wrap;
+
         li {
             position: relative;
             margin: 0 6px;
