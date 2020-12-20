@@ -63,6 +63,11 @@ $pfx: "home-slide";
             @include lg(width, 71%);
             @include md(width, 100%);
             width: 50%;
+
+            &--full {
+                width: 100%;
+                @include lg(width, 100%);
+            }
         }
     }
 

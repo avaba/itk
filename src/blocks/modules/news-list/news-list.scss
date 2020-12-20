@@ -24,30 +24,3 @@
     }
 }
 
-.news-tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-right: -6px;
-
-    &__span {
-        font-size: 16px;
-        line-height: 19px;
-        color: #0DB14B;
-        padding: 6px 17px;
-        background: #FFFFFF;
-        border: 1px solid #E6E6E6;
-        box-sizing: border-box;
-        border-radius: 24px;
-        margin-bottom: 6px;
-        margin-right: 6px;
-        transition: 300ms;
-
-        &:hover, &:active, &:focus {
-            background-color: #0DB14B;
-            color: #FFFFFF;
-            cursor: pointer;
-            transition: 300ms;
-        }
-    }
-}
