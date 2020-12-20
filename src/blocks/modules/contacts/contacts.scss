@@ -64,7 +64,7 @@
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         border-radius: 24px;
         overflow: hidden;
-        max-height: 440px;
+        height: 440px;
 
         &--active {
             display: grid;
@@ -79,7 +79,7 @@
 
         @media (max-width: 48rem) {
             grid-template-columns: 1fr;
-            max-height: none;
+            height: auto;
         }
     }
 
@@ -120,6 +120,10 @@
                 min-width: 100%;
                 min-height: 100%;
 
+            }
+
+            @media (max-width: 48rem) {
+                height: 80vw;
             }
         }
     }
