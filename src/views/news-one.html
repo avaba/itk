@@ -48,7 +48,29 @@
             <div class="blocks">
                 <div class="container">
 
-                    @@include("../blocks/modules/news-list/news-list.html")
+                    <section class="blocks">
+                        <div class="container">
+                            <div class="feedback__container feedback__container-black"
+                                 style="background-image: url(../img/feedback-bg.png);">
+                                <div class="feedback__content">
+                                    <h2>Возникли вопросы по публикации?</h2>
+                                    <span class="form__desc">Оставьте свои контактные данные, мы свяжемся с вами и проконсультируем вас</span>
+                                    <div class="feedback__form">
+                                        <form action="">
+                                            <label for="#">
+                                                <input type="email" placeholder="Ваш email">
+                                            </label>
+                                            <label for="#">
+                                                <input type="tel" placeholder="Номер телефона">
+                                            </label>
+                                            <button type="submit" class="btn"><span>Перезвонить мне</span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     @@include("../blocks/modules/news-tags/news-tags.html")
 
                 </div>

@@ -82,6 +82,10 @@ $pfx: "home-slide";
         &.gray {
             color: $accent;
         }
+
+        [class^="body-news"] & {
+            margin-bottom: -30px;
+        }
     }
 
     &__desc, ul {
