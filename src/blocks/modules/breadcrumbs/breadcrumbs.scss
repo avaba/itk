@@ -24,13 +24,20 @@
             &:before {
                 content: ">";
                 position: absolute;
-                top: 4px;
+                transform: translateY(60%);
                 left: -8px;
                 font-size: 12px;
+
+                @media screen and (max-width: 48rem) {
+                    transform: translateY(30%);
+                }
             }
             a, span {
                 color: #333333;
                 font-size: 12px;
+            }
+            a {
+                cursor: pointer;
             }
         }
     }

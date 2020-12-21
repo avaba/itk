@@ -177,6 +177,7 @@ $pfx: "header";
                 transition: visibility 0.25s, opacity 0.25s, transform 0.25s;
                 align-items: flex-start;
                 flex-direction: column;
+                z-index: 1;
 
                 &:before {
                     content: "";
