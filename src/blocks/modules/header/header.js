@@ -56,4 +56,24 @@ $(document).ready(function () {
         'https://download.teamviewer.com/download/TeamViewerQS.dmg'
     }
   })
+
+  $('#bars').click(function(){
+    $('.header__menu--btm').toggleClass('active');
+    $('body').toggleClass('fixed');
+    $(this).toggleClass('active');
+    if($('.overlay').hasClass('showed')) {
+      $('.overlay').fadeOut(300);
+      $('.overlay').removeClass('showed');
+    } else {
+      $('.overlay').fadeIn(300);
+      $('.overlay').addClass('showed')
+    }
+  });
+  $('.overlay, .close_btn').click(function(){
+    $('.overlay').removeClass('showed');
+    $('.overlay').fadeOut(300);
+    $('body').removeClass('fixed');
+    $('.header__menu--btm').removeClass('active');
+    $('#bars').removeClass('active');
+  });
 })
