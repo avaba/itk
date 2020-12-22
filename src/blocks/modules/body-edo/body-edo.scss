@@ -1,0 +1,123 @@
+.body-edo {
+
+    .card-product__desc {
+        margin-bottom: 0;
+    }
+
+    .card-block--1 {
+        .card-block__wrap {
+            margin-bottom: -30px;
+        }
+    }
+
+    .card-block--2 {
+
+        .card-block__wrap {
+            margin-bottom: -20px;
+        }
+
+        .card-block__wrap-col {
+
+            &:nth-child(1) {flex:5}
+            &:nth-child(2) {flex:4}
+            &:nth-child(3) {flex:4}
+        }
+
+        .card-product__desc {
+            margin-bottom: 23px;
+        }
+
+        h2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .card-block--four {
+        margin-bottom: 30px;
+
+        .card-product {
+            padding: 33px 23px;
+        }
+
+        .card-product__title {
+            margin-bottom: 23px;
+        }
+    }
+
+    .card-product__subtitle {
+        margin-bottom: 1em;
+    }
+
+    .sert-block__item {
+        padding: 30px;
+
+        &--f-0 {
+            flex: 0;
+        }
+    }
+
+    .sert-block__text {
+        p {
+            max-width: 250px;
+
+            @media screen and (max-width: 75rem) {
+                max-width: none;
+            }
+
+            & + .btn {
+                margin: 3em 0 16px 0;
+
+                @media screen and (max-width: 75rem) {
+                    margin: 1em 0 16px;
+                }
+            }
+        }
+    }
+
+    .card-product__foot-price {
+        font-weight: 400;
+    }
+
+    .feedback--edo {
+
+        .feedback__container {
+            padding: 80px 90px;
+
+            @media screen and (max-width: 75rem) {
+                padding: 30px;
+            }
+        }
+
+        form input {
+            width: 220px;
+
+            @media screen and (max-width: 75rem) {
+                width: 100%;
+            }
+        }
+    }
+
+    .content-default {
+
+        .feedback__container {
+            padding: 85px 90px;
+
+            @media screen and (max-width: 75rem) {
+                padding: 30px;
+            }
+
+            form input {
+                width: 220px;
+
+                @media screen and (max-width: 75rem) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .list-block__list {
+        margin-bottom: -10px;
+    }
+}

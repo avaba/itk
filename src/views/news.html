@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>gulp-scss-starter</title>
+    <title>News</title>
     <meta name="theme-color" content="#fff" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
@@ -29,29 +29,33 @@
     <link rel="stylesheet" href="styles/main.css" />
 </head>
 
-<body>
-    <div class="container">
-        <h1 class="mb-5 mt-5">Карта сайта</h1>
-        <ul>
-            <li><a target="blank" href="/">Главная</a></li>
-            <li><a target="blank" href="/ep-product.html">Электронная подпись</a></li>
-            <li><a target="blank" href="/product-all.html">Электронная подпись All</a></li>
-            <li><a target="blank" href="/product-big.html">Электронная подпись Big</a></li>
-            <li><a target="blank" href="/product-mini.html">Электронная подпись Min</a></li>
-            <li><a target="blank" href="/report.html">Электронная отчетность</a></li>
-            <li><a target="blank" href="/report-product.html">Электронная отчетность форма</a></li>
-            <li><a target="blank" href="/partners.html">Заявка на партнерство</a></li>
-            <li><a target="blank" href="/ep-form.html">Заявка на выпуск сертификата</a></li>
-            <li><a target="blank" href="/sertificate.html">Сертификаты и лицензии</a></li>
-            <li><a target="blank" href="/download-po.html">Загрузка программного обеспечения</a></li>
-            <li><a target="blank" href="/instuction.html">Инструкции</a></li>
-            <li><a target="blank" href="/contacts.html">Контакты</a></li>
-            <li><a target="blank" href="/edo.html">ЭДО</a></li>
-            <li><a target="blank" href="/news.html">Новости</a></li>
-            <li><a target="blank" href="/news-theme.html">Новости по теме</a></li>
-            <li><a target="blank" href="/news-one.html">Страница самой новости</a></li>
-        </ul>
-    </div>
+<body class="body-news">
+    @@include("../blocks/modules/header/header.html")
+
+    <section class="home-slide">
+        <div class="container">
+            <div class="home-slide__wrap" style="background-image: url(../img/contacts.jpg);">
+                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+                <div class="home-slide__wrap-col">
+                    <h1 class="home-slide__title">
+                        <br>
+                        Новости
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="content-default">
+            <div class="blocks">
+                <div class="container">
+
+                    @@include("../blocks/modules/news-list/news-list.html")
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include("../blocks/modules/footer/footer.html")
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>

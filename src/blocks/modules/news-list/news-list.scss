@@ -1,0 +1,11 @@
+.news-list {
+
+    &__btn {
+        margin-top: -20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 100px;
+        text-align: center;
+    }
+}
+

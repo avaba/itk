@@ -28,7 +28,7 @@ $pfx: "news";
         padding: 30px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         border-radius: 1em;
-        color: #000;
+        color: #333333;
         text-decoration: none;
         background: #fff;
 
@@ -46,11 +46,13 @@ $pfx: "news";
         &-title {
             display: -webkit-box;
             overflow: hidden;
-            font-weight: 500;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             margin-bottom: 20px;
             text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
         }
 
         &-img {

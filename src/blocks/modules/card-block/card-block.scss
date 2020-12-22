@@ -17,6 +17,12 @@ $pfx: "card-block";
                 @include size-xl(6);
                 @include size-md(12);
             }
+            &.half-half {
+                flex: auto;
+                @include size(6);
+                //@include size-xl(6);
+                @include size-md(12);
+            }
         }
     }
 
@@ -71,6 +77,11 @@ $pfx: "card-block";
         margin-bottom: 30px;
         transition: all 0.3s ease;
         font-weight: bold;
+
+        &-big {
+            font-size: 40px;
+            line-height: 47px;
+        }
     }
 
     &__desc {
