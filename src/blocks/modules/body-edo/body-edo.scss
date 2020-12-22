@@ -59,14 +59,17 @@
 
     .sert-block__text {
         p {
-            max-width: 250px;
+            max-width: 240px;
+            line-height: calc( 19 / 16);
+            margin-top: 0.5em;
+            margin-bottom: 0;
 
             @media screen and (max-width: 75rem) {
                 max-width: none;
             }
 
             & + .btn {
-                margin: 3em 0 16px 0;
+                margin: 3em 0 0;
 
                 @media screen and (max-width: 75rem) {
                     margin: 1em 0 16px;
@@ -119,5 +122,27 @@
 
     .list-block__list {
         margin-bottom: -10px;
+    }
+
+    .sert-block__wrap-col {
+        display: grid;
+        grid-template-rows: min-content 1fr;
+        grid-gap: 16px;
+
+        .sert-block__item {
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 75rem) {
+            margin-bottom: 16px;
+        }
+    }
+
+    .sert-block {
+        margin-bottom: 5em;
+
+        @media screen and (max-width: 62rem) {
+            margin-bottom: 0;
+        }
     }
 }
