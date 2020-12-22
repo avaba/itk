@@ -41,6 +41,9 @@ $pfx: "home-slide";
         font-size: 20px;
         font-weight: 100;
         margin-bottom: 60px;
+        span {
+            font-size: 40px;
+        }
         &.small-desc {
             font-size: 16px;
             margin-bottom: 30px;
