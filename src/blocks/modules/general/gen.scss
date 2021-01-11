@@ -1,0 +1,134 @@
+.home-slide {
+	&__wrap {
+		&.home-general {
+			border-radius: 24px 24px 0px 0px;
+			.btn:not(.btn-white) {
+				box-shadow: 0 0 30px 0 rgba(13, 177, 76, 0.3);
+			}
+		}
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 304px;
+		width: 100%;
+		background: #fff;
+		transition: all 0.3s ease;
+		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+		padding: 20px 32px;
+		box-sizing: border-box;
+		font-size: 18px;
+		&:hover {
+			box-shadow: none;
+		}
+		&:first-child {
+			border-radius: 0px 0px 0px 24px;
+			&:hover {
+				color: #e65100;
+			}
+		}
+		&:nth-child(2) {
+			&:hover {
+				color: #7d1a73;
+			}
+		}
+		&:nth-child(3) {
+			&:hover {
+				color: #313fa0;
+			}
+		}
+		&:last-child {
+			border-radius: 0px 0px 24px 0px;
+			&:hover {
+				color: #007aff;
+			}
+		}
+	}
+}
+
+.link-block {
+	.link-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: -24px;
+		a {
+			width: 33.3333%;
+			margin-bottom: 24px;
+			p {
+				border-bottom: 1px solid #e6e6e6;
+				padding-bottom: 4px;
+				display: inline-block;
+				color: $text;
+				transition: all 0.3s ease;
+				margin: 0;
+			}
+			&:hover {
+				p {
+					color: $accent;
+					border-color: $accent;
+				}
+			}
+		}
+	}
+}
+
+.card-block {
+	&__wrap-col {
+		svg {
+			transition: all 0.3s ease;
+			fill: #979797;
+			width: 103px;
+			height: 80px;
+			margin-bottom: 38px;
+		}
+	}
+	&__big {
+		max-width: 464px;
+		width: 100%;
+		flex: auto;
+	}
+	&__blue {
+		.card-product__title {
+			margin-top: 8px;
+		}
+		&:hover {
+			.card-product__title {
+				color: #007aff;
+			}
+			svg {
+				fill: #007aff;
+			}
+		}
+	}
+	&__orange {
+		.card-product__title {
+			margin-top: 8px;
+		}
+		&:hover {
+			.card-product__title {
+				color: #e65100;
+			}
+			svg {
+				fill: #e65100;
+			}
+		}
+	}
+	&__purple {
+		.card-product__title {
+			margin-top: 8px;
+		}
+		&:hover {
+			.card-product__title {
+				color: #7d1a73;
+			}
+			svg {
+				fill: #7d1a73;
+			}
+		}
+	}
+}
