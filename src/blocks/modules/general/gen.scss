@@ -132,3 +132,42 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1250px) {
+	.home-slide {
+		&__bottom {
+			margin-top: 50px;
+			flex-wrap: wrap;
+		}
+		&__item {
+			max-width: 49%;
+			border-radius: 24px;
+			margin-bottom: 24px;
+			&:first-child,
+			&:last-child {
+				border-radius: 24px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.card-block__big {
+		max-width: 100%;
+	}
+	.link-block .link-list {
+		justify-content: space-between;
+		a {
+			width: 48%;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.home-slide__item {
+		max-width: 100%;
+	}
+	.link-block .link-list a {
+		width: 100%;
+	}
+}
