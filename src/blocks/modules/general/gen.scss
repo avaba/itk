@@ -1,3 +1,21 @@
+.header-right__call {
+	&.btn-gen {
+		border-radius: 12px;
+		span {
+			color: white;
+		}
+		&:hover {
+			span {
+				color: white;
+			}
+		}
+	}
+}
+
+.header__bot.only-bot {
+	margin-top: 20px;
+}
+
 .home-slide {
 	&__wrap {
 		&.home-general {

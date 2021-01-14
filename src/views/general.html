@@ -33,7 +33,7 @@
 </head>
 
 <body>
-	@@include("../blocks/modules/header/header.html")
+	@@include("../blocks/modules/header/header-gen.html")
 
 	<section class="home-slide">
 		<div class="container">
@@ -44,7 +44,7 @@
 					<p class="home-slide__desc">
 						Все современные решения от группы компании ITCOM
 					</p>
-					<a href="https://uc-itcom.ru/udalennyy-vypusk-kep" class="btn">
+					<a href="https://uc-itcom.ru/udalennyy-vypusk-kep" class="btn btn-shadow">
 						<span>Воспользоваться</span>
 					</a>
 					<a href="https://uc-itcom.ru/udalennyy-vypusk-kep" class="btn btn-white">
@@ -117,7 +117,7 @@
 		<div class="container">
 			<div class="card-block__wrap">
 				<div class="card-block__wrap-col card-block__big card-block__blue">
-					<span class="card-product">
+					<a href="#" class="card-product">
 						<span class="card-product__subtitle">Акция</span>
 						<span class="card-product__title">
 							Индивидуальное обучение под вашу <br> сферу бизнеса. Три образовательные <br> программы по цене
@@ -131,7 +131,7 @@
 						<span class="card-product__foot">
 							<span class="card-product__foot-date">ITCOM Академия</span>
 						</span>
-					</span>
+					</a>
 				</div>
 				<div class="card-block__wrap-col card-block__orange">
 					<a href="#" class="card-product">
@@ -171,8 +171,6 @@
 			</div>
 		</div>
 	</section>
-
-	@@include("../blocks/modules/footer-menu/menu.html")
 
 	@@include("../blocks/modules/footer/footer.html")
 	<script src="js/main.js"></script>
