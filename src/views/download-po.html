@@ -2,192 +2,241 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>gulp-scss-starter</title>
-    <meta name="theme-color" content="#fff" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon" />
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png" />
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png" />
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" />
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/main.css" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>gulp-scss-starter</title>
+	<meta name="theme-color" content="#fff" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon" />
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png" />
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png" />
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png" />
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" />
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
-    @@include("../blocks/modules/header/header.html")
+	@@include("../blocks/modules/header/header.html")
 
-    <section class="home-slide">
-        <div class="container">
-            <div class="home-slide__wrap" style="background-image: url(../img/po-bg.jpg);">
-                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
-                <div class="home-slide__wrap-col">
-                    <h1 class="home-slide__title mb-0">Загрузка программного обеспечения</h1>
-                </div>
-            </div>
-        </div>
-        <div class="content-default">
-            <div class="container">
-                <div class="blocks">
-                    <h2>Сертификаты</h2>
-                    <ul>
-                        <li><a href="https://uc-itcom.ru/sites/default/files/software/root_installer.rar">Автоматическая установка корневых сертификатов УЦ ИТК и УЦ Айтиком</a></li>
-                    </ul>
-                    <h3>Квалифицированные корневые сертификаты для ГОСТ Р 34.10-2012</h3>
-                    <ul>
-                        <li><a href="http://itk23.ru/ca/itk2012-2018.cer">Корневой сертификат УЦ ИТК от 20.07.2018</a></li>
-                        <li><a href="http://cdp1.itk23.ru/ca/itk2019.cer">Корневой сертификат УЦ ИТК от 24.10.2019</a></li>
-                        <li><a href="http://cdp1.itk23.ru/ca/itk2020.cer">Корневой сертификат УЦ ИТК от 26.11.2020</a></li>
-                        <li><a href="http://itk23.ru/ca/itcom2012-cp.cer">Корневой сертификат УЦ Айтиком от 31.07.2018 для сертификатов со встроенной лицензией КриптоПРО CSP</a></li>
-                        <li><a href="http://itk23.ru/ca/itcom2019.cer">Корневой сертификат УЦ Айтиком от 24.10.2019 для сертификатов со встроенной лицензией КриптоПРО CSP</a></li>
-                        <li><a href="http://itk23.ru/ca/itcom2012-r.cer">Корневой сертификат УЦ Айтиком от 09.08.2018</a></li>
-                        <li><a href="http://itk23.ru/ca/itcom2019-.cer">Корневой сертификат УЦ Айтиком от 24.10.2019</a></li>
-                        <li><a href="http://itk23.ru/ca/itcom2020.cer">Корневой сертификат УЦ Айтиком от 08.12.2020</a></li>
-                    </ul>
-                    <h3>Неквалифицированные корневые сертификаты</h3>
-                    <ul>
-                        <li><a href="http://itk23.ru/ca/itcom_unqualified.cer">Корневой сертификат корпоративного УЦ Айтиком от 18.06.2020</a></li>
-                    </ul>
-                    <h3>Корневые сертификаты Минкомсвязи</h3>
-                    <ul>
-                        <li><a href="http://e-trust.gosuslugi.ru/Shared/DownloadCert?thumbprint=4BC6DC14D97010C41A26E058AD851F81C842415A">Корневой сертификат «Минкомсвязь России» для ГОСТ Р 34.10-2012</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Списки отзыва сертификатов (СОС)</h2>
-                    <h3>Адреса списков отзыва (для ГОСТ Р 34.10-2012)</h3>
-                    <ul>
-                        <li><a href="http://cdp1.itk23.ru/itk2012-2018.crl">СОС корневого сертификата «ИТК» от 20.07.2018</a></li>
-                        <li><a href="http://cdp1.itk23.ru/itk2012-2019.crl">СОС корневого сертификата «ИТК» от 24.10.2019</a></li>
-                        <li><a href="http://cdp1.itk23.ru/itk2012-2020.crl">СОС корневого сертификата «ИТК» от 26.11.2020</a></li>
-                        <li><a href="http://cdp1.itk23.ru/itcom2012-cp.crl">СОС корневого сертификата «АйтиКом» от 31.07.2018 для сертификатов со встроенной лицензией КриптоПРО CSP</a></li>
-                        <li><a href="http://cdp1.itk23.ru/itcom2019-cp.crl">СОС корневого сертификата «АйтиКом» от 24.10.2019 для сертификатов со встроенной лицензией КриптоПРО CSP</a></li>
-                        <li><a href="http://cdp1.itk23.ru/itcom2012-r.crl">СОС корневого сертификата «АйтиКом» от 09.08.2018</a></li>
-                        <li><a href="http://cdp1.itk23.ru/itcom2019-r.crl">СОС корневого сертификата «АйтиКом» от 24.10.2019</a></li>
-                        <li><a href="http://cdp1.itk23.ru/itcom2012-2020.crl">СОС корневого сертификата «АйтиКом» от 08.12.2020</a></li>
-                    </ul>
-                    <h3>Адреса списков отзыва (для неквалифицированных ЭП)</h3>
-                    <ul>
-                        <li><a href="http://cdp1.itk23.ru/itcom_unqualified.crl">СОС корпоративного УЦ Айтиком от 18.06.2020</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>СБиС++ Электронная отчeтность и документооборот</h2>
-                    <h3>Программное обеспечение</h3>
-                    <ul>
-                        <li><a href="http://update.sbis.ru/versions/2.4/sbis-setup-edo.exe" target="_blank">СБиС: Базовая версия</a></li>
-                        <li><a href="http://update.sbis.ru/versions/2.4/sbis-setup-ubuh-inst.exe">СБиС: Уполномоченная бухгалтерия</a></li>
-                        <li><a href="http://update.sbis.ru/SbisPlugin/master/SbisPlugin.exe">Плагин СБиС</a></li>
-                        <li><a href="http://update.sbis.ru/ext/setupcheckpfr.exe" target="_blank">CheckPFR</a></li>
-                        <li><a href="http://update.sbis.ru/ext/checkxmlinst.exe" target="_blank" title="CheckXML">CheckXML</a></li>
-                        <li><a href="http://update.sbis.ru/ext/setup_checkpo-pd.exe" title="Программа ПО ПД">Программа ПО ПД</a></li>
-                    </ul>
-                    <h3>Документация</h3>
-                    <ul>
-                        <li><a href="http://download.sbis.ru/files/doc/manual/doc.zip ">Руководство пользователя «СБИС Электронная отчетность»</a></li>
-                        <li><a href="http://download.sbis.ru/files/doc/upb/doc-upb.zip">Руководство пользователя СБИС для уполномоченных бухгалтерий</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Продукты компании «КРИПТО-ПРО»</h2>
-                    <h3>Криптопровайдер</h3>
-                    <ul>
-                        <li><a href="/files/CSPSetup.exe">КриптоПро CSP 4.0.9842&nbsp;от 15.11.2016</a> (требуется наличие лицензии)</li>
-                    </ul>
-                    <h3>Дополнительное ПО</h3>
-                    <ul>
-                        <li><a href="https://www.cryptopro.ru/products/cades/plugin/get_2_0">КриптоПро browser plug-in</a></li>
-                        <li><a href="/themes/custom/itcom/img/os2.0.11980.rar">КриптоПро Office Signature 2.0.11980 от 23.03.2017</a> (требуется наличие лицензии)</li>
-                        <li><a href="/themes/custom/itcom/img/csppdf.rar">КриптоПро PDF 2.0.0811 от 30 июня 2017 г.</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Драйверы для токенов</h2>
-                    <h3>ruToken S/2.0/Lite и т.д.</h3>
-                    <ul>
-                        <li><a href="https://www.rutoken.ru/support/download/drivers-for-windows/">Драйверы Рутокен для Windows</a></li>
-                        <li><a href="https://www.rutoken.ru/support/download/rutoken-plugin/">Рутокен Плагин для Windows</a></li>
-                        <li><a href="https://www.rutoken.ru/manual/rutoken_Getting_Started.pdf">Инструкция по эксплуатации Rutoken</a></li>
-                    </ul>
-                    <h3>JaCarta LT/SE/ГОСТ</h3>
-                    <ul>
-                        <li><a href="https://www.aladdin-rd.ru/support/downloads/520e8ab1-91da-45e1-9c9e-8002bd5030aa/get">JC-PROClient</a></li>
-                        <li><a href="https://www.aladdin-rd.ru/support/downloads/c6ff1064-ffb0-4f45-80c8-c662f0962abc/get">Единый Клиент JaCarta для 64х разрядных систем</a></li>
-                    </ul>
-                    <h3>eToken</h3>
-                    <ul>
-                        <li><a href="/themes/custom/itcom/img/img_old/pkiclient_x32_5.1_sp1.zip" title="eToken PKI Client 5.1 SP1 для Microsoft Windows x32">eToken PKI Client 5.1 SP1 для Microsoft Windows x32</a></li>
-                        <li><a href="/themes/custom/itcom/img/img_old/pkiclient_x64_5.1_sp1.zip" title="eToken PKI Client 5.1 SP1 для Microsoft Windows x64">eToken PKI Client 5.1 SP1 для Microsoft Windows x64</a></li>
-                        <li><a href="https://www.aladdin-rd.ru/support/downloads/11961aa2-ebf1-4450-a07b-0f3ddf2e98d8">Документация eToken PKI Client 5.1 SP1</a></li>
-                    </ul>
-                    <h3>ESMART Token</h3>
-                    <ul>
-                        <li><a href="/themes/custom/itcom/img/img_old/smart_setup.zip" title="ESMART PKI Client.">ESMART PKI Client.</a></li>
-                    </ul>
-                    <h3>MS-Key</h3>
-                    <ul>
-                        <li><a href="/themes/custom/itcom/img/img_old/ms_key_driver_x64.zip" title="MS_Key_driver_x64">MS_Key_driver_x64</a></li>
-                        <li><a href="/themes/custom/itcom/img/img_old/ms_key_driver_x86.zip" title="MS_Key_driver_x86">MS_Key_driver_x86</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Дополнительно</h2>
-                    <ul>
-                        <li><a href="http://www.ammyy.com/ru/downloads.html" title="Удаленный помощник">Удаленный помощник</a></li>
-                    </ul>
-                    <h3>КриптоАРМ</h3>
-                    <ul>
-                        <li><a href="/themes/custom/itcom/img/img_old/kriptoarm_5.rar" title="КриптоАРМ 5">КриптоАРМ 5</a> (требуется наличие лицензии)</li>
-                        <li><a href="http://www.trusted.ru/support/downloads/?product=133">Руководство пользователя</a> (установка, настройка, использование, описание возможностей программы)</li>
-                    </ul>
-                    <h3>Декларант-Алко</h3>
-                    <ul>
-                        <li><a href="https://file.c-i.site/s/6KZyleIPwWIoXR4/download">Декларант-Алко 4.33.05</a> (Полная версия)</li>
-                    </ul>
-                </div>
-            </div>
-            <section class="blocks">
-                <div class="container">
-                    <div class="feedback__container feedback__container-black" style="background-image: url(../img/feedback-bg.png);">
-                        <div class="feedback__content">
-                            <h2>Не нашли подходящее ПО?</h2>
-                            <span class="form__desc">Подберем подходящее программное обеспечение под решения вашего бизнеса</span>
-                            <div class="feedback__form">
-                                <form action="">
-                                    <label for="#">
-                                        <input type="email" placeholder="Ваш email">
-                                    </label>
-                                    <label for="#">
-                                        <input type="tel" placeholder="Номер телефона">
-                                    </label>
-                                    <button type="submit" class="btn"><span>Перезвонить мне</span></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
+	<section class="home-slide">
+		<div class="container">
+			<div class="home-slide__wrap" style="background-image: url(../img/po-bg.jpg);">
+				@@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+				<div class="home-slide__wrap-col">
+					<h1 class="home-slide__title mb-0">Загрузка программного обеспечения</h1>
+				</div>
+			</div>
+		</div>
+		<div class="content-default">
+			<div class="container">
+				<div class="blocks">
+					<h2>Сертификаты</h2>
+					<ul>
+						<li><a href="https://uc-itcom.ru/sites/default/files/software/root_installer.rar">Автоматическая
+								установка корневых сертификатов УЦ ИТК и УЦ Айтиком</a></li>
+					</ul>
+					<h3>Квалифицированные корневые сертификаты для ГОСТ Р 34.10-2012</h3>
+					<ul>
+						<li><a href="http://itk23.ru/ca/itk2012-2018.cer">Корневой сертификат УЦ ИТК от 20.07.2018</a></li>
+						<li><a href="http://cdp1.itk23.ru/ca/itk2019.cer">Корневой сертификат УЦ ИТК от 24.10.2019</a></li>
+						<li><a href="http://cdp1.itk23.ru/ca/itk2020.cer">Корневой сертификат УЦ ИТК от 26.11.2020</a></li>
+						<li><a href="http://itk23.ru/ca/itcom2012-cp.cer">Корневой сертификат УЦ Айтиком от 31.07.2018 для
+								сертификатов со встроенной лицензией КриптоПРО CSP</a></li>
+						<li><a href="http://itk23.ru/ca/itcom2019.cer">Корневой сертификат УЦ Айтиком от 24.10.2019 для
+								сертификатов со встроенной лицензией КриптоПРО CSP</a></li>
+						<li><a href="http://itk23.ru/ca/itcom2012-r.cer">Корневой сертификат УЦ Айтиком от 09.08.2018</a></li>
+						<li><a href="http://itk23.ru/ca/itcom2019-.cer">Корневой сертификат УЦ Айтиком от 24.10.2019</a></li>
+						<li><a href="http://itk23.ru/ca/itcom2020.cer">Корневой сертификат УЦ Айтиком от 08.12.2020</a></li>
+					</ul>
+					<h3>Неквалифицированные корневые сертификаты</h3>
+					<ul>
+						<li><a href="http://itk23.ru/ca/itcom_unqualified.cer">Корневой сертификат корпоративного УЦ Айтиком
+								от 18.06.2020</a></li>
+					</ul>
+					<h3>Корневые сертификаты Минкомсвязи</h3>
+					<ul>
+						<li><a
+								href="http://e-trust.gosuslugi.ru/Shared/DownloadCert?thumbprint=4BC6DC14D97010C41A26E058AD851F81C842415A">Корневой
+								сертификат «Минкомсвязь России» для ГОСТ Р 34.10-2012</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Списки отзыва сертификатов (СОС)</h2>
+					<h3>Адреса списков отзыва (для ГОСТ Р 34.10-2012)</h3>
+					<ul>
+						<li><a href="http://cdp1.itk23.ru/itk2012-2018.crl">СОС корневого сертификата «ИТК» от 20.07.2018</a>
+						</li>
+						<li><a href="http://cdp1.itk23.ru/itk2012-2019.crl">СОС корневого сертификата «ИТК» от 24.10.2019</a>
+						</li>
+						<li><a href="http://cdp1.itk23.ru/itk2012-2020.crl">СОС корневого сертификата «ИТК» от 26.11.2020</a>
+						</li>
+						<li><a href="http://cdp1.itk23.ru/itcom2012-cp.crl">СОС корневого сертификата «АйтиКом» от 31.07.2018
+								для сертификатов со встроенной лицензией КриптоПРО CSP</a></li>
+						<li><a href="http://cdp1.itk23.ru/itcom2019-cp.crl">СОС корневого сертификата «АйтиКом» от 24.10.2019
+								для сертификатов со встроенной лицензией КриптоПРО CSP</a></li>
+						<li><a href="http://cdp1.itk23.ru/itcom2012-r.crl">СОС корневого сертификата «АйтиКом» от
+								09.08.2018</a></li>
+						<li><a href="http://cdp1.itk23.ru/itcom2019-r.crl">СОС корневого сертификата «АйтиКом» от
+								24.10.2019</a></li>
+						<li><a href="http://cdp1.itk23.ru/itcom2012-2020.crl">СОС корневого сертификата «АйтиКом» от
+								08.12.2020</a></li>
+					</ul>
+					<h3>Адреса списков отзыва (для неквалифицированных ЭП)</h3>
+					<ul>
+						<li><a href="http://cdp1.itk23.ru/itcom_unqualified.crl">СОС корпоративного УЦ Айтиком от
+								18.06.2020</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>СБиС++ Электронная отчeтность и документооборот</h2>
+					<h3>Программное обеспечение</h3>
+					<ul>
+						<li><a href="http://update.sbis.ru/versions/2.4/sbis-setup-edo.exe" target="_blank">СБиС: Базовая
+								версия</a></li>
+						<li><a href="http://update.sbis.ru/versions/2.4/sbis-setup-ubuh-inst.exe">СБиС: Уполномоченная
+								бухгалтерия</a></li>
+						<li><a href="http://update.sbis.ru/SbisPlugin/master/SbisPlugin.exe">Плагин СБиС</a></li>
+						<li><a href="http://update.sbis.ru/ext/setupcheckpfr.exe" target="_blank">CheckPFR</a></li>
+						<li><a href="http://update.sbis.ru/ext/checkxmlinst.exe" target="_blank" title="CheckXML">CheckXML</a>
+						</li>
+						<li><a href="http://update.sbis.ru/ext/setup_checkpo-pd.exe" title="Программа ПО ПД">Программа ПО
+								ПД</a></li>
+					</ul>
+					<h3>Документация</h3>
+					<ul>
+						<li><a href="http://download.sbis.ru/files/doc/manual/doc.zip ">Руководство пользователя «СБИС
+								Электронная отчетность»</a></li>
+						<li><a href="http://download.sbis.ru/files/doc/upb/doc-upb.zip">Руководство пользователя СБИС для
+								уполномоченных бухгалтерий</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Продукты компании «КРИПТО-ПРО»</h2>
+					<h3>Криптопровайдер</h3>
+					<ul>
+						<li><a href="/files/CSPSetup.exe">КриптоПро CSP 4.0.9842&nbsp;от 15.11.2016</a> (требуется наличие
+							лицензии)</li>
+					</ul>
+					<h3>Дополнительное ПО</h3>
+					<ul>
+						<li><a href="https://www.cryptopro.ru/products/cades/plugin/get_2_0">КриптоПро browser plug-in</a>
+						</li>
+						<li><a href="/themes/custom/itcom/img/os2.0.11980.rar">КриптоПро Office Signature 2.0.11980 от
+								23.03.2017</a> (требуется наличие лицензии)</li>
+						<li><a href="/themes/custom/itcom/img/csppdf.rar">КриптоПро PDF 2.0.0811 от 30 июня 2017 г.</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Драйверы для токенов</h2>
+					<h3>ruToken S/2.0/Lite и т.д.</h3>
+					<ul>
+						<li><a href="https://www.rutoken.ru/support/download/drivers-for-windows/">Драйверы Рутокен для
+								Windows</a></li>
+						<li><a href="https://www.rutoken.ru/support/download/rutoken-plugin/">Рутокен Плагин для Windows</a>
+						</li>
+						<li><a href="https://www.rutoken.ru/manual/rutoken_Getting_Started.pdf">Инструкция по эксплуатации
+								Rutoken</a></li>
+					</ul>
+					<h3>JaCarta LT/SE/ГОСТ</h3>
+					<ul>
+						<li><a
+								href="https://www.aladdin-rd.ru/support/downloads/520e8ab1-91da-45e1-9c9e-8002bd5030aa/get">JC-PROClient</a>
+						</li>
+						<li><a href="https://www.aladdin-rd.ru/support/downloads/c6ff1064-ffb0-4f45-80c8-c662f0962abc/get">Единый
+								Клиент JaCarta для 64х разрядных систем</a></li>
+					</ul>
+					<h3>eToken</h3>
+					<ul>
+						<li><a href="/themes/custom/itcom/img/img_old/pkiclient_x32_5.1_sp1.zip"
+								title="eToken PKI Client 5.1 SP1 для Microsoft Windows x32">eToken PKI Client 5.1 SP1 для
+								Microsoft Windows x32</a></li>
+						<li><a href="/themes/custom/itcom/img/img_old/pkiclient_x64_5.1_sp1.zip"
+								title="eToken PKI Client 5.1 SP1 для Microsoft Windows x64">eToken PKI Client 5.1 SP1 для
+								Microsoft Windows x64</a></li>
+						<li><a href="https://www.aladdin-rd.ru/support/downloads/11961aa2-ebf1-4450-a07b-0f3ddf2e98d8">Документация
+								eToken PKI Client 5.1 SP1</a></li>
+					</ul>
+					<h3>ESMART Token</h3>
+					<ul>
+						<li><a href="/themes/custom/itcom/img/img_old/smart_setup.zip" title="ESMART PKI Client.">ESMART PKI
+								Client.</a></li>
+					</ul>
+					<h3>MS-Key</h3>
+					<ul>
+						<li><a href="/themes/custom/itcom/img/img_old/ms_key_driver_x64.zip"
+								title="MS_Key_driver_x64">MS_Key_driver_x64</a></li>
+						<li><a href="/themes/custom/itcom/img/img_old/ms_key_driver_x86.zip"
+								title="MS_Key_driver_x86">MS_Key_driver_x86</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Дополнительно</h2>
+					<ul>
+						<li><a href="http://www.ammyy.com/ru/downloads.html" title="Удаленный помощник">Удаленный помощник</a>
+						</li>
+					</ul>
+					<h3>КриптоАРМ</h3>
+					<ul>
+						<li><a href="/themes/custom/itcom/img/img_old/kriptoarm_5.rar" title="КриптоАРМ 5">КриптоАРМ 5</a>
+							(требуется наличие лицензии)</li>
+						<li><a href="http://www.trusted.ru/support/downloads/?product=133">Руководство пользователя</a>
+							(установка, настройка, использование, описание возможностей программы)</li>
+					</ul>
+					<h3>Декларант-Алко</h3>
+					<ul>
+						<li><a href="https://file.c-i.site/s/6KZyleIPwWIoXR4/download">Декларант-Алко 4.33.05</a> (Полная
+							версия)</li>
+					</ul>
+				</div>
+			</div>
+			<section class="blocks">
+				<div class="container">
+					<div class="feedback__container feedback__container-black"
+						style="background-image: url(../img/feedback-bg.png);">
+						<div class="feedback__content">
+							<h2>Не нашли подходящее ПО?</h2>
+							<span class="form__desc">Подберем подходящее программное обеспечение под решения вашего
+								бизнеса</span>
+							<div class="feedback__form">
+								<form action="">
+									<label for="#">
+										<input type="email" placeholder="Ваш email">
+									</label>
+									<label for="#">
+										<input type="tel" placeholder="Номер телефона">
+									</label>
+									<button type="submit" class="btn"><span>Перезвонить мне</span></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
 
-    @@include("../blocks/modules/footer/footer.html")
-    <script src="js/main.js"></script>
-    <script src="js/vendor.js"></script>
+	@@include("../blocks/modules/footer-menu/menu.html")
+
+	@@include("../blocks/modules/footer/footer.html")
+	<script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
 </body>
 
 </html>

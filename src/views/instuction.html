@@ -2,241 +2,368 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>gulp-scss-starter</title>
-    <meta name="theme-color" content="#fff" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon" />
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png" />
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png" />
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" />
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/main.css" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>gulp-scss-starter</title>
+	<meta name="theme-color" content="#fff" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon" />
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png" />
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png" />
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png" />
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" />
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
-    @@include("../blocks/modules/header/header.html")
+	@@include("../blocks/modules/header/header.html")
 
-    <section class="home-slide">
-        <div class="container">
-            <div class="home-slide__wrap" style="background-image: url(../img/instuction.png);">
-                @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
-                <div class="home-slide__wrap-col">
-                    <h1 class="home-slide__title mb-0">Инструкции</h1>
-                </div>
-            </div>
-        </div>
-        <div class="content-default">
-            <div class="container">
-                <div class="blocks">
-                    <h2>Электронная подпись</h2>
-                    <h3>Генерация и установка КЭП</h3>
-                    <ul>
-                        <li><a href="/instruction/vypuskgeneraciya-i-ustanovka-kep-dlya-os-windows-1">Квалифицированная электронная подпись</a></li>
-                        <li><a href="/instruction/oblachnaya-kvalificirovannaya-elektronnaya-podpis">Облачная квалифицированная электронная подпись</a></li>
-                    </ul>
-                    <h3>Работа и эксплуатация КЭП</h3>
-                    <ul>
-                        <li><a href="/instruction/nastroyka-kep-dlya-raboty-na-macos">Настройка КЭП для работы на MacOS</a></li>
-                        <li><a href="/instruction/kak-podpisat-dokument-elektronnoy-podpisyu">Как подписать документ электронной подписью</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/podpisanie-dokumenta-s-pomoschyu-oblachnogo-sertifikata">Как подписать документ с помощью "облачного" сервиса</a></li>
-                        <li><a href="/instruction/kak-proverit-srok-deystviya-elektronnoy-podpisi">Как проверить срок действия электронной подписи</a></li>
-                        <li><a href="/instruction/kak-obnovit-kep-u-menya-istekaet-sertifikat-kakoy-srok-deystviya-moego-sertifikata">Как обновить КЭП / у меня истекает сертификат / какой срок действия моего сертификата?</a></li>
-                        <li><a href="/instruction/otzyv-sertifikata">Отзыв сертификата</a></li>
-                        <li><a href="/instruction/ustanovit-kornevye-sertifikaty-gde-vzyat-kornevye-sertifikaty-iili-spisok-otozvannykh">Установить корневые сертификаты / Где взять корневые сертификаты и/или список отозванных сертификатов УЦ?</a></li>
-                        <li><a href="/instruction/podpisanie-dokumenta-s-pomoschyu-kriptopro-50">Как подписать документ электронной подписью используя Крипто Про 5?</a></li>
-                        <li><a href="/instruction/kak-skopirovat-konteynerzakrytuyu-chast-klyucha">Как скопировать контейнер/закрытую часть ключа?</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/eksport-pfx-fayla-i-ego-ustanovka">Экспорт PFX-файла и его установка</a></li>
-                        <li><a href="/instruction/kak-esportirovat-otrytyy-klyuch">Как экспортировать открытый ключ?</a></li>
-                        <li><a href="/instruction/poluchenie-identifikatora-nalogoplatelschika-dlya-podachi-otchyotnosti-cherez-sayt-fns">Получение идентификатора налогоплательщика для подачи отчётности через сайт ФНС nalog.ru</a></li>
-                    </ul>
-                    <h3>Устранение ошибок при работе</h3>
-                    <ul>
-                        <li><a href="/instruction/ne-udaetsya-postroit-cepochku-sertifikatovsertifikat-ne-prokhodit-podlinnost">Сертификат не проходит подлинность</a></li>
-                        <li><a href="/instruction/sertifikat-nedeystvitelen">Сертификат недействителен</a></li>
-                        <li><a href="/instruction/ne-udaetsya-postroit-cepochku-sertifikatov">Не удается построить цепочку сертификатов</a></li>
-                        <li><a href="/instruction/pri-vkhode-na-sberbank-ast-oshibka-klientskiy-sertifikat-ne-sopostavlen-s-polzovatelem">При входе на Сбербанк-АСТ ошибка: «Клиентский сертификат не сопоставлен с пользователем»</a></li>
-                        <li><a href="/instruction/pri-rabote-na-etp-ili-oshibka-pri-podpisanii-dannykh-oshibka-ispolneniya-funkcii">При работе на ЭТП или ИС ошибка при подписании данных: «Ошибка исполнения функции»</a></li>
-                        <li><a href="/instruction/oshibka-biblioteka-capicom-ne-mozhet-byt-zagruzhena">Ошибка! Библиотека CAPICOM не может быть загружена"</a></li>
-                        <li><a href="/instruction/nastroyka-internet-explorera-dlya-raboty-na-etp">Настройка браузера для работы на площадках&nbsp;</a></li>
-                        <li><a href="/instruction/na-portale-ne-otobrazhaetsya-nuzhnyy-sertifikat">На портале не отображается нужный сертификат</a></li>
-                        <li><a href="/instruction/oshibka-biblioteka-capicom-ne-mozhet-byt-zagruzhena-vozmozhno-iz-za-nizkikh-prav">Ошибка! Библиотека CAPICOM не может быть загружена, возможно, из-за низких прав доступа на данной локальной машине</a></li>
-                        <li><a href="/instruction/na-vashem-kompyutere-otsutstvuyut-ili-nekorrektno-nastroeny-sredstva-dlya-raboty-s-ecp">На вашем компьютере отсутствуют или некорректно настроены средства для работы с ЭЦП. Обратитесь к поставщику вашего сертификата и СКЗИ</a></li>
-                        <li><a href="/instruction/nevozmozhno-sozdanie-obekta-serverom-programmirovaniya-obektov">Невозможно создание объекта &nbsp;сервером программирования объектов</a></li>
-                        <li><a href="/instruction/v-vashem-brauzere-otsutstvuyut-razresheniya-na-ispolzovanie-activex-obektov">В Вашем браузере отсутствуют разрешения на использование ActiveX объектов</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Программы для работы с электронной подписью</h2>
-                    <h3>КриптоАРМ</h3>
-                    <ul>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptoarm-gde-skachat-kak-ustanovit">КриптоАРМ: Где скачать? Как установить?</a></li>
-                        <li><a href="/instruction/kriptoarm-status-sertifikata-nedeystvitelen-oshibka-postroeniya-puti-sertifikacii">КриптоАРМ: статус сертификата: недействителен, ошибка построения пути сертификации</a></li>
-                        <li><a href="/instruction/kriptoarm-preduprezhdenie-net-polnogo-doveriya-k-sertifikatu-podpisi">КриптоАРМ: предупреждение &nbsp;«Нет полного доверия к сертификату подписи»</a></li>
-                        <li><a href="/instruction/kriptoarm-ne-udaetsya-ustanovit-licenzionnyy-klyuch-oshibka-sokhraneniya-dannykh">КриптоАРМ: Не удается установить лицензионный ключ: ошибка сохранения данных</a></li>
-                        <li><a href="/instruction/kriptoarm-ukazan-khesh-algoritm-nesovmestimyy-s-dannym-faylom-podpisi">КриптоАРМ: Указан хеш-алгоритм, несовместимый с данным файлом подписи</a></li>
-                        <li><a href="/instruction/kriptoarm-otsutstvuet-lichnyy-sertifikat-dlya-rasshifrovaniya">КриптоАРМ: Отсутствует личный сертификат для расшифрования</a></li>
-                        <li><a href="/instruction/ustanovka-kriptoarm-zavershaetsya-s-oshibkoy">КриптоАРМ: Установка завершается с ошибкой</a></li>
-                        <li><a href="/instruction/kripoarm-oshibka-podpis-ne-validna-na-saytakh">КриптоАРМ: ошибка «Подпись не валидна»</a></li>
-                        <li><a href="/instruction/kriptoarmne-udaetsya-podpisat-fayl-oshibka-ispolneniya-funkcii-0x0000065b">КриптоАРМ: не удается подписать файл: ошибка исполнения функции 0x0000065b</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Ключевые носители Rutoken/eToken/флешка</h2>
-                    <h3>Эксплуатация</h3>
-                    <ul>
-                        <li><a href="/instruction/otlichiya-rutoken-literutoken-srutoken-ecp-20">Отличия Рутокен Lite/Рутокен S/Рутокен ЭЦП 2.0</a></li>
-                        <li><a href="/instruction/parol-pin-kod-dlya-konteynera-rutokenetokenfleshka">Пароль (PIN-код) для контейнера Rutoken/eToken/флешка?</a></li>
-                        <li><a href="/instruction/kak-smenit-pin-kod-na-rutokenetoken">Как сменить пин-код на Rutoken/eToken?</a></li>
-                        <li><a href="/instruction/kak-sbrosit-pin-kod-pin-kod-rutoken-ili-razblokirovat-rutoken">Как сбросить PIN-код (пин-код) Rutoken или разблокировать Rutoken</a></li>
-                        <li><a href="/instruction/ustanovka-drayvera-na-klyuchevoy-nositel">Установка драйвера на ключевой носитель</a></li>
-                        <li><a href="/instruction/kak-obnovit-drayver-rutoken">Как обновить драйвер Rutoken</a></li>
-                        <li><a href="/instruction/nastroyka-rutoken-20-dlya-raboty-v-egais">Настройка Рутокен 2.0 для работы в ЕГАИС</a></li>
-                        <li><a href="/instruction/formatirovanie-rutoken">Форматирование Rutoken &nbsp;</a> &nbsp; &nbsp; &nbsp;</li>
-                        <li><a href="/instruction/kak-razblokirovat-etoken">Как разблокировать eToken</a></li>
-                    </ul>
-                    <h3>Устранение ошибок при работе</h3>
-                    <ul>
-                        <li><a href="/instruction/na-rutoken-ne-gorit-lampochka">На Rutoken не горит лампочка</a></li>
-                        <li><a href="/instruction/nekorrektnyy-tip-nositelya-ili-nositel-ne-otformatirovan">Некорректный тип носителя или носитель не отформатирован</a></li>
-                        <li><a href="/instruction/nedostatochno-mesta-na-nositele">Недостаточно места на носителе</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Криптопровайдеры</h2>
-                    <h3>КриптоПро</h3>
-                    <ul>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-istekla-linceziya-kak-vvesti-licenziyu-kriptopro-csp-kak-vvesti-seriynyy">КриптоПро CSP: Истекла линцезия / Как ввести лицензию КриптоПро CSP? / Как ввести серийный номер?</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-soobschenie-vstavte-klyuchevoy-nositel-ili-vstavlen-drugoy-klyuchevoy">КриптоПро CSP: Cообщение «Вставьте ключевой носитель» или «Вставлен другой ключевой носитель»</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-kak-pereustanovit-programmu">КриптоПро CSP: Как переустановить программу?</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-soobschenie-ob-oshibke-oshibka-obrascheniya-k-ukazannomu-csp">КриптоПро CSP: Cообщение об ошибке «Ошибка обращения к указанному CSP»</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-nastroyka-schityvateley">КриптоПро CSP: Настройка считывателей</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-soobschenie-nabor-klyuchey-ne-opredelen-ili-nabor-klyuchey-ne">КриптоПро CSP: Cообщение «Набор ключей не определен» или «Набор ключей не существует»</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-poyavlyaetsya-soobschenie-vvedite-parol-pin-kod-dlya-konteynera">КриптоПро CSP: Gоявляется сообщение «Введите пароль (PIN-код) для контейнера»</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-pri-ustanovke-soobschenie-voznikla-oshibka-v-processe-ustanovki-0">КриптоПро CSP: При установке сообщение Возникла ошибка в процессе установки драйвера</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-okno-vybor-klyuchevogo-konteynera-pustoe-libo-v-nem-ne-otobrazhaetsya-0">КриптоПро CSP: Окно «Выбор ключевого контейнера» пустое либо в нем не отображается нужный контейнер</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-kak-ustanovitskopirovat-sertifikatkonteynerklyuch-v-reestr">КриптоПро CSP: Как установить/скопировать сертификат/контейнер/ключ в реестр?</a></li>
-                    </ul>
-                    <h3>VipNet</h3>
-                    <ul>
-                        <li><a href="https://uc-itcom.ru/instruction/ustanovkapereustanovkaudalenie-vipnet">Установка/Переустановка/Удаление VipNet</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/spisok-podderzhivaemykh-vneshnikh-ustroystv-kakoy-tip-nositelya-podderzhivaet-vipnet">Список поддерживаемых внешних устройств / Какой тип носителя поддерживает VipNet</a></li>
-                    </ul>
-                    <h3>eToken</h3>
-                    <ul>
-                        <li><a href="/node/46">Как разблокировать eToken</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Электронные торговые площадки и запросы котировок</h2>
-                    <ul>
-                        <li><a href="/instruction/trebovaniya-k-rabochemu-mestu-dlya-elektronnykh-torgov">Требования к рабочему месту для электронных торгов</a></li>
-                        <li><a href="/instruction/ustanovka-lichnogo-sertifikata">Установка личного сертификата</a></li>
-                        <li><a href="/instruction/ustanovka-neobkhodimogo-programmnogo-obespecheniya-dlya-raboty-s-elektronnymi-torgovymi">Установка необходимого программного обеспечения для работы с электронными торговыми площадками</a></li>
-                        <li><a href="/instruction/poluchena-novaya-elektronnaya-podpis-dlya-torgov-chto-neobkhodimo-sdelat">Получена новая электронная подпись для торгов. Что необходимо сделать?</a></li>
-                        <li><a href="/instruction/poryadok-podachi-kotirovochnykh-zayavok-v-elektronnom-vide">Порядок подачи котировочных заявок в электронном виде</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/instrukciya-po-ustanovke-kriptopro-office-signature">Инструкция по установке КриптоПРО Office Signature</a></li>
-                        <li><a href="/instruction/ispolzovanie-kriptopro-csp-30-i-36-v-wordexcel-iz-sostava-microsoft-office-2003-2007">Инструкция по использованию КриптоПРО Office Signature</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kriptopro-office-signature-ne-udaetsya-podpisat-wordexcel-dokument">КриптоПро Office Signature: не удается подписать Word/Excel документ</a></li>
-                        <li><a href="/instruction/programma-kriptoarm-versiya-4-rukovodstvo-polzovatelya">Программа «КриптоАРМ». Версия 4. Руководство пользователя</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Общие вопросы</h2>
-                    <ul>
-                        <li><a href="/instruction/kak-obespechit-yuridicheskuyu-silu-ecp-v-elektronnom-dokumente">Как обеспечить юридическую силу ЭЦП в электронном документе?</a></li>
-                        <li><a href="/instruction/terminy-i-opredeleniya-glossariy">Термины и определения (глоссарий)</a></li>
-                        <li><a href="/instruction/kak-vvesti-seriynyy-nomer-kriptopro-csp-36">Как ввести серийный номер КриптоПро CSP 4.0?</a></li>
-                        <li><a href="/instruction/ustanovka-kornevogo-sertifikata-udostoveryayuschego-centra-ooo-itk">Установка корневого сертификата Удостоверяющего центра ООО "ИТК"</a></li>
-                        <li><a href="/instruction/instrukciya-po-ustanovke-drayverov">Инструкция по установке драйверов</a></li>
-                        <li><a href="/sites/default/files/2020-03/instuction_ep.PDF">Инструкция по генерации ключа электронной подписи</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/polnoe-rukovodstvo-po-nastroyke-pk-dlya-raboty-s-elektronnoy-podpisyu">Полное руководство по настройке ПК для работы с электронной подписью</a></li>
-                        <li><a href="https://uc-itcom.ru/instruction/kakie-dokumenty-nuzhny-dlya-polucheniya-elektronnoy-podpisi">Какие документы нужны для получения электронной подписи?</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Заполнение заявления на получение ЭП: частые вопросы</h2>
-                    <ul>
-                        <li><a href="/instruction/kakoy-adres-ukazyvat-v-zayavlenii-na-vypusk-ep" rel="nofollow" target="_blank">Какой адрес указывать в заявлении на выпуск ЭП</a></li>
-                        <li><a href="/instruction/zapolnenie-bloka-pasport-inostrannym-grazhdaninom" rel="nofollow" target="_blank">Заполнение блока «Паспорт» иностранным гражданином</a></li>
-                        <li><a href="/instruction/zapolnenie-bloka-data-vydachi-pasporta" rel="nofollow" target="_blank">Заполнение блока «Дата выдачи паспорта»</a></li>
-                        <li><a href="/instruction/kakie-nuzhny-dokumenty-posle-smeny-fio" rel="nofollow" target="_blank">Какие нужны документы после смены Ф.И.О.</a></li>
-                        <li><a href="/instruction/podkhodit-li-snils-vydannyy-v-mfc" rel="nofollow" target="_blank">Подходит ли СНИЛС, выданный в МФЦ</a></li>
-                        <li><a href="/instruction/zachem-prikladyvat-snils-v-zayavku-esli-pfr-ego-ne-vydayot" target="_blank">Зачем прикладывать СНИЛС в заявку, если ПФР его не выдаёт?</a></li>
-                        <li><a href="/instruction/vypusk-ep-pri-nastuplenii-sroka-smeny-pasporta" rel="nofollow" target="_blank">Выпуск ЭП при наступлении срока смены паспорта</a></li>
-                        <li><a href="/instruction/dannye-o-rukovoditele-ne-vneseny-v-egryul" rel="nofollow" target="_blank">Данные о руководителе не внесены в ЕГРЮЛ</a></li>
-                        <li><a href="/instruction/v-vypiske-egryul-dannye-s-oshibkoy-ili-opechatkoy" rel="nofollow" target="_blank">В выписке ЕГРЮЛ данные с ошибкой или опечаткой</a></li>
-                        <li><a href="/instruction/chto-takoe-nadlezhaschee-kachestvo-dokumenta" rel="nofollow" target="_blank">Что такое «Надлежащее качество документа»?</a></li>
-                        <li><a href="/instruction/chto-takoe-zhivaya-podpis-i-pechat" rel="nofollow" target="_blank">Что такое «Живая подпись и печать»?</a></li>
-                        <li><a href="/instruction/kakuyu-stavit-datu-na-zayavlenii" rel="nofollow" target="_blank">Какую ставить дату на заявлении</a></li>
-                        <li><a href="/instruction/sootvetstvie-podpisi-v-pasporte-i-zayavlenii" rel="nofollow" target="_blank">Соответствие подписи в паспорте и заявлении</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Отчетность через Интернет</h2>
-                    <ul>
-                        <li><a href="/instruction/elektronnaya-otchetnost-sistema-sbis">Продление сертификата СБиС++</a></li>
-                    </ul>
-                </div>
-                <div class="blocks">
-                    <h2>Отчетноcть в РосАлкогольРегулирование</h2>
-                    <ul>
-                        <li><a href="/instruction/ustanovka-lichnogo-sertifikata">Установка личного сертификата</a></li>
-                        <li><a href="/instruction/ustanovka-sertifikatov-dlya-sdachi-otchetnosti-v-rosalkogolregulirovanie">Установка сертификатов для сдачи отчетности в Росалкогольрегулирование</a></li>
-                        <li><a href="/instruction/video-registraciya-v-sisteme-rosalkogolregulirovaniya">Видео: Регистрация в системе Росалкогольрегулирования</a></li>
-                        <li><a href="/instruction/instrukciya-po-rabote-s-kriptoarm">Инструкция по работе с КриптоАРМ</a></li>
-                        <li><a href="/instruction/video-podpisanie-i-shifrovanie-deklaracii">Видео: Подписание и шифрование декларации</a></li>
-                        <li><a href="/instruction/video-zagruzka-i-ustanovka-deklarant-alko">Видео: Загрузка и установка Декларант-Алко</a></li>
-                        <li><a href="/instruction/kak-otpravit-otchetnost-v-rosalkogolregulirovanie-organizaciyam-obschaya-skhema">Как отправить отчетность в Росалкогольрегулирование организациям. Общая схема</a></li>
-                        <li><a href="/instruction/registraciya-na-portale-dlya-otchetnosti-v-rosalkogolregulirovanie">Регистрация на портале для отчетности в Росалкогольрегулирование</a></li>
-                        <li><a href="/instruction/podgotovka-otchetnosti-v-programme-deklarant-alko">Подготовка отчетности в программе Декларант-Алко</a></li>
-                        <li><a href="/instruction/kak-sformirovat-otchety-za-neskolko-filialov-ili-organizaciy-v-deklarant-alko">Как сформировать отчеты за несколько филиалов или организаций в Декларант-Алко</a></li>
-                        <li><a href="/instruction/poryadok-predstavleniya-otchetnosti-v-rosalkogolregulirovanie">Порядок представления отчетности в Росалкогольрегулирование</a></li>
-                    </ul>
-                </div>
-            </div>
-            <section class="blocks">
-                <div class="container">
-                    <div class="feedback__container feedback__container-black" style="background-image: url(../img/feedback-bg.png);">
-                        <div class="feedback__content">
-                            <h2>Не нашли подходящую инструкцию?</h2>
-                            <span class="form__desc">Подберем подходящую инструкцию под ваши запросы для решения вашего бизнеса</span>
-                            <div class="feedback__form">
-                                <form action="">
-                                    <label for="#">
-                                        <input type="email" placeholder="Ваш email">
-                                    </label>
-                                    <label for="#">
-                                        <input type="tel" placeholder="Номер телефона">
-                                    </label>
-                                    <button type="submit" class="btn"><span>Перезвонить мне</span></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
+	<section class="home-slide">
+		<div class="container">
+			<div class="home-slide__wrap" style="background-image: url(../img/instuction.png);">
+				@@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+				<div class="home-slide__wrap-col">
+					<h1 class="home-slide__title mb-0">Инструкции</h1>
+				</div>
+			</div>
+		</div>
+		<div class="content-default">
+			<div class="container">
+				<div class="blocks">
+					<h2>Электронная подпись</h2>
+					<h3>Генерация и установка КЭП</h3>
+					<ul>
+						<li><a href="/instruction/vypuskgeneraciya-i-ustanovka-kep-dlya-os-windows-1">Квалифицированная
+								электронная подпись</a></li>
+						<li><a href="/instruction/oblachnaya-kvalificirovannaya-elektronnaya-podpis">Облачная
+								квалифицированная электронная подпись</a></li>
+					</ul>
+					<h3>Работа и эксплуатация КЭП</h3>
+					<ul>
+						<li><a href="/instruction/nastroyka-kep-dlya-raboty-na-macos">Настройка КЭП для работы на MacOS</a>
+						</li>
+						<li><a href="/instruction/kak-podpisat-dokument-elektronnoy-podpisyu">Как подписать документ
+								электронной подписью</a></li>
+						<li><a href="https://uc-itcom.ru/instruction/podpisanie-dokumenta-s-pomoschyu-oblachnogo-sertifikata">Как
+								подписать документ с помощью "облачного" сервиса</a></li>
+						<li><a href="/instruction/kak-proverit-srok-deystviya-elektronnoy-podpisi">Как проверить срок действия
+								электронной подписи</a></li>
+						<li><a
+								href="/instruction/kak-obnovit-kep-u-menya-istekaet-sertifikat-kakoy-srok-deystviya-moego-sertifikata">Как
+								обновить КЭП / у меня истекает сертификат / какой срок действия моего сертификата?</a></li>
+						<li><a href="/instruction/otzyv-sertifikata">Отзыв сертификата</a></li>
+						<li><a
+								href="/instruction/ustanovit-kornevye-sertifikaty-gde-vzyat-kornevye-sertifikaty-iili-spisok-otozvannykh">Установить
+								корневые сертификаты / Где взять корневые сертификаты и/или список отозванных сертификатов
+								УЦ?</a></li>
+						<li><a href="/instruction/podpisanie-dokumenta-s-pomoschyu-kriptopro-50">Как подписать документ
+								электронной подписью используя Крипто Про 5?</a></li>
+						<li><a href="/instruction/kak-skopirovat-konteynerzakrytuyu-chast-klyucha">Как скопировать
+								контейнер/закрытую часть ключа?</a></li>
+						<li><a href="https://uc-itcom.ru/instruction/eksport-pfx-fayla-i-ego-ustanovka">Экспорт PFX-файла и
+								его установка</a></li>
+						<li><a href="/instruction/kak-esportirovat-otrytyy-klyuch">Как экспортировать открытый ключ?</a></li>
+						<li><a
+								href="/instruction/poluchenie-identifikatora-nalogoplatelschika-dlya-podachi-otchyotnosti-cherez-sayt-fns">Получение
+								идентификатора налогоплательщика для подачи отчётности через сайт ФНС nalog.ru</a></li>
+					</ul>
+					<h3>Устранение ошибок при работе</h3>
+					<ul>
+						<li><a
+								href="/instruction/ne-udaetsya-postroit-cepochku-sertifikatovsertifikat-ne-prokhodit-podlinnost">Сертификат
+								не проходит подлинность</a></li>
+						<li><a href="/instruction/sertifikat-nedeystvitelen">Сертификат недействителен</a></li>
+						<li><a href="/instruction/ne-udaetsya-postroit-cepochku-sertifikatov">Не удается построить цепочку
+								сертификатов</a></li>
+						<li><a
+								href="/instruction/pri-vkhode-na-sberbank-ast-oshibka-klientskiy-sertifikat-ne-sopostavlen-s-polzovatelem">При
+								входе на Сбербанк-АСТ ошибка: «Клиентский сертификат не сопоставлен с пользователем»</a></li>
+						<li><a
+								href="/instruction/pri-rabote-na-etp-ili-oshibka-pri-podpisanii-dannykh-oshibka-ispolneniya-funkcii">При
+								работе на ЭТП или ИС ошибка при подписании данных: «Ошибка исполнения функции»</a></li>
+						<li><a href="/instruction/oshibka-biblioteka-capicom-ne-mozhet-byt-zagruzhena">Ошибка! Библиотека
+								CAPICOM не может быть загружена"</a></li>
+						<li><a href="/instruction/nastroyka-internet-explorera-dlya-raboty-na-etp">Настройка браузера для
+								работы на площадках&nbsp;</a></li>
+						<li><a href="/instruction/na-portale-ne-otobrazhaetsya-nuzhnyy-sertifikat">На портале не отображается
+								нужный сертификат</a></li>
+						<li><a
+								href="/instruction/oshibka-biblioteka-capicom-ne-mozhet-byt-zagruzhena-vozmozhno-iz-za-nizkikh-prav">Ошибка!
+								Библиотека CAPICOM не может быть загружена, возможно, из-за низких прав доступа на данной
+								локальной машине</a></li>
+						<li><a
+								href="/instruction/na-vashem-kompyutere-otsutstvuyut-ili-nekorrektno-nastroeny-sredstva-dlya-raboty-s-ecp">На
+								вашем компьютере отсутствуют или некорректно настроены средства для работы с ЭЦП. Обратитесь к
+								поставщику вашего сертификата и СКЗИ</a></li>
+						<li><a href="/instruction/nevozmozhno-sozdanie-obekta-serverom-programmirovaniya-obektov">Невозможно
+								создание объекта &nbsp;сервером программирования объектов</a></li>
+						<li><a
+								href="/instruction/v-vashem-brauzere-otsutstvuyut-razresheniya-na-ispolzovanie-activex-obektov">В
+								Вашем браузере отсутствуют разрешения на использование ActiveX объектов</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Программы для работы с электронной подписью</h2>
+					<h3>КриптоАРМ</h3>
+					<ul>
+						<li><a href="https://uc-itcom.ru/instruction/kriptoarm-gde-skachat-kak-ustanovit">КриптоАРМ: Где
+								скачать? Как установить?</a></li>
+						<li><a
+								href="/instruction/kriptoarm-status-sertifikata-nedeystvitelen-oshibka-postroeniya-puti-sertifikacii">КриптоАРМ:
+								статус сертификата: недействителен, ошибка построения пути сертификации</a></li>
+						<li><a href="/instruction/kriptoarm-preduprezhdenie-net-polnogo-doveriya-k-sertifikatu-podpisi">КриптоАРМ:
+								предупреждение &nbsp;«Нет полного доверия к сертификату подписи»</a></li>
+						<li><a
+								href="/instruction/kriptoarm-ne-udaetsya-ustanovit-licenzionnyy-klyuch-oshibka-sokhraneniya-dannykh">КриптоАРМ:
+								Не удается установить лицензионный ключ: ошибка сохранения данных</a></li>
+						<li><a href="/instruction/kriptoarm-ukazan-khesh-algoritm-nesovmestimyy-s-dannym-faylom-podpisi">КриптоАРМ:
+								Указан хеш-алгоритм, несовместимый с данным файлом подписи</a></li>
+						<li><a href="/instruction/kriptoarm-otsutstvuet-lichnyy-sertifikat-dlya-rasshifrovaniya">КриптоАРМ:
+								Отсутствует личный сертификат для расшифрования</a></li>
+						<li><a href="/instruction/ustanovka-kriptoarm-zavershaetsya-s-oshibkoy">КриптоАРМ: Установка
+								завершается с ошибкой</a></li>
+						<li><a href="/instruction/kripoarm-oshibka-podpis-ne-validna-na-saytakh">КриптоАРМ: ошибка «Подпись не
+								валидна»</a></li>
+						<li><a href="/instruction/kriptoarmne-udaetsya-podpisat-fayl-oshibka-ispolneniya-funkcii-0x0000065b">КриптоАРМ:
+								не удается подписать файл: ошибка исполнения функции 0x0000065b</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Ключевые носители Rutoken/eToken/флешка</h2>
+					<h3>Эксплуатация</h3>
+					<ul>
+						<li><a href="/instruction/otlichiya-rutoken-literutoken-srutoken-ecp-20">Отличия Рутокен Lite/Рутокен
+								S/Рутокен ЭЦП 2.0</a></li>
+						<li><a href="/instruction/parol-pin-kod-dlya-konteynera-rutokenetokenfleshka">Пароль (PIN-код) для
+								контейнера Rutoken/eToken/флешка?</a></li>
+						<li><a href="/instruction/kak-smenit-pin-kod-na-rutokenetoken">Как сменить пин-код на
+								Rutoken/eToken?</a></li>
+						<li><a href="/instruction/kak-sbrosit-pin-kod-pin-kod-rutoken-ili-razblokirovat-rutoken">Как сбросить
+								PIN-код (пин-код) Rutoken или разблокировать Rutoken</a></li>
+						<li><a href="/instruction/ustanovka-drayvera-na-klyuchevoy-nositel">Установка драйвера на ключевой
+								носитель</a></li>
+						<li><a href="/instruction/kak-obnovit-drayver-rutoken">Как обновить драйвер Rutoken</a></li>
+						<li><a href="/instruction/nastroyka-rutoken-20-dlya-raboty-v-egais">Настройка Рутокен 2.0 для работы в
+								ЕГАИС</a></li>
+						<li><a href="/instruction/formatirovanie-rutoken">Форматирование Rutoken &nbsp;</a> &nbsp; &nbsp;
+							&nbsp;</li>
+						<li><a href="/instruction/kak-razblokirovat-etoken">Как разблокировать eToken</a></li>
+					</ul>
+					<h3>Устранение ошибок при работе</h3>
+					<ul>
+						<li><a href="/instruction/na-rutoken-ne-gorit-lampochka">На Rutoken не горит лампочка</a></li>
+						<li><a href="/instruction/nekorrektnyy-tip-nositelya-ili-nositel-ne-otformatirovan">Некорректный тип
+								носителя или носитель не отформатирован</a></li>
+						<li><a href="/instruction/nedostatochno-mesta-na-nositele">Недостаточно места на носителе</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Криптопровайдеры</h2>
+					<h3>КриптоПро</h3>
+					<ul>
+						<li><a
+								href="https://uc-itcom.ru/instruction/kriptopro-csp-istekla-linceziya-kak-vvesti-licenziyu-kriptopro-csp-kak-vvesti-seriynyy">КриптоПро
+								CSP: Истекла линцезия / Как ввести лицензию КриптоПро CSP? / Как ввести серийный номер?</a></li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/kriptopro-csp-soobschenie-vstavte-klyuchevoy-nositel-ili-vstavlen-drugoy-klyuchevoy">КриптоПро
+								CSP: Cообщение «Вставьте ключевой носитель» или «Вставлен другой ключевой носитель»</a></li>
+						<li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-kak-pereustanovit-programmu">КриптоПро CSP:
+								Как переустановить программу?</a></li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/kriptopro-csp-soobschenie-ob-oshibke-oshibka-obrascheniya-k-ukazannomu-csp">КриптоПро
+								CSP: Cообщение об ошибке «Ошибка обращения к указанному CSP»</a></li>
+						<li><a href="https://uc-itcom.ru/instruction/kriptopro-csp-nastroyka-schityvateley">КриптоПро CSP:
+								Настройка считывателей</a></li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/kriptopro-csp-soobschenie-nabor-klyuchey-ne-opredelen-ili-nabor-klyuchey-ne">КриптоПро
+								CSP: Cообщение «Набор ключей не определен» или «Набор ключей не существует»</a></li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/kriptopro-csp-poyavlyaetsya-soobschenie-vvedite-parol-pin-kod-dlya-konteynera">КриптоПро
+								CSP: Gоявляется сообщение «Введите пароль (PIN-код) для контейнера»</a></li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/kriptopro-csp-pri-ustanovke-soobschenie-voznikla-oshibka-v-processe-ustanovki-0">КриптоПро
+								CSP: При установке сообщение Возникла ошибка в процессе установки драйвера</a></li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/kriptopro-csp-okno-vybor-klyuchevogo-konteynera-pustoe-libo-v-nem-ne-otobrazhaetsya-0">КриптоПро
+								CSP: Окно «Выбор ключевого контейнера» пустое либо в нем не отображается нужный контейнер</a>
+						</li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/kriptopro-csp-kak-ustanovitskopirovat-sertifikatkonteynerklyuch-v-reestr">КриптоПро
+								CSP: Как установить/скопировать сертификат/контейнер/ключ в реестр?</a></li>
+					</ul>
+					<h3>VipNet</h3>
+					<ul>
+						<li><a href="https://uc-itcom.ru/instruction/ustanovkapereustanovkaudalenie-vipnet">Установка/Переустановка/Удаление
+								VipNet</a></li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/spisok-podderzhivaemykh-vneshnikh-ustroystv-kakoy-tip-nositelya-podderzhivaet-vipnet">Список
+								поддерживаемых внешних устройств / Какой тип носителя поддерживает VipNet</a></li>
+					</ul>
+					<h3>eToken</h3>
+					<ul>
+						<li><a href="/node/46">Как разблокировать eToken</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Электронные торговые площадки и запросы котировок</h2>
+					<ul>
+						<li><a href="/instruction/trebovaniya-k-rabochemu-mestu-dlya-elektronnykh-torgov">Требования к
+								рабочему месту для электронных торгов</a></li>
+						<li><a href="/instruction/ustanovka-lichnogo-sertifikata">Установка личного сертификата</a></li>
+						<li><a
+								href="/instruction/ustanovka-neobkhodimogo-programmnogo-obespecheniya-dlya-raboty-s-elektronnymi-torgovymi">Установка
+								необходимого программного обеспечения для работы с электронными торговыми площадками</a></li>
+						<li><a href="/instruction/poluchena-novaya-elektronnaya-podpis-dlya-torgov-chto-neobkhodimo-sdelat">Получена
+								новая электронная подпись для торгов. Что необходимо сделать?</a></li>
+						<li><a href="/instruction/poryadok-podachi-kotirovochnykh-zayavok-v-elektronnom-vide">Порядок подачи
+								котировочных заявок в электронном виде</a></li>
+						<li><a href="https://uc-itcom.ru/instruction/instrukciya-po-ustanovke-kriptopro-office-signature">Инструкция
+								по установке КриптоПРО Office Signature</a></li>
+						<li><a
+								href="/instruction/ispolzovanie-kriptopro-csp-30-i-36-v-wordexcel-iz-sostava-microsoft-office-2003-2007">Инструкция
+								по использованию КриптоПРО Office Signature</a></li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/kriptopro-office-signature-ne-udaetsya-podpisat-wordexcel-dokument">КриптоПро
+								Office Signature: не удается подписать Word/Excel документ</a></li>
+						<li><a href="/instruction/programma-kriptoarm-versiya-4-rukovodstvo-polzovatelya">Программа
+								«КриптоАРМ». Версия 4. Руководство пользователя</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Общие вопросы</h2>
+					<ul>
+						<li><a href="/instruction/kak-obespechit-yuridicheskuyu-silu-ecp-v-elektronnom-dokumente">Как
+								обеспечить юридическую силу ЭЦП в электронном документе?</a></li>
+						<li><a href="/instruction/terminy-i-opredeleniya-glossariy">Термины и определения (глоссарий)</a></li>
+						<li><a href="/instruction/kak-vvesti-seriynyy-nomer-kriptopro-csp-36">Как ввести серийный номер
+								КриптоПро CSP 4.0?</a></li>
+						<li><a href="/instruction/ustanovka-kornevogo-sertifikata-udostoveryayuschego-centra-ooo-itk">Установка
+								корневого сертификата Удостоверяющего центра ООО "ИТК"</a></li>
+						<li><a href="/instruction/instrukciya-po-ustanovke-drayverov">Инструкция по установке драйверов</a>
+						</li>
+						<li><a href="/sites/default/files/2020-03/instuction_ep.PDF">Инструкция по генерации ключа электронной
+								подписи</a></li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/polnoe-rukovodstvo-po-nastroyke-pk-dlya-raboty-s-elektronnoy-podpisyu">Полное
+								руководство по настройке ПК для работы с электронной подписью</a></li>
+						<li><a
+								href="https://uc-itcom.ru/instruction/kakie-dokumenty-nuzhny-dlya-polucheniya-elektronnoy-podpisi">Какие
+								документы нужны для получения электронной подписи?</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Заполнение заявления на получение ЭП: частые вопросы</h2>
+					<ul>
+						<li><a href="/instruction/kakoy-adres-ukazyvat-v-zayavlenii-na-vypusk-ep" rel="nofollow"
+								target="_blank">Какой адрес указывать в заявлении на выпуск ЭП</a></li>
+						<li><a href="/instruction/zapolnenie-bloka-pasport-inostrannym-grazhdaninom" rel="nofollow"
+								target="_blank">Заполнение блока «Паспорт» иностранным гражданином</a></li>
+						<li><a href="/instruction/zapolnenie-bloka-data-vydachi-pasporta" rel="nofollow"
+								target="_blank">Заполнение блока «Дата выдачи паспорта»</a></li>
+						<li><a href="/instruction/kakie-nuzhny-dokumenty-posle-smeny-fio" rel="nofollow" target="_blank">Какие
+								нужны документы после смены Ф.И.О.</a></li>
+						<li><a href="/instruction/podkhodit-li-snils-vydannyy-v-mfc" rel="nofollow" target="_blank">Подходит
+								ли СНИЛС, выданный в МФЦ</a></li>
+						<li><a href="/instruction/zachem-prikladyvat-snils-v-zayavku-esli-pfr-ego-ne-vydayot"
+								target="_blank">Зачем прикладывать СНИЛС в заявку, если ПФР его не выдаёт?</a></li>
+						<li><a href="/instruction/vypusk-ep-pri-nastuplenii-sroka-smeny-pasporta" rel="nofollow"
+								target="_blank">Выпуск ЭП при наступлении срока смены паспорта</a></li>
+						<li><a href="/instruction/dannye-o-rukovoditele-ne-vneseny-v-egryul" rel="nofollow"
+								target="_blank">Данные о руководителе не внесены в ЕГРЮЛ</a></li>
+						<li><a href="/instruction/v-vypiske-egryul-dannye-s-oshibkoy-ili-opechatkoy" rel="nofollow"
+								target="_blank">В выписке ЕГРЮЛ данные с ошибкой или опечаткой</a></li>
+						<li><a href="/instruction/chto-takoe-nadlezhaschee-kachestvo-dokumenta" rel="nofollow"
+								target="_blank">Что такое «Надлежащее качество документа»?</a></li>
+						<li><a href="/instruction/chto-takoe-zhivaya-podpis-i-pechat" rel="nofollow" target="_blank">Что такое
+								«Живая подпись и печать»?</a></li>
+						<li><a href="/instruction/kakuyu-stavit-datu-na-zayavlenii" rel="nofollow" target="_blank">Какую
+								ставить дату на заявлении</a></li>
+						<li><a href="/instruction/sootvetstvie-podpisi-v-pasporte-i-zayavlenii" rel="nofollow"
+								target="_blank">Соответствие подписи в паспорте и заявлении</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Отчетность через Интернет</h2>
+					<ul>
+						<li><a href="/instruction/elektronnaya-otchetnost-sistema-sbis">Продление сертификата СБиС++</a></li>
+					</ul>
+				</div>
+				<div class="blocks">
+					<h2>Отчетноcть в РосАлкогольРегулирование</h2>
+					<ul>
+						<li><a href="/instruction/ustanovka-lichnogo-sertifikata">Установка личного сертификата</a></li>
+						<li><a href="/instruction/ustanovka-sertifikatov-dlya-sdachi-otchetnosti-v-rosalkogolregulirovanie">Установка
+								сертификатов для сдачи отчетности в Росалкогольрегулирование</a></li>
+						<li><a href="/instruction/video-registraciya-v-sisteme-rosalkogolregulirovaniya">Видео: Регистрация в
+								системе Росалкогольрегулирования</a></li>
+						<li><a href="/instruction/instrukciya-po-rabote-s-kriptoarm">Инструкция по работе с КриптоАРМ</a></li>
+						<li><a href="/instruction/video-podpisanie-i-shifrovanie-deklaracii">Видео: Подписание и шифрование
+								декларации</a></li>
+						<li><a href="/instruction/video-zagruzka-i-ustanovka-deklarant-alko">Видео: Загрузка и установка
+								Декларант-Алко</a></li>
+						<li><a
+								href="/instruction/kak-otpravit-otchetnost-v-rosalkogolregulirovanie-organizaciyam-obschaya-skhema">Как
+								отправить отчетность в Росалкогольрегулирование организациям. Общая схема</a></li>
+						<li><a href="/instruction/registraciya-na-portale-dlya-otchetnosti-v-rosalkogolregulirovanie">Регистрация
+								на портале для отчетности в Росалкогольрегулирование</a></li>
+						<li><a href="/instruction/podgotovka-otchetnosti-v-programme-deklarant-alko">Подготовка отчетности в
+								программе Декларант-Алко</a></li>
+						<li><a
+								href="/instruction/kak-sformirovat-otchety-za-neskolko-filialov-ili-organizaciy-v-deklarant-alko">Как
+								сформировать отчеты за несколько филиалов или организаций в Декларант-Алко</a></li>
+						<li><a href="/instruction/poryadok-predstavleniya-otchetnosti-v-rosalkogolregulirovanie">Порядок
+								представления отчетности в Росалкогольрегулирование</a></li>
+					</ul>
+				</div>
+			</div>
+			<section class="blocks">
+				<div class="container">
+					<div class="feedback__container feedback__container-black"
+						style="background-image: url(../img/feedback-bg.png);">
+						<div class="feedback__content">
+							<h2>Не нашли подходящую инструкцию?</h2>
+							<span class="form__desc">Подберем подходящую инструкцию под ваши запросы для решения вашего
+								бизнеса</span>
+							<div class="feedback__form">
+								<form action="">
+									<label for="#">
+										<input type="email" placeholder="Ваш email">
+									</label>
+									<label for="#">
+										<input type="tel" placeholder="Номер телефона">
+									</label>
+									<button type="submit" class="btn"><span>Перезвонить мне</span></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
 
-    @@include("../blocks/modules/footer/footer.html")
-    <script src="js/main.js"></script>
-    <script src="js/vendor.js"></script>
+	@@include("../blocks/modules/footer-menu/menu.html")
+
+	@@include("../blocks/modules/footer/footer.html")
+	<script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
 </body>
 
 </html>
