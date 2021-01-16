@@ -1,7 +1,6 @@
 $pfx: "sertificate-advantages";
 
 .#{$pfx} {
-	
 	h2 {
 		color: $gray;
 		font-weight: 300;
@@ -9,49 +8,48 @@ $pfx: "sertificate-advantages";
 		line-height: 48px;
 		margin-bottom: 55px;
 		text-align: center;
-
 	}
 }
 
 .list-1 {
 	list-style-type: none;
 	@include row-flex();
-	
+
 	&__item {
 		@include col();
 		@include size(6);
-        @include size-md(12);
+		@include size-md(12);
 		background-position: left top;
 		background-repeat: no-repeat;
 		margin-bottom: 35px;
 		padding-left: 144px;
 		padding-top: 30px;
-		
+
 		&:nth-child(1) {
 			background-image: url(../img/icon_obslujivanie.png);
 		}
-		
+
 		&:nth-child(2) {
 			background-image: url(../img/icon_online_perevipusk.png);
 		}
-		
+
 		&:nth-child(3) {
 			background-image: url(../img/icon_tehpodderjka.png);
 		}
-		
+
 		&:nth-child(4) {
 			background-image: url(../img/icon_dostup_k_materialam.png);
 		}
-		
+
 		&:nth-child(5) {
 			background-image: url(../img/icon_dostavka.png);
 		}
-		
+
 		&:nth-child(6) {
 			background-image: url(../img/icon_rasshirenoe_deistvie.png);
 		}
 	}
-	
+
 	&__title {
 		color: $text;
 		display: block;
@@ -59,7 +57,7 @@ $pfx: "sertificate-advantages";
 		line-height: 28px;
 		margin-bottom: 10px;
 	}
-	
+
 	&__descript {
 		color: $gray-dark;
 		font-size: 16px;
@@ -69,7 +67,7 @@ $pfx: "sertificate-advantages";
 }
 
 @media (max-width: 400px) {
-    .list-1__item {
-        padding-left: 110px;
-    }
+	.list-1__item {
+		padding-left: 110px;
+	}
 }

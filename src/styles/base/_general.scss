@@ -118,6 +118,7 @@ img {
 		font-weight: 300;
 		font-size: 40px;
 		@include lg(font-size, 26px);
+		@include lg(line-height, 105%);
 		@include lg(width, 100%);
 	}
 
