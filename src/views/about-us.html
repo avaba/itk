@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>gulp-scss-starter</title>
+	<meta name="theme-color" content="#fff" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon" />
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png" />
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png" />
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png" />
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" />
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+	@@include("../blocks/modules/header/header.html")
+
+	<section class="home-slide">
+		<div class="container">
+			<div class="home-slide__wrap home-general no-bg" style="background: #FFE1A6;">
+				<div class="breadcrumbs bigcrumbs">
+					<naw>
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><span>О нас</span></li>
+						</ul>
+					</naw>
+				</div>
+				<div class="home-slide__wrap-col">
+					<h1 class="home-slide__title">IT-решения для бизнеса<br>с 2011 года</h1>
+					<p class="home-slide__desc big-desc">
+						Станьте партнером ITCOM уже сегодня
+					</p>
+					<a href="#popupp" class="btn btn-shadow fancybox"><span>Стать партнером</span></a>
+					<a href="#popupp" class="btn btn-white fancybox">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about-us blocks">
+		<div class="container">
+			<div class="about-us__row">
+				<div class="about-us__col">
+					<div class="blocks__head">
+						<h2>О компании</h2>
+					</div>
+					<div class="about">
+						<h3>ITCOM – многопрофильная
+							ИТ-компания</h3>
+						<p>Широкая линейка продуктов и решений для бизнеса, только от ITCOM. Удостоверяющий центр ITCOM
+							выпускает ключи
+							сертификатов электронной подписи для регистрации кассы, электронных торгов, работы с госпорталами и
+							для физических лиц.
+							Профессионализм и комплексный подход позволили нам вырасти из регионального удостоверяющего центра
+							в федеральную
+							компанию с новыми перспективными направлениями. Мы оказываем услуги тендерного сопровождения,
+							реализуем онлайн-кассы по
+							54-ФЗ, подключаем к ЕГАИС и ОФД, оказываем услуги по информационной безопасности.</p>
+					</div>
+				</div>
+				<div class="about-us__col">
+					<div class="blocks__head">
+						<h2>Показатели</h2>
+					</div>
+					<div class="indicators">
+						<div class="indicators__list">
+							<div class="indicators__item">
+								<span class="count">9</span>
+								<span class="text">лет на рынке услуг для бизнеса</span>
+							</div>
+							<div class="indicators__item">
+								<span class="count">76</span>
+								<span class="text">филиалов по всей России</span>
+							</div>
+							<div class="indicators__item">
+								<span class="count">2 000</span>
+								<span class="text">партнеров</span>
+							</div>
+							<div class="indicators__item">
+								<span class="count">360</span>
+								<span class="text">пунктов выдачи</span>
+							</div>
+							<div class="indicators__item">
+								<span class="count">673к</span>
+								<span class="text">довольных клиентов</span>
+							</div>
+							<div class="indicators__item">
+								<span class="count">249к</span>
+								<span class="text">КЭП в год</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-us__col">
+					<div class="about-us__col--last">
+						<div class="blocks__head">
+							<h2>Документы</h2>
+						</div>
+						<div class="documents__list">
+							<a href="#" class="documents__item">
+								<div class="documents__icon">
+									<img src="../img/svg/file-pdf.svg" alt="">
+								</div>
+								<div class="documents__text">
+									<span class="small">Регламент</span>
+									<span>ООО «ИТК»</span>
+								</div>
+							</a>
+							<a href="#" class="documents__item">
+								<div class="documents__icon">
+									<img src="../img/svg/file-pdf.svg" alt="">
+								</div>
+								<div class="documents__text">
+									<span class="small">Регламент</span>
+									<span>ООО «Айтиком»</span>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="btn btn-white">Смотреть все документы компании</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="card-block blocks">
+		<div class="container">
+			<div class="blocks__head center">
+				<h2>Основные виды деятельности</h2>
+			</div>
+			<div class="card-block__wrap">
+				<div class="card-block__wrap-col">
+					<a href="https://ep.uc-itcom.ru/product-all.html"
+						class="card-product card-product-dark card-product-flag">
+						<span class="card-product__subtitle">Решение</span>
+						<span class="card-product__title">
+							Корпоративный<br>
+							удостоверяющий центр
+						</span>
+						<span class="card-product__desc">
+							Выдавайте электронную подпись сами, любому количеству сотрудников, прямо на рабочем месте, для
+							любых применений.
+						</span>
+					</a>
+				</div>
+				<div class="card-block__wrap-col">
+					<a href="https://uc-itcom.ru/produkty-i-resheniya/elektronnaya-podpis/dlya-biznesa-i-edo"
+						class="card-product">
+						<span class="card-product__subtitle">Услуга</span>
+						<span class="card-product__title">
+							Электронная подпись
+						</span>
+						<span class="card-product__desc">
+							Электронные подписи для любых целей от надежного удостоверяющего центра с представительствами по
+							всей России
+						</span>
+					</a>
+				</div>
+				<div class="card-block__wrap-col">
+					<a href="https://uc-itcom.ru/produkty-i-resheniya/elektronnaya-podpis/kupit-etsp-dlya-fizicheskih-lits"
+						class="card-product">
+						<span class="card-product__subtitle">Решение</span>
+						<span class="card-product__title">
+							Электронная<br>
+							отчетность
+						</span>
+						<span class="card-product__desc">
+							Помощь с инвентаризацией остатков и составлением инструкций по внедрению системы маркировки
+						</span>
+					</a>
+				</div>
+				<div class="card-block__wrap-col">
+					<span class="card-product">
+						<span class="card-product__subtitle">Решение</span>
+						<span class="card-product__title">
+							Электронный<br>
+							документооборот
+						</span>
+						<span class="card-product__desc">
+							Применение решений для внутреннего и внешнего документооборота с использованием ЭП
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="partners blocks">
+		<div class="container">
+			<div class="blocks__head center">
+				<h2>Наши партнеры</h2>
+			</div>
+			<div class="partners__tabs">
+				<div class="partners__tabs--link">
+					<span class="active" id="tab1">Банки-партнеры</span>
+					<span id="tab2">Электронные-торговые площадки</span>
+				</div>
+				<div class="partners__tabs--container">
+					<div class="tab tab1 active">
+						<ul>
+							<li><img src="../img/alfa_bank.png" alt=""></li>
+							<li><img src="../img/tinkoff_bank.png" alt=""></li>
+							<li><img src="../img/vtb_24.png" alt=""></li>
+							<li><img src="../img/raifaisen_bank.png" alt=""></li>
+						</ul>
+					</div>
+					<div class="tab tab2">
+						<ul>
+							<li><img src="../img/b2b_center.png" alt=""></li>
+							<li><img src="../img/etp_gpb.png" alt=""></li>
+							<li><img src="../img/cdt.png" alt=""></li>
+							<li><img src="../img/fabrikant.png" alt=""></li>
+							<li><img src="../img/tek_torg.png" alt=""></li>
+							<li><img src="../img/mbm_ru.png" alt=""></li>
+							<li><img src="../img/torgovaya_palata.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="map-block hidden-map blocks">
+		<div class="container">
+			<div class="blocks__head center">
+				<h2>Карта охвата</h2>
+			</div>
+			<div class="map-block__text">
+				<p>Головные офисы ITCOM размещаются в Москве и Краснодаре, а широкая сеть филиалов охватывает всю территорию
+					России и представлена в 18 городах России. Кроме того, партнерская сеть насчитывает более 2000 компаний.
+					Квалифицированную электронную подпись можно получить в 360 пунктах выдачи по всей России.</p>
+				<a href="#popupp" class="btn btn-shadow fancybox"><span>Стать партнером</span></a>
+				<a href="#popupp" class="btn btn-white fancybox">Точка выдачи</a>
+			</div>
+			<img src="../img/svg/map.svg" alt="" class="map-block__img svg map-block__small" />
+		</div>
+	</section>
+
+	<section class="list-block blocks">
+		<div class="container">
+			<div class="blocks__head center">
+				<h2>Возможности федерального удостоверяющего центра ITCOM</h2>
+			</div>
+			<div class="list-block__list big-list">
+				<ul>
+					<li>
+						<span class="list-block__title">Выпуск электронной подписи за 30 минут</span>
+						<p>Когда подпись нужна быстро, воспользуйтесь ускоренным выпуском ЭП</p>
+					</li>
+					<li>
+						<span class="list-block__title">Надежный удостоверяющий центр</span>
+						<p>ФУЦ ITCOM действующий лицензиат ФСБ, аккредитован Минкомсвязи РФ от 25.05.2018 г.</p>
+					</li>
+					<li>
+						<span class="list-block__title">Оформление подписи по двум документам</span>
+						<p>Для выпуска сертификата электронной подписи потребуется паспорт и СНИЛС</p>
+					</li>
+					<li>
+						<span class="list-block__title">350 точек выдачи по всей России</span>
+						<p>Представительства нашего УЦ есть в каждом регионе страны</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="card-block blocks">
+		<div class="container">
+			<div class="blocks__head">
+				<h2>Наши сертификаты принимают</h2>
+				<a href="#" class="blocks__head-link">Все площадки</a>
+			</div>
+			<div class="card-block__wrap">
+				<div class="card-block__wrap-col custom-col">
+					<a href="#" class="card-product">
+						<span class="card-product__title">
+							<b>На всех федеральных<br>
+								и коммерческих ЭТП</b>
+						</span>
+						<span class="card-product__desc ol-desc">
+							<ul>
+								<li>«Сбербанк-АСТ»</li>
+								<li>«ЕЭТП»</li>
+								<li>«РТС-тендер»</li>
+								<li>«НЭП»</li>
+								<li>«Газпромбанк»</li>
+								<li>«B2B»</li>
+								<li>«Фабрикант»</li>
+								<li>«ТЭК-Торг»</li>
+								<li>«uTender»</li>
+							</ul>
+						</span>
+					</a>
+				</div>
+				<div class="card-block__wrap-col custom-col">
+					<a href="#" class="card-product">
+						<span class="card-product__title">
+							<b>На порталах и сайтах<br>
+								государственных систем</b>
+						</span>
+						<span class="card-product__desc ol-desc">
+							<ul>
+								<li>«Госуслуги»</li>
+								<li>ФНС</li>
+								<li>ФТС</li>
+								<li>Честный знак</li>
+								<li>Росреестр</li>
+								<li>ФСС</li>
+								<li>ПФР</li>
+								<li>ЕГАИС</li>
+							</ul>
+						</span>
+					</a>
+				</div>
+				<div class="card-block__wrap-col custom-col">
+					<a href="#" class="card-product">
+						<span class="card-product__title">
+							<b>На ЭТП по реализации<br>
+								имущества банкротов</b>
+						</span>
+						<span class="card-product__desc ol-desc">
+							<ul>
+								<li>Центр дистанционных торгов</li>
+								<li>Регторг</li>
+								<li>Центр реализации</li>
+								<li>Фритрейд</li>
+								<li>Электронные системы Поволжья</li>
+								<li>Уральская ЭТП</li>
+								<li>Альфалот</li>
+								<li>Аукционный тендерный центр</li>
+							</ul>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="partners blocks">
+		<div class="container">
+			<div class="blocks__head center">
+				<h2>Нас рекомендуют</h2>
+			</div>
+			<div class="partners__tabs">
+				<div class="partners__tabs--container">
+					<div class="tab active">
+						<ul>
+							<li><img src="../img/fix_prais.png" alt=""></li>
+							<li><img src="../img/kristal.png" alt=""></li>
+							<li><img src="../img/azbuka_vkusa.png" alt=""></li>
+							<li><img src="../img/detskii_mir.png" alt=""></li>
+							<li><img src="../img/monetka.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="info blocks">
+		<div class="container">
+			<div class="blocks__head center">
+				<h2>Информация</h2>
+			</div>
+			<div class="info__list">
+				<a href="#">
+					<span>Партнерам</span>
+					<img src="../img/nobg.jpg" alt="">
+				</a>
+				<a href="#">
+					<span>Техподдержка</span>
+					<img src="../img/nobg.jpg" alt="">
+				</a>
+				<a href="#">
+					<span>Пункты выдачи</span>
+					<img src="../img/nobg.jpg" alt="">
+				</a>
+				<a href="#">
+					<span>Статьи и новости</span>
+					<img src="../img/nobg.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="feedback blocks">
+		<div class="container">
+			<div class="feedback__container traid-bg"
+				style="background: url('../img/about-bg.jpg') no-repeat center; background-size: cover;">
+				<div class="feedback__content">
+					<div class="blocks__head">
+						<h2>Ищите решения для вашего бизнеса?</h2>
+					</div>
+					<span class="form__desc">Подберем подходящее решение для вашего бизенса, мы поможем вашей компании</span>
+					<div class="feedback__form">
+						<form action="">
+							<label for="#">
+								<input type="tel" placeholder="Номер телефона">
+							</label>
+							<label for="#">
+								<input type="email" placeholder="E-mail">
+							</label>
+							<button type="submit" class="btn btn-shadow"><span>Перезвонить мне</span></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@@include("../blocks/modules/footer/footer.html")
+	<script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
+</body>
+
+</html>

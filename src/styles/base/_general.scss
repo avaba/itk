@@ -129,6 +129,7 @@ img {
 		@include lg(flex-wrap, wrap);
 		&.center {
 			justify-content: center;
+			text-align: center;
 		}
 
 		&-link {

@@ -23,6 +23,16 @@
 		.home-slide__title {
 			margin: 0;
 			margin-top: 80px;
+			text-shadow: none;
+		}
+		.home-slide__desc {
+			font-weight: 400;
+		}
+		.btn.btn-white {
+			background: transparent;
+			&:hover {
+				background: $accent;
+			}
 		}
 	}
 }
