@@ -1,0 +1,46 @@
+.links__group {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: -24px;
+	@include xl(padding-top, 75px);
+	@include sm(padding-top, 165px);
+	a {
+		display: flex;
+		align-items: center;
+		color: $text;
+		max-width: 345px;
+		width: 100%;
+		margin-bottom: 24px;
+		p {
+			transition: all 0.3s ease;
+			padding-left: 13px;
+			font-size: 20px;
+			line-height: 28px;
+		}
+		svg {
+			transition: all 0.3s ease;
+			width: 54px;
+			height: 54px;
+			fill: #ababab;
+		}
+		&:hover {
+			svg {
+				fill: $accent;
+			}
+			p {
+				color: $accent;
+			}
+		}
+	}
+}
+.home-slide__wrap.wrap-all {
+	@include xl(padding, 50px 30px);
+	.home-slide__wrap-col {
+		max-width: 750px;
+		width: 100%;
+		.home-slide__title {
+			text-shadow: none;
+		}
+	}
+}
