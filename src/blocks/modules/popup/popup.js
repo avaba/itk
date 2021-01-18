@@ -5,7 +5,7 @@ $('.btn-popup').click(function (e) {
 	$('.popup').fadeIn(500);
 })
 
-$('.overlay, .close').click(function () {
+$('.overlay-p, .close').click(function () {
 	$("body").removeClass('active');
 	$("main").removeClass('active');
 	$('.popup').fadeOut(500);
